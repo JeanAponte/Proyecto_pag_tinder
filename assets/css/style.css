@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Footer*/
+
+.footer{
+    display:flex;
+    justify-content: space-around;
+    background-color: #FE9595;
+    font-family: 'Pacifico';
+}
+
+.social_media{
+    
+}

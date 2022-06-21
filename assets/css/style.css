@@ -3,7 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*Menu*/
 
+header{
+    width: 100%;
+    background-color:aqua;
+    height: 150px;
+}
+#menu{
+    width: 80%;
+    height: 150px;
+    margin: auto;
+}
+.logo{
+    width: 20%;
+    height: 50px;
+    float: left;
+    padding-top: 10px;
+}
+nav{
+    width: 70%;
+    height: 70px;
+    float: left;
+    text-align: center;
+    padding-top: 55px;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Pacifico';
+    padding-left: 24px;
+    letter-spacing: 1px;
+}
+nav ul li a:hover{
+    color: aliceblue;
+}
+nav ul .registro{
+    font-size: 10px;
+}
 /*Footer*/
 
 .footer{

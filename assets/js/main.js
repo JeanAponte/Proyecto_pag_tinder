@@ -40,4 +40,4 @@ function main(){
 
 main();
 
-//Fin de funciones página indice_menus.html
+//Fin de funciones página index_usuarios.html

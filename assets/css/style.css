@@ -41,7 +41,7 @@ nav ul li a{
     letter-spacing: 1px;
 }
 nav ul li a:hover{
-    color: aliceblue;
+    color:#F54D4E;
 }
 /*Botones*/
 .button1{
@@ -56,9 +56,10 @@ nav ul li a:hover{
     text-decoration: none;
     margin-block-end: 10px;
     border-radius: 18px;
+    font-family: 'Pacifico';
 }
 nav .button1:hover{
-    color: white;
+    color:#F54D4E;
 
 }
 

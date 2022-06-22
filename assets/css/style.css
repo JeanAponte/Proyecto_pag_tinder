@@ -70,6 +70,10 @@ nav .button1:hover{
     background-color: #FE9595;
     font-family: 'Pacifico';
     padding-bottom: 10px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+
 }
 
 .contacto{

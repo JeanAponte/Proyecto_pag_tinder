@@ -44,17 +44,18 @@ nav ul li a:hover{
 }
 
 
-
 /*principal*/
 .principal {
     background-image: url("/assets/imagenes/imagen1.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-    max-height: 100%;
+    width: ;
+    height: ;
+
     font-family: 'Pacifico';
     text-shadow: 0 0 2px white;
+    text-align: center;
 }
+
 
 /*Botones*/
 .button1{

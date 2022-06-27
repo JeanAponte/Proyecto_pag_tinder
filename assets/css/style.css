@@ -8,7 +8,7 @@
 header{
     width: 100%;
     background-color:#FE9595;
-    height: 150px;
+    height: 178px;
 }
 #menu{
     width: 80%;
@@ -26,16 +26,15 @@ nav{
     height: 70px;
     float: left;
     text-align: center;
-    padding-top: 55px;
+    padding-top: 25px;
 }
 nav ul li{
     display: inline;
 }
 nav ul li a{
     color: black;
-    font-size: 25px;
+    font-size: 35px;
     text-decoration: none;
-    text-transform: uppercase;
     font-family: 'Pacifico';
     padding-left: 24px;
     letter-spacing: 1px;
@@ -49,18 +48,45 @@ nav ul li a:hover{
     color:#FE9595;
     display: inline-block;
     font-size: 16px;
-    margin: 10px;
+    margin: 5px;
     padding: 5px 0px;
     text-align: center;
     width: 90px;
     text-decoration: none;
-    margin-block-end: 10px;
     border-radius: 18px;
     font-family: 'Pacifico';
+    margin-left: 750px;
+    margin-bottom: 0px;
 }
 nav .button1:hover{
     color:#F54D4E;
-
+}
+/*Formulario de la pagina de registro*/
+.formulario{
+    text-align: center;
+    font-family: 'Pacifico';
+    color: black;
+    background: #FE9595;
+    width: 450px;
+    margin-top: 31px;
+    margin-left: 430px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    
+}
+.formulario .continuar{
+    font-size: 15px;
+    font-family: 'Pacifico';
+    background-color: black;
+    color: #FE9595;
+    border-radius: 15px;
+    width: 100px;
+    margin-bottom: 6px;
+    margin-top: 8px;
+}
+.formulario .continuar:hover{
+    color: #F54D4E;
 }
 
 

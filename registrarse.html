@@ -10,10 +10,78 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Bubblegum+Sans&family=Grape+Nuts&family=Indie+Flower&family=Kalam:wght@300;700&family=Lobster&family=Pacifico&family=Patua+One&display=swap" rel="stylesheet">
 
-
-    <script src="./assets/js/main.js"></script>
 </head>
 <body>
+    <header>
+        <div id="menu">
+        <div class="logo">
+            <img src="assets\imagenes\tinder_logo-removebg-preview-removebg-preview.png">
+        </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="filtro.html">Filtro</a></li>
+            <li><a href="index_usuarios.html">Usuarios</a></li>
+            <li><a href="normas.html">Normas</a></li>    
+        </ul>
+            <a href="registrarse.html" class="button1">Registrarse</a>
+            <a href="usuario.html" class="button1">Login</a>
+    </nav>
+        </div>
+    </header>
+    <div class="formulario">
+        <h1>Registrese</h1>
+         <p>Nombre: <input type="text" name="nombre"></p>
+         <p>Fecha de nacimiento: <input type="date"></p>
+         <p>Orientacion sexual: <select>
+             <option>Heterosexual</option>
+             <option>Gay</option>
+             <option>Lesbiana</option>
+             <option>Asexual</option>
+             <option>Pansexual</option>
+             </select>
+         <p>Sexo: <select>
+            <option>Hombre</option>
+            <option>Mujer</option>
+            <option>No binario</option>
+         </select></p>
+         <p>Ciudad: <input type="text" name="ciudad"></p>
+         <p>Pais: <input type="text" name="pais"></p>
+         <p>Email: <input type="email" name="email"></p>
+         <p>Telefono: <input type="tel" name="telefono"></p>
+         <p>Aficiones:<br>
+             <input type="checkbox" name="casilla">Cantar
+             <input type="checkbox" name="casilla">Cine
+             <input type="checkbox" name="casilla">Caminar
+             <input type="checkbox" name="casilla">Video juegos
+             <input type="checkbox" name="casilla">Cocinar<br>
+             <input type="checkbox" name="casilla">Leer
+             <input type="checkbox" name="casilla">Musica
+             <input type="checkbox" name="casilla">Correr
+             <input type="checkbox" name="casilla">Deportes
+             <input type="checkbox" name="casilla">Bailar<br>
+             <input type="checkbox" name="casilla">Fiesta
+             <input type="checkbox" name="casilla">Nadar
+             <input type="checkbox" name="casilla">Animales
+             <input type="checkbox" name="casilla">Naturaleza
+             <input type="checkbox" name="casilla">Piano<br>
+             <input type="checkbox" name="casilla">Moda
+             <input type="checkbox" name="casilla">Cazar
+             <input type="checkbox" name="casilla">Comer
+             <input type="checkbox" name="casilla">Bucear
+             <input type="checkbox" name="casilla">Futbol<br>
+             <input type="checkbox" name="casilla">Viajar
+             <input type="checkbox" name="casilla">Dibujar
+             <input type="checkbox" name="casilla">Navegar
+             <input type="checkbox" name="casilla">Yoga<br>
+             <input type="checkbox" name="casilla">Ir al Gym
+             <input type="checkbox" name="casilla">Pescar
+             <input type="checkbox" name="casilla">Ir a la playa
+             <input type="checkbox" name="casilla">Escribir
+             </p>
+             <input  class="continuar" type="submit" value="Continuar">
+    </div>
+     
     <footer>
         <div class="footer">
             <div class="contacto">
@@ -42,5 +110,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./data/usuarios.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

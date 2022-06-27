@@ -1,61 +1,43 @@
-//Funciones página usuario.html
+//Funciones página index_usuarios.html
 
-/*Función que obtiene los menús de la base de datos */
+/*Función que obtiene todos los usuarios de la base de datos */
 
-function getDataMenus(){
-    let menus_json = JSON.parse(menus);
-    return menus_json;
+function getDataUsuarios(){
+    let usuarios_json = JSON.parse(usuarios);
+    return usuarios_json;
 }
 
-/*Función que recorre el array de menús de objetos JSON y lo muestra*/
+/*Función que recorre el array de usuarios de objetos JSON y lo muestra*/
 
-function displayDataMenus (data){
-    let menus_html = '';
+function displayDataUsuarios (data){
+    let usuarios_html = '';
 
     for (let i = 0; i < data.length; i++){
-        menus_html += menus_toHTML(data[i]);
+        usuarios_html += usuarios_toHTML(data[i]);
     }
 
-    document.querySelector('.menus').innerHTML = menus_html;
+    document.querySelector('.usuarios').innerHTML = usuarios_html;
 }
 
-/*Dado un objeto JSON de menú, devuelve su correspondiente HTML*/
+/*Dado un objeto JSON de usuario, devuelve su correspondiente HTML*/
 
-function menus_toHTML (menus){
-    let menus_toHtml = '<article class="menu " '+ menus.menu + '>\
-        <div class="presentacion">\
-        <a href ="#" target="_blank"> <h2>Menú ' + menus.menu + '</h2></a>\
-        </div>\
-        <div class="primer_plato">\
-        <p><b>Primer plato:</b> ' + menus.primero + '</p>\
-        </div>\
-        <div class="segundo_plato">\
-        <p><b>Segundo plato:</b> ' + menus.segundo + '</p>\
-        </div>\
-        <div class="postre">\
-        <p><b>Postre: </b>' + menus.postre + '</p>\
-        </div>\
-        <div class="cafe">\
-        <p><b>Café: </b>' + menus.cafe + '</p>\
-        </div>\
-        <div class="bebida">\
-        <p><b>Bebida:</b> ' + menus.bebidas + '</p>\
-        </div>\
-        <div class="info_adicional">\
-        <p><b>Días disponibles</b>: ' + menus.dia + '<p>\
-        <p><b>Precio</b>: ' + menus.precio + ' €</p>\
+function usuarios_toHTML (menus){
+    let usuarios_toHtml = '<article class="usuario " '+ usuarios.id + '>\
+        <div class="imagen">\
+        <img src="' + usuarios.foto + '" alt="usuario ' + usuarios.id + '">\
+        <figcaption>' + usuarios.nombre + '" "' + usuarios.edad + '</figcaption>\
         </div>\
         </article>';
 
-        return menus_toHtml;
+        return usuarios_toHtml;
 }
 
 
 function main(){
-    data = getDataMenus();
-    displayDataMenus(data);
+    data = getDataUsuarios();
+    displayDataUsuarios(data);
 }
 
 main();
 
-//Fin de funciones página indice_menus.html
+//Fin de funciones página index_usuarios.html

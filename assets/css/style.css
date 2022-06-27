@@ -45,11 +45,17 @@ nav ul li a:hover{
 
 
 /*principal*/
-.principal {
+main{
     background-image: url("/assets/imagenes/imagen1.jpg");
-    background-repeat: no-repeat;
-    width: ;
-    height: ;
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 500px;
+    
+}
+.botones {
 
     font-family: 'Pacifico';
     text-shadow: 0 0 2px white;

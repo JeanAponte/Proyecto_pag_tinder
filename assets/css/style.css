@@ -33,7 +33,7 @@ nav ul li{
 }
 nav ul li a{
     color: black;
-    font-size: 35px;
+    font-size: 44px;
     text-decoration: none;
     font-family: 'Pacifico';
     padding-left: 24px;
@@ -72,27 +72,6 @@ body{
     justify-content: top;
 }
 
-
-
-/*Botones*/
-.button1{
-    background: black;
-    color:#FE9595;
-    display: inline-block;
-    font-size: 16px;
-    margin: 5px;
-    padding: 5px 0px;
-    text-align: center;
-    width: 90px;
-    text-decoration: none;
-    border-radius: 18px;
-    font-family: 'Pacifico';
-    margin-left: 750px;
-    margin-bottom: 0px;
-}
-nav .button1:hover{
-    color:#F54D4E;
-}
 /*Formulario de la pagina de registro*/
 .formulario{
     text-align: center;

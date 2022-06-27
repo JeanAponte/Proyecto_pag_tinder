@@ -47,20 +47,31 @@ nav ul li a:hover{
 /*principal*/
 main{
     background-image: url("/assets/imagenes/imagen1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
+    margin-block:initial;
+    display: flex;
 }
 body{
-    width: 100%;
+    position:static;
+    width: 1500px;
     height: 500px;
     
 }
+.descripcion {
+    font-family: 'Pacifico';
+    text-align: center;
+    
+}
 .botones {
-
     font-family: 'Pacifico';
     text-shadow: 0 0 2px white;
     text-align: center;
+    justify-content: top;
 }
+
 
 
 /*Botones*/

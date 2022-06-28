@@ -46,7 +46,7 @@ nav ul li a:hover{
 
 /*principal*/
 main{
-    background-image: url("/assets/imagenes/imagen1.jpg");
+    background-image: url("../imagenes/imagen1.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;

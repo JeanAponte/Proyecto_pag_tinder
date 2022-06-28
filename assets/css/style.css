@@ -51,16 +51,13 @@ main{
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
-    margin-block:initial;
+   /* margin-block:initial;*/
     display: flex;
+    flex-direction: column;
 }
-body{
-    position:static;
-    width: 1500px;
-    height: 500px;
-    
-}
+
 .descripcion {
+    margin: 20px;
     font-family: 'Pacifico';
     text-align: center;
     
@@ -69,7 +66,7 @@ body{
     font-family: 'Pacifico';
     text-shadow: 0 0 2px white;
     text-align: center;
-    justify-content: top;
+    
 }
 
 /*Formulario de la pagina de registro*/
@@ -111,7 +108,7 @@ body{
     bottom: 0;
     position: absolute;
     width: 100%;
-
+    height: 100px;
 }
 
 .contacto{
@@ -124,7 +121,9 @@ body{
 }
 
 .social_media{
-    margin-left: 430px;
+    margin-left: 430px;/*Para responsive 150 probar*/
+    display: flex;
+    flex-direction: row;
 }
 
 .social_media a{
@@ -144,7 +143,7 @@ body{
 }
 
 .consejos{
-    margin-left: 320px;
+    margin-left: 320px;/*para responsive 220*/
     margin-top: 10px;
 }
 

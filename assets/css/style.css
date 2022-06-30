@@ -81,6 +81,7 @@ button{
     background-color: #FE9595;
     color: black;
     text-align: center;
+    border-radius: 20px;
 }
 button:last-child{
     margin-left: -850px;

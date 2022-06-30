@@ -62,25 +62,31 @@ body{
 
 .descripcion {
     margin: 20px;
-    padding: 40px 40px;
+    padding: 30px 20%;
     font-family: 'Pacifico';
-    text-align: center;
+    text-justify:center;
     
 }
+
 .botones {
+    display: flex;
+    justify-content: space-around;
     text-shadow: 0 0 4px white;
     text-align: center;   
 }
 button{
-    width: 25%;
-    height: 55px;
-    font-family: 'Pacifico';font-size: 30px;
+    padding: 5px;
+    font-family: 'Pacifico';
+    font-size: 30px;
     background-color: #FE9595;
     color: black;
     text-align: center;
 }
+button:last-child{
+    margin-left: -850px;
+}
 
-button .continuar:hover{
+button:hover{
     color:#F54D4E;
 }
 

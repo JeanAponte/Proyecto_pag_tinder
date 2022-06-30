@@ -134,8 +134,9 @@ button:hover{
 }
 
 .contacto{
-    margin-left: 20px;
-    margin-top: 10px;
+    position:absolute;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
 .contacto p{
@@ -143,7 +144,8 @@ button:hover{
 }
 
 .social_media{
-    margin-left: 430px;/*Para responsive 150 probar*/
+    margin-left: 650px;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
 }
@@ -166,7 +168,7 @@ button:hover{
 
 .consejos{
     margin-left: 320px;/*para responsive 220*/
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .consejos:last-child{

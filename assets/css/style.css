@@ -78,8 +78,13 @@ button{
     background-color: #FE9595;
     color: black;
     text-align: center;
-
 }
+
+button .continuar:hover{
+    color:#F54D4E;
+}
+
+
 /*Formulario de la pagina de registro*/
 .formulario{
     text-align: center;

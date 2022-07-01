@@ -185,7 +185,7 @@ button:hover{
     color:#F54D4E;
 }
 
-/*Responsive*/
+/*Responsive header*/
 @media(max-width:844px){
     nav ul li a{
         font-size: 15px;
@@ -212,6 +212,32 @@ button:hover{
     nav ul li a:hover{
         color:#F54D4E
     }
+    /*Responsive formulario*/
+    .formulario{
+        width: 350px;
+        height: 515px;
+        margin-left: 20px;
+        margin-top: 72px;
+    }
+    .formulario h1{
+        font-size: 18px;
+    }
+    .formulario p{
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .fomulario  select option{
+        font-size:11px;
+    }
+     .formulario .continuar {
+       font-size: 10px;
+       width: 58px;
+    }
+    .formulario .continuar:hover{
+        color: #F54D4E;
+    }
+
+    
 }
 
 /*Footer*/

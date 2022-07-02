@@ -65,7 +65,7 @@ body{
     padding: 30px 20%;
     font-family: 'Pacifico';
     text-justify:center;
-    
+    text-shadow: 0 0 2px white;
 }
 
 .botones {
@@ -82,6 +82,7 @@ button{
     color: black;
     text-align: center;
     border-radius: 20px;
+    display: inline;
 }
 button:last-child{
     margin-left: -850px;
@@ -213,6 +214,8 @@ button:hover{
         color:#F54D4E
     }
     /*Responsive formulario*/
+
+    
     .formulario{
         width: 350px;
         height: 515px;
@@ -236,6 +239,39 @@ button:hover{
     .formulario .continuar:hover{
         color: #F54D4E;
     }
+
+/*Responsive descripcion*/
+@media(max-width:844px){
+    main{
+        font-size: 15px;
+        padding-left: 7px;
+        display: inline-block;
+    }
+
+    main .img{
+       background-size: cover;
+       height: 500px;
+    }
+    
+    .botones{
+        flex-wrap: wrap;
+        font-size: 20px;
+        margin-left: 50%;
+        width: 30%;
+        height: 30%;
+        text-align: center;
+    }
+
+    button{
+        flex-wrap: wrap;
+        font-size: 20px;
+        width: 70%;
+        height: 40%;
+        float: left;
+        text-align: center;
+    }
+}
+
 
 /*Responsive Footer*/
 

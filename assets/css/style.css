@@ -7,7 +7,7 @@
 
 header{
     width: 100%;
-    background-color:#FE9595;
+    background-color:#e294f5;
     height: 178px;
 }
 #menu{
@@ -32,7 +32,7 @@ nav ul li{
     display: inline;
 }
 nav ul li a{
-    color: black;
+    color: #461453;
     font-size: 44px;
     text-decoration: none;
     font-family: 'Pacifico';
@@ -40,12 +40,13 @@ nav ul li a{
     letter-spacing: 1px;
 }
 nav ul li a:hover{
-    color:#F54D4E;
+    transition: 0.3s;
+    color:white;
 }
 
 
 /*principal*/
-main{
+.main_principal{
     background-image: url("../imagenes/imagen1.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -134,11 +135,10 @@ button:hover{
 
 .footer{
     display:flex;
-    background-color: #FE9595;
+    background-color: #e294f5;
     font-family: 'Pacifico';
     padding-bottom: 10px;
     bottom: 0;
-    position: absolute;
     width: 100%;
     height: 100px;
 }
@@ -149,12 +149,16 @@ button:hover{
     margin-top: 20px;
 }
 
+.contacto h2, .contacto p, .consejos p{
+    color:#461453;
+}
+
 .contacto p{
     margin-top: -10px;
 }
 
 .social_media{
-    margin-left: 650px;
+    margin-left: 600px;
     margin-top: 15px;
     display: flex;
     flex-direction: row;
@@ -162,14 +166,14 @@ button:hover{
 
 .social_media a{
     text-decoration: none;
-    color: black;
+    color: #461453;
     font-size: 40px;
+    padding-right:10px;
 }
 
 .social_media a:hover{
     transition: 0.5s;
-    transform: scale(1.3);
-    color:#F54D4E;
+    color:#e294f5;
 }
 
 .consejos p{
@@ -186,12 +190,12 @@ button:hover{
 }
 .consejos a{
     text-decoration: none;
-    color: black;
+    color: #461453;
     font-size: 20px;
 }
 
 .consejos a:hover{
-    color:#F54D4E;
+    color:#e294f5;
 }
 
 /*Responsive header*/

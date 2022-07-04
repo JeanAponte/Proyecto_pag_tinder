@@ -75,7 +75,7 @@ body{
     text-align: center;   
 }
 button{
-    padding: 5px;
+    padding: 0px;
     font-family: 'Pacifico';
     font-size: 30px;
     background-color: #FE9595;
@@ -246,6 +246,9 @@ button:hover{
         font-size: 15px;
         padding-left: 7px;
         display: inline-block;
+    }
+    body.img{
+        background-image: 100%;
     }
 
     main .img{

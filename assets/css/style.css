@@ -74,6 +74,14 @@ body{
     text-shadow: 0 0 4px white;
     text-align: center;   
 }
+
+.botones a {
+    color: #F54D4E;
+    background-color:black;
+    border-radius: 20px;
+}
+
+
 button{
     padding: 0px;
     font-family: "Segoe UI";

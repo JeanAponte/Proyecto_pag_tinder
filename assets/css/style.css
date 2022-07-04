@@ -107,13 +107,20 @@ button:hover{
     font-family: 'Pacifico';
     color: black;
     background: #FE9595;
-    width: 450px;
-    margin-top: 31px;
+    width: 400px;
+    height: 265px;
+    margin-top: 120px;
     margin-left: 430px;
     font-size: 16px;
     margin-bottom: 10px;
     border-radius: 20px;
     
+}
+.formulario p{
+    font-size: 22px;
+}
+.formulario h1{
+    font-size: 35px;
 }
 .formulario .continuar{
     font-size: 15px;

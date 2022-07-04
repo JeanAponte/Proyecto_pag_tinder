@@ -63,9 +63,9 @@ body{
 .descripcion {
     margin: 20px;
     padding: 30px 20%;
-    font-family: 'Pacifico';
-    text-justify:center;
-    text-shadow: 0 0 2px white;
+    background-color: #fe95957b;
+    font-family: "Segoe UI";
+    text-align: center;
 }
 
 .botones {
@@ -76,7 +76,7 @@ body{
 }
 button{
     padding: 0px;
-    font-family: 'Pacifico';
+    font-family: "Segoe UI";
     font-size: 30px;
     background-color: #FE9595;
     color: black;

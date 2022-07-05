@@ -107,7 +107,7 @@ button:hover{
     text-align: center;
     font-family: 'Pacifico';
     color: black;
-    background: #FE9595;
+    background: #e294f5;
     width: 400px;
     height: 265px;
     margin-top: 120px;
@@ -127,14 +127,14 @@ button:hover{
     font-size: 15px;
     font-family: 'Pacifico';
     background-color: black;
-    color: #FE9595;
+    color: white;
     border-radius: 15px;
     width: 100px;
     margin-bottom: 6px;
     margin-top: 8px;
 }
 .formulario .continuar:hover{
-    color: #F54D4E;
+    color: #461453;
 }
 
 

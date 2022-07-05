@@ -138,6 +138,49 @@ button:hover{
     color: #461453;
 }
 
+/*Formulario2 de la pagina de registro*/
+
+.formulario2{
+    text-align: center;
+    font-family: 'Pacifico';
+    color: black;
+    background: #e294f5;
+    width: 400px;
+    height: 665px;
+    margin-top: 120px;
+    margin-left: 430px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    
+}
+
+
+.formulario2 p{
+    font-size: 22px;
+}
+
+
+.formulario2 h1{
+    font-size: 35px;
+}
+
+
+.formulario2 .continuar{
+    font-size: 15px;
+    font-family: 'Pacifico';
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    width: 100px;
+    margin-bottom: 6px;
+    margin-top: 8px;
+}
+
+.formulario2 .continuar:hover{
+    color: #461453;
+}
+
 
 /*Footer*/
 

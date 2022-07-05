@@ -67,6 +67,7 @@ body{
     background-color: #fe95957b;
     font-family: "Segoe UI";
     text-align: center;
+    font-family: 'pacifico';
 }
 
 .botones {
@@ -259,40 +260,15 @@ button:hover{
         color: #F54D4E;
     }
 
-/*Responsive descripcion*/
-@media(max-width:844px){
-    main{
-        font-size: 15px;
-        padding-left: 7px;
-        display: inline-block;
-    }
-    body.img{
-        background-image: 100%;
+    /*Responsive descripcion*/
+
+    .descripcion{
+        font-size: 13px;
+
     }
 
-    main .img{
-       background-size: cover;
-       height: 500px;
-    }
+
     
-    .botones{
-        flex-wrap: wrap;
-        font-size: 20px;
-        margin-left: 50%;
-        width: 30%;
-        height: 30%;
-        text-align: center;
-    }
-
-    button{
-        flex-wrap: wrap;
-        font-size: 20px;
-        width: 70%;
-        height: 40%;
-        float: left;
-        text-align: center;
-    }
-}
 
 
 /*Responsive Footer*/

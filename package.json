@@ -19,5 +19,8 @@
   "homepage": "https://github.com/JeanAponte/Proyecto_pag_tinder#readme",
   "devDependencies": {
     "jest": "^28.1.2"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
   }
 }

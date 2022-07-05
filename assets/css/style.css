@@ -1,37 +1,43 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /*Menu*/
 
-header{
+header {
     width: 100%;
-    background-color:#e294f5;
+    background-color: #e294f5;
     height: 178px;
 }
-#menu{
+
+#menu {
     width: 80%;
     height: 150px;
     margin: auto;
 }
-.logo{
+
+.logo {
     width: 20%;
     height: 50px;
     float: left;
     padding-top: 10px;
 }
-nav{
+
+nav {
     width: 70%;
     height: 70px;
     float: left;
     text-align: center;
     padding-top: 25px;
 }
-nav ul li{
+
+nav ul li {
     display: inline;
 }
-nav ul li a{
+
+nav ul li a {
     color: #461453;
     font-size: 44px;
     text-decoration: none;
@@ -39,24 +45,25 @@ nav ul li a{
     padding-left: 24px;
     letter-spacing: 1px;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     transition: 0.3s;
-    color:white;
+    color: white;
 }
 
 
 /*principal*/
-.main_principal{
+.main_principal {
     background-image: url("../imagenes/imagen1.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100%;
     width: auto;
-   /* margin-block:initial;*/
     display: flex;
     flex-direction: column;
 }
-body{
+
+body {
     width: 100%;
     height: 500px;
 }
@@ -76,16 +83,14 @@ body{
     display: flex;
     justify-content: space-around;
     text-shadow: 0 0 4px #461453;
-    text-align: center;   
+    text-align: center;
 }
 
 .botones a {
-    color:#461453;
-    border-radius: 18px;
     text-decoration: none;
 }
 
-button{
+button {
     padding: 8px;
     background: #e294f5;
     font-family: "pacifico";
@@ -93,19 +98,21 @@ button{
     text-align: center;
     border-radius: 25px;
     display: inline;
-    
+
+
 }
-button:last-child{
+
+button:last-child {
     margin-left: -650px;
 }
 
- button a:hover{
-    color:white;
+button a:hover {
+    color: white;
 }
 
 
 /*Formulario de la pagina de registro*/
-.formulario{
+.formulario {
     text-align: center;
     font-family: 'Pacifico';
     color: black;
@@ -117,15 +124,18 @@ button:last-child{
     font-size: 16px;
     margin-bottom: 10px;
     border-radius: 20px;
-    
+
 }
-.formulario p{
+
+.formulario p {
     font-size: 22px;
 }
-.formulario h1{
+
+.formulario h1 {
     font-size: 35px;
 }
-.formulario .continuar{
+
+.formulario .continuar {
     font-size: 15px;
     font-family: 'Pacifico';
     background-color: black;
@@ -135,7 +145,8 @@ button:last-child{
     margin-bottom: 6px;
     margin-top: 8px;
 }
-.formulario .continuar:hover{
+
+.formulario .continuar:hover {
     color: #461453;
 }
 
@@ -185,8 +196,8 @@ button:last-child{
 
 /*Footer*/
 
-.footer{
-    display:flex;
+.footer {
+    display: flex;
     background-color: #e294f5;
     font-family: 'Pacifico';
     padding-bottom: 10px;
@@ -195,132 +206,173 @@ button:last-child{
     height: 100px;
 }
 
-.contacto{
-    position:absolute;
+.contacto {
+    position: absolute;
     margin-left: 50px;
     margin-top: 20px;
 }
 
-.contacto h2, .contacto p, .consejos p{
-    color:#461453;
+.contacto h2,
+.contacto p,
+.consejos p {
+    color: #461453;
 }
 
-.contacto p{
+.contacto p {
     margin-top: -10px;
 }
 
-.social_media{
+.social_media {
     margin-left: 600px;
     margin-top: 15px;
     display: flex;
     flex-direction: row;
 }
 
-.social_media a{
+.social_media a {
     text-decoration: none;
     color: #461453;
     font-size: 40px;
-    padding-right:10px;
+    padding-right: 10px;
 }
 
-.social_media a:hover{
+.social_media a:hover {
     transition: 0.5s;
-    color:#e294f5;
+    color: #e294f5;
 }
 
-.consejos p{
+.consejos p {
     font-size: 15px;
 }
 
-.consejos{
-    margin-left: 320px;/*para responsive 220*/
+.consejos {
+    margin-left: 320px;
+    /*para responsive 220*/
     margin-top: 20px;
 }
 
-.consejos:last-child{
+.consejos:last-child {
     text-align: center;
 }
-.consejos a{
+
+.consejos a {
     text-decoration: none;
     color: #461453;
     font-size: 20px;
 }
 
-.consejos a:hover{
-    color:#e294f5;
+.consejos a:hover {
+    color: #e294f5;
 }
 
 /*Responsive header*/
-@media(max-width:844px){
-    nav ul li a{
+@media(max-width:844px) {
+    nav ul li a {
         font-size: 15px;
         padding-left: 7px;
         display: inline-block;
     }
-    nav{
-        margin-left:  -10px;;
+
+    nav {
+        margin-left: -10px;
+        ;
         display: inline-block;
         height: 10px;
         width: 80%;
     }
-    .logo img{
+
+    .logo img {
         width: 70px;
-        height:70px;
+        height: 70px;
         padding-top: 10px;
         margin-left: -32px;
         margin-top: -10px;
     }
-    header{
+
+    header {
         height: 75px;
         width: 100%;
     }
-    nav ul li a:hover{
-        color:#F54D4E
+
+    nav ul li a:hover {
+        color: #F54D4E
     }
+
     /*Responsive formulario*/
 
-    
-    .formulario{
+
+    .formulario {
         width: 350px;
         height: 515px;
         margin-left: 20px;
         margin-top: 72px;
     }
-    .formulario h1{
+
+    .formulario h1 {
         font-size: 18px;
     }
-    .formulario p{
+
+    .formulario p {
         font-size: 15px;
         margin-top: 5px;
     }
-    .fomulario  select option{
-        font-size:11px;
+
+    .fomulario select option {
+        font-size: 11px;
     }
-     .formulario .continuar {
-       font-size: 10px;
-       width: 58px;
+
+    .formulario .continuar {
+        font-size: 10px;
+        width: 58px;
     }
-    .formulario .continuar:hover{
+
+    .formulario .continuar:hover {
         color: #F54D4E;
     }
 
     /*Responsive descripcion*/
 
-    .descripcion{
-        font-size: 13px;
+    .descripcion {
+        font-size: 15px;
         padding: 8px;
         border-radius: 15px;
     }
-    .botones button a{
-        font-size: 15px;
 
+    /*Responsive botones*/
+    .botones button a {
+        font-size: 15px;
+        padding: 4px;
+    }
+
+    /*Responsive Footer*/
+
+    .contacto h2 {
+        font-size: 16px;
+        margin-top: 0px;
+        margin-left: -32px;
+    }
+
+    .contacto p {
+        font-size: 12px;
+        margin-left: -32px;
+    }
+
+    .social_media a {
+        font-size: 15px;
+    }
+    
+    .consejos a {
+        font-size: 16px;
+        margin-left: -1460px;
+        margin-bottom:-10cm;
+    }
+
+    .consejos p {
+        font-size: 11px;
+        margin-left: -1460px;
     }
 
 
-    
 
-
-/*Responsive Footer*/
 
 }
-

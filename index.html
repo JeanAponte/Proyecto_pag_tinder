@@ -7,6 +7,7 @@
     <title>Tinder Sorprecha</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/form.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Bubblegum+Sans&family=Grape+Nuts&family=Indie+Flower&family=Kalam:wght@300;700&family=Lobster&family=Pacifico&family=Patua+One&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -32,8 +33,26 @@
             <p>Tienes millones de personas solteras a tu alcance… ¡y todas quieren conocer a gente como tú! Pertenezcas donde pertenezcas eres bienvenido .</p>
         </div>
         <div class="botones">
-            <button> <a href="usuario.html">Iniciar Sesión</a></button>
-            <button> <a href="registrarse.html">Registrarse</a></button>
+            <div class="contenedor">
+                <button id="btn-abrir-popup" class="btn-abrir-popup">Log In</button>
+            </div>
+        
+            <div class="overlay" id="overlay">
+                <div class="popup" id="popup">
+                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                    <h3>REGISTRATE</h3>
+                    <h4>¡Y podrás acceder a toda nuestra web!</h4>
+                    <form action="">
+                        <div class="contenedor-inputs">
+                            <input type="text" placeholder="Nombre">
+                            <input type="text" placeholder="Apellidos">
+                            <input type="email" placeholder="Email">
+                            <input type="email" placeholder="Teléfono">
+                        </div>
+                        <input type="submit" class="btn-submit" value="Continuar">
+                    </form>
+                </div>
+            </div>
         </div>
 
 
@@ -77,5 +96,6 @@
 
     <script src="./data/usuarios.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="assets/js/popup.js"></script>
 </body>
 </html>

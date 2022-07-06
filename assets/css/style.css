@@ -12,6 +12,24 @@ header {
     height: 178px;
 }
 
+nav .toggle {
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    display: none;
+}
+
+@media(max-width:844px) {
+      nav ul {
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    nav .toggle{
+        display: block;
+    }
+}
+
 #menu {
     width: 80%;
     height: 150px;
@@ -152,7 +170,7 @@ button a:hover {
 
 /*Formulario2 de la pagina de registro*/
 
-.formulario2{
+.formulario2 {
     text-align: center;
     font-family: 'Pacifico';
     color: black;
@@ -164,21 +182,21 @@ button a:hover {
     font-size: 16px;
     margin-bottom: 10px;
     border-radius: 20px;
-    
+
 }
 
 
-.formulario2 p{
+.formulario2 p {
     font-size: 22px;
 }
 
 
-.formulario2 h1{
+.formulario2 h1 {
     font-size: 35px;
 }
 
 
-.formulario2 .continuar{
+.formulario2 .continuar {
     font-size: 15px;
     font-family: 'Pacifico';
     background-color: black;
@@ -189,7 +207,7 @@ button a:hover {
     margin-top: 8px;
 }
 
-.formulario2 .continuar:hover{
+.formulario2 .continuar:hover {
     color: #461453;
 }
 
@@ -360,11 +378,11 @@ button a:hover {
     .social_media a {
         font-size: 15px;
     }
-    
+
     .consejos a {
         font-size: 16px;
         margin-left: -1460px;
-        margin-bottom:-10cm;
+        margin-bottom: -10cm;
     }
 
     .consejos p {

@@ -222,22 +222,18 @@ button a:hover {
 
 .contacto {
     position: absolute;
-    margin-left: 50px;
+    margin-left: 120px;
     margin-top: 20px;
 }
 
-.contacto h2,
-.contacto p,
-.consejos p {
+.contacto a, .consejos a{
+    text-decoration: none;
     color: #461453;
-}
-
-.contacto p {
-    margin-top: -10px;
+    font-size: 30px;
 }
 
 .social_media {
-    margin-left: 600px;
+    margin-left: 550px;
     margin-top: 15px;
     display: flex;
     flex-direction: row;
@@ -250,9 +246,9 @@ button a:hover {
     padding-right: 10px;
 }
 
-.social_media a:hover {
+.social_media a:hover, .contacto a:hover, .consejos a:hover {
     transition: 0.5s;
-    color: #e294f5;
+    color: #9c15be;
 }
 
 .consejos p {
@@ -260,23 +256,14 @@ button a:hover {
 }
 
 .consejos {
-    margin-left: 320px;
+    margin-left: 180px;
     /*para responsive 220*/
-    margin-top: 20px;
+    margin-top: 10px;
+    color:#461453;
 }
 
 .consejos:last-child {
     text-align: center;
-}
-
-.consejos a {
-    text-decoration: none;
-    color: #461453;
-    font-size: 20px;
-}
-
-.consejos a:hover {
-    color: #e294f5;
 }
 
 /*Responsive header*/

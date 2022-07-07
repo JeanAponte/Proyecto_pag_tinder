@@ -71,58 +71,44 @@ nav ul li a:hover {
 
 /*principal*/
 .main_principal {
-    background-image: url("../imagenes/imagen1.jpg");
+    background-image: url("/imagenes/fondo.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100%;
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-body {
-    width: 100%;
-    height: 500px;
+    align-items: center;
 }
 
 .descripcion {
-    margin: 20px;
-    padding: 30px 20%;
+    margin:20px;
+    width:50%;
+    padding:20px;
     font-size: 24px;
-    background-color: #fe95957b;
-    font-family: "Segoe UI";
-    text-align: center;
-    font-family: 'pacifico';
+    background-color: #461453a2;
+    color:#d787eb;
+    font-family: 'Pacifico';
     border-radius: 28px;
 }
 
 .botones {
-    display: flex;
-    justify-content: space-around;
-    text-shadow: 0 0 4px #461453;
-    text-align: center;
-}
-
-.botones a {
-    text-decoration: none;
+    margin-bottom: 20px;
 }
 
 button {
     padding: 8px;
-    background: #e294f5;
+    background:#461453;
     font-family: "pacifico";
     font-size: 25px;
     text-align: center;
+    border-color:#d787eb;
     border-radius: 25px;
-    display: inline;
+    color:#d787eb;
 }
 
-button:last-child {
-    margin-left: -650px;
-}
-
-button a:hover {
-    color: white;
+button:last-child{
+    margin-left: 30px;
 }
 
 /*Formulario de la pagina de registro*/

@@ -1,11 +1,24 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<%- include('head'); %>
+    <title>365</title>
+</head> 
+    <body>
+        <%- include('header'); %> 
+        
+        <main class="main_principal">
+            <div class="descripcion">
+                <p>Gente adulta con todo tipo de historias y experiencias previas aprovecha para hacer amigos, vivir aventuras… ¡y lo que surja!</p>
+                <p>Quieres empezar una relación? ¡Hecho! ¿Quieres hacer nuevos amigos? Ningún problema. ¿Eres nuevo en la facultad y quieres aprovechar al máximo tu experiencia en la uni? Citas Coders es para ti.</p>
+                <p>Tienes millones de personas solteras a tu alcance… ¡y todas quieren conocer a gente como tú! Pertenezcas donde pertenezcas eres bienvenido .</p>
+            </div>
+            <div class="botones">
+                <button> <a href="./user.ejs">Iniciar Sesión</a></button>
+                <button> <a href="registrarse.html">Registrarse</a></button>
+            </div>
+        </main>
+
+        <%- include('footer'); %> 
+
+        <script src="../data/usuarios.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
 </html>

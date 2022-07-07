@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-/*Menu*/
-
+/*Header*/
 header {
     width: 100%;
     background-color: #e294f5;
@@ -98,8 +97,6 @@ button {
     text-align: center;
     border-radius: 25px;
     display: inline;
-
-
 }
 
 button:last-child {
@@ -109,7 +106,6 @@ button:last-child {
 button a:hover {
     color: white;
 }
-
 
 /*Formulario de la pagina de registro*/
 .formulario {
@@ -371,8 +367,4 @@ button a:hover {
         font-size: 11px;
         margin-left: -1460px;
     }
-
-
-
-
 }

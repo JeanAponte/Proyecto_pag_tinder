@@ -9,61 +9,63 @@ header {
     width: 100%;
     background-color: #e294f5;
     height: 178px;
+    top: 0;
+    left: 0;
 }
 
-nav .toggle {
+.toggle {
     background: none;
+    color: #461453;
     border: none;
     font-size: 30px;
-    padding: 0 20px;
+    padding: 0;
     display: none;
-}
+    cursor: pointer;
 
-@media(max-width:844px) {
-      nav ul {
-        flex-direction: column;
-        margin-right: 20px;
-    }
-    nav .toggle{
-        display: block;
-    }
-}
-
-#menu {
-    width: 80%;
-    height: 150px;
-    margin: auto;
 }
 
 .logo {
     width: 20%;
     height: 50px;
+    margin-top: -15px;
+    margin-left: 30px;
     float: left;
-    padding-top: 10px;
+
 }
 
-nav {
-    width: 70%;
+.menu {
+    width: 100%;
     height: 70px;
     float: left;
     text-align: center;
     padding-top: 25px;
+    position: absolute;
+    margin-left: 5px;
 }
 
-nav ul li {
+.menu, .nav-menu li {
     display: inline;
+    margin-left: 50px;
+
 }
 
-nav ul li a {
+.menu, .nav-menu {
+    margin-right: 210px;
+    margin-top: 20px;
+}
+
+.menu, .nav-menu li a {
     color: #461453;
-    font-size: 44px;
+    font-size: 43px;
     text-decoration: none;
     font-family: 'Pacifico';
-    padding-left: 24px;
+    padding-left: 15px;
+    margin-left: 0px;
     letter-spacing: 1px;
+    text-align: center;
 }
 
-nav ul li a:hover {
+.menu, .nav-menu li a:hover {
     transition: 0.3s;
     color: white;
 }
@@ -82,12 +84,12 @@ nav ul li a:hover {
 }
 
 .descripcion {
-    margin:20px;
-    width:50%;
-    padding:20px;
+    margin: 20px;
+    width: 50%;
+    padding: 20px;
     font-size: 24px;
     background-color: #461453a2;
-    color:#d787eb;
+    color: #d787eb;
     font-family: 'Pacifico';
     border-radius: 28px;
 }
@@ -98,16 +100,16 @@ nav ul li a:hover {
 
 button {
     padding: 8px;
-    background:#461453;
+    background: #461453;
     font-family: "pacifico";
     font-size: 25px;
     text-align: center;
-    border-color:#d787eb;
+    border-color: #d787eb;
     border-radius: 25px;
-    color:#d787eb;
+    color: #d787eb;
 }
 
-button:last-child{
+button:last-child {
     margin-left: 30px;
 }
 
@@ -212,7 +214,8 @@ button:last-child{
     margin-top: 20px;
 }
 
-.contacto a, .consejos a{
+.contacto a,
+.consejos a {
     text-decoration: none;
     color: #461453;
     font-size: 30px;
@@ -232,7 +235,9 @@ button:last-child{
     padding-right: 10px;
 }
 
-.social_media a:hover, .contacto a:hover, .consejos a:hover {
+.social_media a:hover,
+.contacto a:hover,
+.consejos a:hover {
     transition: 0.5s;
     color: #9c15be;
 }
@@ -245,7 +250,7 @@ button:last-child{
     margin-left: 180px;
     /*para responsive 220*/
     margin-top: 10px;
-    color:#461453;
+    color: #461453;
 }
 
 .consejos:last-child {
@@ -254,18 +259,34 @@ button:last-child{
 
 /*Responsive header*/
 @media(max-width:844px) {
-    nav ul li a {
+    .menu, .nav-menu li a {
         font-size: 15px;
-        padding-left: 7px;
-        display: inline-block;
+        padding-left: auto;
+        padding-right: 50%;
+        margin-left: 50px;
+        flex-direction:column;
+        padding-bottom: 15px;
+
     }
 
-    nav {
+    .menu {
         margin-left: -10px;
-        ;
-        display: inline-block;
         height: 10px;
-        width: 80%;
+        width: 100%;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        background-color: #d787eb;
+        left:100%;
+        position: absolute;
+        width: 100%;
+        height: 844px;
+        padding: 0;
+        overflow: auto;
+        transition:  left 0.3s;
+
     }
 
     .logo img {
@@ -281,8 +302,15 @@ button:last-child{
         width: 100%;
     }
 
-    nav ul li a:hover {
-        color: #F54D4E
+    .menu, .nav-menu li a:hover {
+        background: none;
+        color: white
+    }
+    .toggle{
+        display: block;
+    }
+    .menu_visible{
+       left: 0;
     }
 
     /*Responsive formulario*/

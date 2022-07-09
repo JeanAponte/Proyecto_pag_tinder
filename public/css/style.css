@@ -4,70 +4,65 @@
     box-sizing: border-box;
 }
 
-/*Header*/
-header {
+.header {
+    background: #e294f5;
+    height: 80px;
+    position: fixed;
     width: 100%;
-    background-color: #e294f5;
-    height: 178px;
     top: 0;
     left: 0;
 }
 
-.toggle {
-    background: none;
-    color: #461453;
-    border: none;
-    font-size: 30px;
-    padding: 0;
-    display: none;
-    cursor: pointer;
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0;
+}
 
+.nav-link {
+    color: #461453;
+    text-decoration: none;
+    font-family: 'pacifico';
 }
 
 .logo {
-    width: 20%;
-    height: 50px;
-    margin-top: -15px;
-    margin-left: 30px;
-    float: left;
-
+    height: 80px;
+    margin-left: 140px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
 }
 
-.menu {
-    width: 100%;
-    height: 70px;
-    float: left;
-    text-align: center;
-    padding-top: 25px;
-    position: absolute;
-    margin-left: 5px;
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
 }
 
-.menu, .nav-menu li {
-    display: inline;
-    margin-left: 50px;
-
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
 }
 
-.menu, .nav-menu {
-    margin-right: 210px;
-    margin-top: 20px;
+.nav-menu-link {
+    padding: 8px 12px;
 }
 
-.menu, .nav-menu li a {
-    color: #461453;
-    font-size: 43px;
-    text-decoration: none;
-    font-family: 'Pacifico';
-    padding-left: 15px;
-    margin-left: 0px;
-    letter-spacing: 1px;
-    text-align: center;
+.nav-menu-link:hover {
+    color:#461453
 }
 
-.menu, .nav-menu li a:hover {
-    transition: 0.3s;
-    color: white;
+.nav-toggle {
+    font-size: 40px;
+    background: none;
+    border: none;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
 }
 
 
@@ -259,58 +254,58 @@ button:last-child {
 
 /*Responsive header*/
 @media(max-width:844px) {
-    .menu, .nav-menu li a {
-        font-size: 15px;
-        padding-left: auto;
-        padding-right: 50%;
-        margin-left: 50px;
-        flex-direction:column;
-        padding-bottom: 15px;
+
+    .header {
+        height: 60px;
 
     }
 
-    .menu {
-        margin-left: -10px;
-        height: 10px;
-        width: 100%;
+    .logo {
+        height: 60px;
+        font-weight: bold;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    .nav-link{
+        color:#d787eb;
     }
 
-    .nav-menu{
+    .nav-menu {
         flex-direction: column;
         align-items: center;
-        background-color: #d787eb;
-        left:100%;
-        position: absolute;
+        margin-right: 40px;
+        background-color:#461453;
+        position: fixed;
+        left: 0;
+        top: 60px;
         width: 100%;
-        height: 844px;
-        padding: 0;
-        overflow: auto;
-        transition:  left 0.3s;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
 
     }
 
-    .logo img {
-        width: 70px;
-        height: 70px;
-        padding-top: 10px;
-        margin-left: -32px;
-        margin-top: -10px;
+    .nav-menu-item {
+        line-height: 70px;
+        font-size: 17px;
     }
 
-    header {
-        height: 75px;
-        width: 100%;
+    .nav-menu-link:hover {
+        color:white;
+        transition: 0.5s;
     }
 
-    .menu, .nav-menu li a:hover {
-        background: none;
-        color: white
-    }
-    .toggle{
+    .nav-toggle {
+        font-size: 29px;
         display: block;
+        color: #461453;
     }
-    .menu_visible{
-       left: 0;
+
+    .nav-menu_visible {
+        left: 0;
+
     }
 
     /*Responsive formulario*/

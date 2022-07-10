@@ -40,7 +40,7 @@
 }
 
 .nav-menu-item {
-    font-size: 18px;
+    font-size: 20px;
     margin: 0 10px;
     line-height: 80px;
     text-transform: uppercase;
@@ -52,7 +52,7 @@
 }
 
 .nav-menu-link:hover {
-    color:#461453
+    color:#9c15be;
 }
 
 .nav-toggle {
@@ -63,6 +63,18 @@
     line-height: 60px;
     display: none;
 }
+.user{
+    font-size: 27px;
+    background: none;
+    border: none;
+    padding: 0 20px;
+    line-height: 60px;
+}
+.hola:hover{
+    color: #9c15be;
+    transition: 0.3s;
+}
+.hola{color:#461453;}
 
 
 /*principal*/

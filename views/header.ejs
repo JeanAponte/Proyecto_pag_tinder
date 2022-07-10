@@ -1,18 +1,21 @@
         <header class="header">
-            <nav class="nav">
-                <img src="/imagenes/Logo_365-removebg-preview.png" class="logo nav-link">
-                
-                <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
-                <ul class="nav-menu nav-menu_visible">
-                    <li class="nav-menu-item "><a href="/" class="nav-menu-link nav-link">Inicio</a></li>
-                    <li class="nav-menu-item"><a href="filtro.ejs" class="nav-menu-link nav-link">Filtros</a></li>
-                    <li class="nav-menu-item"><a href="user.ejs" class="nav-menu-link nav-link">Usuarios</a></li>
-                    <li class="nav-menu-item"><a href="normas.ejs" class="nav-menu-link nav-link">Normas</a></li>
-
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <a href="#" class="enlace">
+                    <img src="/imagenes/Logo_365-removebg-preview.png"  class="logo">
+                </a>
+                <ul>
+                    <li><a class="active" href="/">Inicio</a></li>
+                    <li><a href="filtro.ejs">Filtro</a></li>
+                    <li><a href="users.ejs">Usuarios</a></li>
+                    <li><a href="normas.ejs">Normas</a></li>
+                    
                 </ul>
                 <button class="user"><a href="user.ejs" class="hola"><i class="fa-solid fa-user"></i></a></button>
             </nav>
 
         </header>
-        <script src="../public/js/menu.js"></script>
     

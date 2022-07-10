@@ -7,7 +7,6 @@
 .header {
     background: #e294f5;
     height: 80px;
-
     width: 100%;
     top: 0;
     left: 0;
@@ -89,21 +88,6 @@
     border-radius: 28px;
 }
 
-.normas {
-    width: 600px;
-    margin: 0 auto;
-    font-family: 'Pacifico';
-    background-color: #4614537c;
-    padding: 0 20px 20px 20px;
-    border: 5px solid black;
-}
-
-.normas strong {
-    text-align: center;
-
-}
-
-
 .botones {
     margin-bottom: 20px;
 }
@@ -123,6 +107,79 @@ button:last-child {
     margin-left: 30px;
 }
 
+
+/*Css Página normas y consejos de seguridad*/
+
+.main_normas, .main_consejos_seguridad{
+    font-family: "pacifico";
+    background-color:#ecc0f8;
+}
+
+.main_consejos_seguridad{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+
+
+.normas{
+    margin-left: 50px;
+    padding-right: 40px;
+}
+
+.main_normas h1, .main_consejos_seguridad h1{
+    text-align: center;
+    font-size: 50px;
+    color:#461453;
+}
+
+.normas h2, .main_consejos_seguridad h2{
+    color:#461453;
+    font-size: 30px;
+}
+
+.normas ul, .main_consejos_seguridad ul{
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.normas strong, .main_consejos_seguridad h3{
+    font-size: 20px;
+    color:#9c15be;
+}
+
+.normas li{
+    margin-bottom: 20px;
+}
+
+.denuncias h2{
+    color:#461453;
+    text-align: center;
+    font-size: 30px;
+}
+
+.denuncias p{
+    margin-left: 100px;   
+}
+
+.denuncias a{
+    color:#9c15be;
+}
+
+.denuncias a:hover{
+    color:#cf44f2;
+    transition: 0.3s;
+}
+.denuncias a:last-child{
+   text-decoration: none;
+   margin-left: 10px;
+
+}
+
+.denuncias{
+    padding-bottom: 10px;
+}
 /*Formulario de la pagina de registro*/
 .formulario {
     text-align: center;
@@ -178,7 +235,6 @@ button:last-child {
     border-radius: 20px;
 
 }
-
 
 .formulario2 p {
     font-size: 22px;

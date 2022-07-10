@@ -121,8 +121,6 @@ button:last-child {
     padding-bottom: 10px;
 }
 
-
-
 .normas{
     margin-left: 50px;
     padding-right: 40px;
@@ -180,6 +178,10 @@ button:last-child {
 .denuncias{
     padding-bottom: 10px;
 }
+
+/*Responsive página de consejos y normas*/
+
+
 /*Formulario de la pagina de registro*/
 .formulario {
     text-align: center;

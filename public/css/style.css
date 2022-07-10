@@ -89,6 +89,21 @@
     border-radius: 28px;
 }
 
+.normas {
+    width: 600px;
+    margin: 0 auto;
+    font-family: 'Pacifico';
+    background-color: #4614537c;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+.normas strong {
+    text-align: center;
+
+}
+
+
 .botones {
     margin-bottom: 20px;
 }

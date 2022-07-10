@@ -1,0 +1,51 @@
+<%- include('head'); %> 
+    <title>Form</title>
+</head>
+    <body>
+        <%- include('header'); %> 
+        <div class="formulario2">
+            <h1>Registrese</h1>
+                <p>Pais: <input type="text" name="pais"></p>
+                <p>Ciudad: <input type="text" name="ciudad"></p>
+                <p>Sexo: <select>
+                    <option>Hombre</option>
+                    <option>Mujer</option>
+                    <option>No binario</option>
+                    </select>
+                </p>
+                <p>Aficiones:<br>
+                    <input type="checkbox" name="casilla">Cantar
+                    <input type="checkbox" name="casilla">Cine
+                    <input type="checkbox" name="casilla">Caminar
+                    <input type="checkbox" name="casilla">Video juegos
+                    <input type="checkbox" name="casilla">Cocinar<br>
+                    <input type="checkbox" name="casilla">Leer
+                    <input type="checkbox" name="casilla">Musica
+                    <input type="checkbox" name="casilla">Correr
+                    <input type="checkbox" name="casilla">Deportes
+                    <input type="checkbox" name="casilla">Bailar<br>
+                    <input type="checkbox" name="casilla">Fiesta
+                    <input type="checkbox" name="casilla">Nadar
+                    <input type="checkbox" name="casilla">Animales
+                    <input type="checkbox" name="casilla">Naturaleza
+                    <input type="checkbox" name="casilla">Piano<br>
+                    <input type="checkbox" name="casilla">Moda
+                    <input type="checkbox" name="casilla">Cazar
+                    <input type="checkbox" name="casilla">Comer
+                    <input type="checkbox" name="casilla">Bucear
+                    <input type="checkbox" name="casilla">Futbol<br>
+                    <input type="checkbox" name="casilla">Viajar
+                    <input type="checkbox" name="casilla">Dibujar
+                    <input type="checkbox" name="casilla">Navegar
+                    <input type="checkbox" name="casilla">Yoga<br>
+                    <input type="checkbox" name="casilla">Ir al Gym
+                    <input type="checkbox" name="casilla">Pescar
+                    <input type="checkbox" name="casilla">Ir a la playa
+                    <input type="checkbox" name="casilla">Escribir
+                </p>
+                <button onclick="location.href='/form3.ejs'">Continuar</button>
+
+        </div>
+        <%- include('footer'); %> 
+    </body>
+</html>

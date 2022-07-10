@@ -192,6 +192,10 @@ button:last-child {
 }
 
 /*Formulario de la pagina de registro*/
+.main_form{
+    background-color: #e294f5;
+}
+
 .formulario {
     text-align: center;
     font-family: 'Pacifico';
@@ -199,11 +203,8 @@ button:last-child {
     background: #e294f5;
     width: 400px;
     height: 265px;
-    margin-top: 120px;
     margin-left: 430px;
     font-size: 16px;
-    margin-bottom: 10px;
-    border-radius: 20px;
 
 }
 

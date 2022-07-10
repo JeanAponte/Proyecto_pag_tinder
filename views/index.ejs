@@ -12,29 +12,15 @@
                 <p>Tienes millones de personas solteras a tu alcance… ¡y todas quieren conocer a gente como tú! Pertenezcas donde pertenezcas eres bienvenido .</p>
             </div>
             <div class="botones">
-                <div class="contenedor">
-                    <button id="btn-abrir-popup" class="btn-abrir-popup">Log In</button>
-                </div>
-            
-                <div class="overlay" id="overlay">
-                    <div class="popup" id="popup">
-                        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-                        <h3>REGISTRATE</h3>
-                        <h4>¡Y podrás acceder a toda nuestra web!</h4>
-                        <form action="">
-                            <div class="contenedor-inputs">
-                                <input type="text" placeholder="Nombre">
-                                <input type="text" placeholder="Apellidos">
-                                <input type="email" placeholder="Email">
-                                <input type="email" placeholder="Teléfono">
-                            </div>
-                            <input type="submit" class="btn-submit" value="Continuar">
-                        </form>
-                    </div>
-                </div>
+                <button onclick="location.href='/user.ejs'">Iniciar Sesión</button>
+                <button onclick="location.href='/form.ejs'">Registrarse</button>
             </div>
         </main>
 
         <%- include('footer'); %> 
+
+        <script src="../public/js/menu.js"></script>
+        <script src="../public/js/popup.js"></script>
+        <script src="../public/js/main.js"></script>
     </body>
 </html>

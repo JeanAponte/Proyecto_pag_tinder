@@ -6,7 +6,7 @@ router.get('/', function(req, res) {
   res.render('index');
 });
 
-router.get('/users.ejs', function(req, res) {
+router.get('/user.ejs', function(req, res) {
   res.render('users');
 });
 

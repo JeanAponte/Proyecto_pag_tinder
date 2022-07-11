@@ -34,14 +34,19 @@
                 <img src="/imagenes/close.png" alt="close button" class="close-popup-singup">
                 <form action="/form2" method="post">
                     <h1>Registarse</h1>
-                    <input type="text" name="nombre" placeholder="Nombre">
-                    <input type="email" name="email" placeholder="Email">
-                    <input type="password" name="password" placeholder="Contraseña">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
                     <input type="submit" class="button-send" value="Enviar">
+
+                    <button type="button" onclick="captura()">Enviar</button>
+
+
                 </form>
             </div>
         </div>
  
         <%- include('footer'); %> 
+        <script src="../public/js/datos.js"></script>
     </body>
 </html>

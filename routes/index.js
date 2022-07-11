@@ -6,24 +6,24 @@ router.get('/', function(req, res) {
   res.render('index');
 });
 
-router.get('/user.ejs', function(req, res) {
+router.get('/users', function(req, res) {
   res.render('users');
 });
 
-router.get('/consejos_seguridad.ejs', function(req, res) {
+router.get('/consejos_seguridad', function(req, res) {
   res.render('consejos_seguridad');
 });
 
-router.get('/normas.ejs', function(req, res) {
+router.get('/normas', function(req, res) {
   res.render('normas');
 });
 
-router.get('/form.ejs', function(req, res) {
-  res.render('form');
+router.get('/filtro', function(req, res) {
+  res.render('filtro');
 });
 
-router.get('/filtro.ejs', function(req, res) {
-  res.render('filtro');
+router.get('/login', function(req, res) {
+  res.render('login');
 });
 
 module.exports = router;

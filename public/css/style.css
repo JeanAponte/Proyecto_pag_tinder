@@ -453,6 +453,70 @@ input{
     margin-top: 20px;
 }
 
+/*------------------------------------------------
+            FORMULARIO DE CONTACTO
+-------------------------------------------------*/
+#main_contacto{
+    background-color: #e294f5;
+    margin: 0;
+}
+
+form{
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 30px;
+    border: none;
+    font-family: "pacifico";
+    padding-right: 100px;
+}
+
+input, textarea{
+    font-family: "pacifico";
+    width: 100px;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    text-align: center;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 300px;
+    min-width: 310px;
+    max-width: 310px;
+}
+
+#boton{
+    background-color: #cf44f2;
+    color:#ecc0f8;
+}
+
+#boton:hover{
+    cursor:pointer;
+}
+
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+
+
+
+
+
 .contacto a,
 .consejos a {
     text-decoration: none;

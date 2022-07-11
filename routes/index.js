@@ -30,4 +30,8 @@ router.get('/contactanos', function(req, res) {
   res.render('contactanos');
 });
 
+router.post('/bienvenida', function(req, res) {
+  res.render('bienvenida');
+});
+
 module.exports = router;

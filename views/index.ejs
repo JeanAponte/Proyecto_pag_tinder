@@ -1,7 +1,7 @@
 <%- include('head'); %>
     <title>365</title>
 </head> 
-    <body>
+    <body class="principal">
         <%- include('header'); %> 
         
         <main class="main_principal">
@@ -11,13 +11,11 @@
                     ¿Quieres empezar una relación? ¡Hecho! ¿Quieres hacer nuevos amigos? Ningún problema. ¿Eres nuevo en la facultad y quieres aprovechar al máximo tu experiencia en la uni? Citas Coders es para ti.</p>
                 <p>Tienes millones de personas solteras a tu alcance… ¡y todas quieren conocer a gente como tú! Pertenezcas donde pertenezcas eres bienvenido .</p>
             </div>
-            <div class="botones">
-                <button onclick="location.href='/form.ejs'">Registrarse</button>
-            </div> 
         </main>
 
         <div class="popup-container">
             <a href="#" class="button-popup" id="button-popup">Iniciar sesión</a>
+            <a href="#" class="button-popup" id="button-popup-singup">Registrarse</a>
         </div>
       
         <div class="popup-login">
@@ -29,7 +27,21 @@
                 <a href="/users/user" class="button-popup2">Iniciar sesión</a>
             </div>
         </div>
-          
+
+        <!--Popup Singup-->
+        <div class="popup-singup">
+            <div class="popup-content-singup">
+                <img src="/imagenes/close.png" alt="close button" class="close-popup-singup">
+                <form action="/form2" method="post">
+                    <h1>Registarse</h1>
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="password" name="password" placeholder="Contraseña">
+                    <input type="submit" class="button-send" value="Enviar">
+                </form>
+            </div>
+        </div>
+ 
         <%- include('footer'); %> 
     </body>
 </html>

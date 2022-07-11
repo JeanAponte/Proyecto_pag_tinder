@@ -26,4 +26,8 @@ router.get('/forminiciarsesion', function(req, res) {
   res.render('forminiciarsesion');
 });
 
+router.get('/contactanos', function(req, res) {
+  res.render('contactanos');
+});
+
 module.exports = router;

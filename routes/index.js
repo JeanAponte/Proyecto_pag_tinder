@@ -22,8 +22,8 @@ router.get('/filtro', function(req, res) {
   res.render('filtro');
 });
 
-router.get('/login', function(req, res) {
-  res.render('login');
+router.get('/forminiciarsesion', function(req, res) {
+  res.render('forminiciarsesion');
 });
 
 module.exports = router;

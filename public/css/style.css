@@ -101,17 +101,24 @@ nav ul li a:hover{
     margin-bottom: 20px;
 }
 
-button {
+button, .button{
     padding: 8px;
     background: #461453;
     font-family: "pacifico";
-    font-size: 25px;
+    font-size: 15px;
     text-align: center;
-    border-color: #d787eb;
-    border-radius: 25px;
+    border: 2px solid #d787eb;
+    border-radius: 15px;
     color: #d787eb;
+    box-shadow: 6px 6px 29px -4px #461453;
+    transition: 0.3s;
+    text-decoration: none;
 }
 
+button:hover, .button:hover{
+    color:#461453;
+    background-color: #e294f5;
+}
 button:last-child {
     margin-left: 30px;
 }
@@ -187,6 +194,78 @@ button:last-child {
 .denuncias{
     padding-bottom: 10px;
 }
+
+/*Pop-up Iniciar sesión*/
+
+.popup-container{
+    margin-top: -60px;
+    margin-bottom: 20px;
+    margin-left: -180px;
+    text-align: center;
+  }
+
+.button-popup, .button-popup2{
+    padding: 8px;
+    background: #461453;
+    font-family: "pacifico";
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid #d787eb;
+    border-radius: 15px;
+    color: #d787eb;
+    box-shadow: 6px 6px 29px -4px #461453;
+    transition: 0.3s;
+    text-decoration: none;
+}
+  
+  .button-popup:hover, .button-popup2:hover {
+    color:#582963;
+    background-color:#a757bb;
+  }
+  
+  .popup-login{
+    background-color: #e294f549;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .popup-content{
+    height: 250px;
+    width: 400px;
+    background-color: #e294f5;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .popup-content img:first-child{
+    width: 14%;
+  }
+  
+  .close-popup{
+    width: 5%;
+    position: absolute;
+    top: -10px;
+    right: -15px;
+  }
+  
+  .popup-content input{
+    margin: 20px auto;
+    display: block;
+    width: 60%;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+
 
 /*Formulario de la pagina de registro*/
 .main_form{
@@ -268,171 +347,6 @@ button:last-child {
 
 .formulario2 .continuar:hover {
     color: #461453;
-}
-
-/*Pop Up Login*/
-
-.contenedor {
-	width: 90%;
-	max-width: 1000px;
-	margin: 20px auto;
-    line-height: 28px;
-}
-
-
-.contenedor .btn-abrir-popup {
-	padding: 0 20px;
-	margin-bottom: 20px;
-	height: 40px;
-	line-height: 40px;
-	border: none;
-	color: #fff;
-	background: #e294f5;
-	border-radius: 3px;
-    font-family: "pacifico";
-	font-size: 16px;
-	cursor: pointer;
-	transition: .3s ease all;
-	cursor: pointer;
-}
-
-.contenedor .btn-abrir-popup:hover {
-	background: rgba(94,125,227, .9);
-}
-
-/* ------------------------- */
-/* POPUP */
-/* ------------------------- */
-
-.overlay {
-	background: rgba(0,0,0,.3);
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	visibility: hidden;
-}
-
-.overlay.active {
-	visibility: visible;
-}
-
-.popup {
-	background: #e294f5;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-	border-radius: 3px;
-    font-family: "pacifico";
-	padding: 20px;
-	text-align: center;
-	width: 600px;
-	
-	transition: .3s ease all;
-	transform: scale(0.7);
-	opacity: 0;
-}
-
-.popup .btn-cerrar-popup {
-	font-size: 16px;
-	line-height: 16px;
-	display: block;
-	text-align: right;
-	transition: .3s ease all;
-	color: #BBBBBB;
-}
-
-.popup .btn-cerrar-popup:hover {
-	color: #000;
-}
-
-.popup h3 {
-	font-size: 36px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	opacity: 0;
-}
-
-.popup h4 {
-	font-size: 26px;
-	font-weight: 300;
-	margin-bottom: 40px;
-	opacity: 0;
-}
-
-.popup form .contenedor-inputs {
-	opacity: 0;
-}
-
-.popup form .contenedor-inputs input {
-	width: 100%;
-	margin-bottom: 20px;
-	height: 52px;
-	font-size: 18px;
-	line-height: 52px;
-	text-align: center;
-	border: 1px solid #BBBBBB;
-}
-
-.popup form .btn-submit {
-	padding: 0 20px;
-	height: 40px;
-	line-height: 40px;
-	border: none;
-	color: #fff;
-	background: black;
-	border-radius: 3px;
-    font-family: "pacifico";
-	font-size: 16px;
-	cursor: pointer;
-	transition: .3s ease all;
-}
-
-.popup form .btn-submit:hover {
-	background: rgba(94,125,227, .9);
-}
-
-input{
-	font-family: "pacifico";
-}
-
-/* ------------------------- */
-/* ANIMACIONES */
-/* ------------------------- */
-.popup.active {	transform: scale(1); opacity: 1; }
-.popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
-.popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
-.popup.active .contenedor-inputs { animation: entradaInputs 1s linear 1s forwards; }
-
-@keyframes entradaTitulo {
-	from {
-		opacity: 0;
-		transform: translateY(-25px);
-	}
-
-	to {
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
-
-@keyframes entradaSubtitulo {
-	from {
-		opacity: 0;
-		transform: translateY(25px);
-	}
-
-	to {
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
-
-@keyframes entradaInputs {
-	from { opacity: 0; }
-	to { opacity: 1; }
 }
 
 /*Footer*/

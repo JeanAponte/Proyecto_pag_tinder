@@ -12,19 +12,24 @@
                 <p>Tienes millones de personas solteras a tu alcance… ¡y todas quieren conocer a gente como tú! Pertenezcas donde pertenezcas eres bienvenido .</p>
             </div>
             <div class="botones">
-<<<<<<< Updated upstream
-                <button onclick="location.href='/forminiciarsesion.ejs'">Iniciar Sesión</button>
-=======
-                <button onclick="location.href='/login.ejs'">Iniciar Sesión</button>
->>>>>>> Stashed changes
                 <button onclick="location.href='/form.ejs'">Registrarse</button>
-            </div>
+            </div> 
         </main>
 
+        <div class="popup-container">
+            <a href="#" class="button-popup" id="button-popup">Iniciar sesión</a>
+        </div>
+      
+        <div class="popup-login">
+            <div class="popup-content">
+                <img src="/imagenes/user.png" alt="User">
+                <img src="/imagenes/close.png" alt="close button" class="close-popup">
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="/users/user" class="button-popup2">Iniciar sesión</a>
+            </div>
+        </div>
+          
         <%- include('footer'); %> 
-
-        <script src="../public/js/menu.js"></script>
-        <script src="../public/js/popup.js"></script>
-        <script src="../public/js/main.js"></script>
     </body>
 </html>

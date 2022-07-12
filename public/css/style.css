@@ -207,6 +207,29 @@ nav ul li a:hover{
     color:#461453;
   }
 
+/*Pagina de Filtro*/
+
+.cajafiltro {
+    display: flex;
+    flex-direction: row;
+    background-color:#ecc0f8;
+}
+
+.filtro {
+    float: left;
+    flex-direction:column;
+    width: 25%;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    background-color:#ecd0f4;
+}
+
+.main_filtro{
+    width: 75%;
+}
+
 /*Css Página normas y consejos de seguridad*/
 
 .main_normas, .main_consejos_seguridad{

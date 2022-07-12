@@ -212,15 +212,18 @@ nav ul li a:hover{
 .cajafiltro {
     display: flex;
     flex-direction: row;
+    background-color:#ecc0f8;
 }
 
 .filtro {
     float: left;
+    flex-direction:column;
     width: 25%;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-bottom: 10px;
-    flex-direction: column;
+    background-color:#ecd0f4;
 }
 
 .main_filtro{

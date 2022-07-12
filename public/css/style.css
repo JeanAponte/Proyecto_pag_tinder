@@ -236,6 +236,10 @@ nav ul li a:hover{
     font-size: 30px;
 }
 
+.normas h2{
+    text-align: start;
+}
+
 .normas ul, .main_consejos_seguridad ul{
     margin-left: 50px;
     margin-right: 20px;

@@ -499,13 +499,6 @@ textarea{
     cursor:pointer;
 }
 
-@media (max-width:480px){
-    form{
-        width: 100%;
-    }
-}
-
-
 /*Responsive header*/
 @media(max-width:844px) {
 
@@ -598,21 +591,25 @@ textarea{
         margin-left: 40px;
         margin-top: 20px;
     }
+    .social_media a{
+        font-size: 19px;
+    }
 
      .social_media {
-        margin-left: 290px;
-        margin-top: 5px;
+        margin-left: 40px;
+        margin-top: 50px;
         width: fit-content;
+       
     }
     
     .consejos{
         width: fit-content;
-        margin-top: 80px;
-        margin-left: 120px;
+        margin-top: 20px;
+        margin-left: 170px;
         position: absolute;
     }
 
     .contacto a, .consejos a {
-        font-size: 30px;
+        font-size: 20px;
     }
 }

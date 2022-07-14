@@ -22,9 +22,11 @@
             <div class="popup-content">
                 <img src="/imagenes/user.png" alt="User">
                 <img src="/imagenes/close.png" alt="close button" class="close-popup">
-                <input type="text" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <a href="/users/user" class="button-popup2">Iniciar sesión</a>
+                <form action ="/users/user" method="post">
+                <input type="text" name="email" id="email" placeholder="Email">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <input type="submit" class="button-popup2" value ="Iniciar sesión">
+            </form>
             </div>
         </div>
 

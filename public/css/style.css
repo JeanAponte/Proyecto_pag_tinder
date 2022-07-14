@@ -142,6 +142,10 @@ nav ul li a:hover{
     align-items: center;
     text-align: center;
   }
+  .popup-login form input{
+    margin-left: 27px;
+    margin-top: 4px;
+  }
   
   .popup-content{
     height: 280px;

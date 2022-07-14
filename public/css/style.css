@@ -405,6 +405,46 @@ nav ul li a:hover{
     margin-top: 20px;
 }
 
+.contacto a, .consejos a {
+    text-decoration: none;
+    color: #461453;
+    font-size: 30px;
+}
+
+.social_media {
+    margin-left: 550px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.social_media a {
+    text-decoration: none;
+    color: #461453;
+    font-size: 40px;
+    padding-right: 10px;
+}
+
+.social_media a:hover, .contacto a:hover, .consejos a:hover {
+    transition: 0.5s;
+    color: #9c15be;
+}
+
+.consejos p {
+    font-size: 15px;
+}
+
+.consejos {
+    margin-left: 180px;
+    /*para responsive 220*/
+    margin-top: 10px;
+    color: #461453;
+}
+
+.consejos:last-child {
+    text-align: center;
+}
+
 /*------------------------------------------------
             FORMULARIO DE CONTACTO
 -------------------------------------------------*/
@@ -465,52 +505,6 @@ textarea{
     }
 }
 
-
-
-
-
-.contacto a,
-.consejos a {
-    text-decoration: none;
-    color: #461453;
-    font-size: 30px;
-}
-
-.social_media {
-    margin-left: 550px;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: row;
-}
-
-.social_media a {
-    text-decoration: none;
-    color: #461453;
-    font-size: 40px;
-    padding-right: 10px;
-}
-
-.social_media a:hover,
-.contacto a:hover,
-.consejos a:hover {
-    transition: 0.5s;
-    color: #9c15be;
-}
-
-.consejos p {
-    font-size: 15px;
-}
-
-.consejos {
-    margin-left: 180px;
-    /*para responsive 220*/
-    margin-top: 10px;
-    color: #461453;
-}
-
-.consejos:last-child {
-    text-align: center;
-}
 
 /*Responsive header*/
 @media(max-width:844px) {
@@ -587,81 +581,38 @@ textarea{
     /*Responsive descripcion*/
 
     .descripcion {
-        font-size: 15px;
+        font-size: 20px;
+        width: 95%;
         padding: 8px;
         border-radius: 15px;
     }
 
-    /*Responsive botones*/
-    .botones button a {
-        font-size: 15px;
-        padding: 4px;
-    }
-
     /*Responsive Footer*/
 
-    .contacto h2 {
-        font-size: 16px;
-        margin-top: 0px;
-        margin-left: -32px;
+    .footer {
+        width: 100%;
+        height: 180px;
+    }
+    
+    .contacto {
+        margin-left: 40px;
+        margin-top: 20px;
     }
 
-    .contacto p {
-        font-size: 12px;
-        margin-left: -32px;
+     .social_media {
+        margin-left: 290px;
+        margin-top: 5px;
+        width: fit-content;
+    }
+    
+    .consejos{
+        width: fit-content;
+        margin-top: 80px;
+        margin-left: 120px;
+        position: absolute;
     }
 
-    .social_media a {
-        font-size: 15px;
-    }
-
-    .consejos a {
-        font-size: 16px;
-        margin-left: -1460px;
-        margin-bottom: -10cm;
-    }
-
-    .consejos p {
-        font-size: 11px;
-        margin-left: -1460px;
+    .contacto a, .consejos a {
+        font-size: 30px;
     }
 }
-
-
-/*Responsive general*/
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-  }
-  
-  @media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-  }
-  
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  }

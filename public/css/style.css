@@ -838,7 +838,7 @@ textarea{
     ul{
         position: fixed;
         width: 100%;
-        height: 100vh;
+        height:735px;
         background:#461453;
         top: 80px;
         left: -100%;
@@ -850,6 +850,7 @@ textarea{
         display: block;
         margin: 50px 0;
         line-height: 30px;
+        margin-top: 100px;
 
     }
     nav ul li a{
@@ -866,6 +867,10 @@ textarea{
     #check:checked ~ ul {
         left:0;
 
+    }
+    
+    nav{
+        position: fixed;
     }
 
 
@@ -914,7 +919,7 @@ textarea{
 
     .footer {
         width: 100%;
-        height: 180px;
+        height: 100px;
     }
     
     .contacto {
@@ -941,5 +946,14 @@ textarea{
 
     .contacto a, .consejos a {
         font-size: 22px;
+    }
+
+    /*Responsive pgna filtro*/
+    .filtro{
+        margin-top: 100px;
+    }
+
+    .main_filtro{
+        margin-top: 113px;
     }
 }

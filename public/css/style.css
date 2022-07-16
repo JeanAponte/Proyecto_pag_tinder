@@ -170,14 +170,12 @@ nav ul li a:hover{
     margin-left: 30px;
   }
 
-  
-
   .popup-singup{
     margin-top: 100px;
   }
 
   .popup-content{
-    height: 330px;
+    height: 340px;
     width: 380px;
     background-color: #e294f5;
     padding: 20px;

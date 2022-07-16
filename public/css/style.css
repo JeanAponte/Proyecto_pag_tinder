@@ -539,9 +539,10 @@ form .pagina .botones-form button .adelante{
 }
 
 .main_consejos_seguridad{
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 90px;
+    padding-right: 80px;
     padding-bottom: 10px;
+    font-size: 25px;
 }
 
 .normas{
@@ -872,6 +873,10 @@ textarea{
     nav{
         position: fixed;
     }
+    
+    .hola{
+        background: none;
+    }
 
 
     /*Responsive formulario*/
@@ -958,4 +963,29 @@ textarea{
     .main_filtro{
         margin-top: 113px;
     }
+
+
+    /*Responsive pgna normas*/
+
+   .main_consejos_seguridad h3{
+    font-size: 20px;
+    margin-right: -30px;
+    margin-left: -30px;
+    text-align: center;
+   }
+
+   .main_consejos_seguridad p{
+    padding-right: 10px;
+    font-size: 17px;
+    margin-right: -30px;
+    margin-left: -30px;
+    text-align: center;
+   }
+
+   .main_consejos_seguridad h2{
+    font-size: 27px;
+    margin-right: -112px;
+    margin-left: -30px;
+    text-align: center;
+   }    
 }

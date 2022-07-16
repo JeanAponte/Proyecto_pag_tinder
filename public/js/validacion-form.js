@@ -32,83 +32,10 @@ const progressText = document.querySelectorAll(".paso p"); /*Selecciona todos lo
 const progressCheck = document.querySelectorAll(".paso .check");
 const num = document.querySelectorAll(".paso .num");
 
-const botonInicar = document.getElementById("boton-iniciar");
 /*Máximo de páginas que tengo en el formulario*/
 let max = 4;
 let contador = 1;
 let c = 0; /*Otro contador para la funcionalidad del registro final*/
-
-/*Validación botón Iniciar sesión Popup*/
-
-botonIniciar.addEventListener("click", function(e){
-    var emailLogin = document.getElementById("email-login").value;
-    var passwordLogin = document.getElementById("password-login").value;
-
-    /*Si todo está vacío*/
-    if ( emailLogin == "" && passwordLogin == "" ){
-        document.getElementById("email-login-error").innerHTML = "* Este campo no puede quedar vacío."
-        document.getElementById("email-login").style.borderColor="#461453"
-        document.getElementById("password-login-error").innerHTML = "* Este campo no puede quedar vacío."
-        document.getElementById("password-login").style.borderColor="#461453"
-
-    }else if( emailLogin == "" || passwordLogin == "" || 
-                email.length < 6 || passwordLogin.length < 5 ||
-                !verificarEmail(emailLogin) || !verificarPassword(passwordLogin)){
-    
-        /*Si el email está vacío*/
-        if ( emailLogin == "" ){
-            document.getElementById("email-login-error").innerHTML = "* Este campo no puede quedar vacío."
-            document.getElementById("email-login").style.borderColor="#461453"      
-        }else if ( emailLogin.length < 6 ){
-            document.getElementById("email-login-error").innerHTML = "* Debe tener 6 o más caractéres."
-            document.getElementById("email-login").style.borderColor="#461453"      
-        }else if ( !verificarCorreo(emailLogin) ){
-            document.getElementById("email-login-error").innerHTML = "* Ingreso de datos inválidos."
-            document.getElementById("email-login").style.borderColor="#461453"      
-        }else {
-            document.getElementById("email-login-error").innerHTML = ""
-            document.getElementById("email-login").style.borderColor="lightgrey"      
-        }
-
-        /*Contraseña incorrecta o vacía*/
-        if ( passwordLogin == "" ){
-            document.getElementById("password-login-error").innerHTML = "* Este campo no puede quedar vacío."
-            document.getElementById("password-login").style.borderColor="blueviolet"      
-        }else if ( passwordLogin.length < 5 && !verificarPassword(passwordLogin) ){
-            document.getElementById("password-login-error").innerHTML = "* Mínimo una MAY, MIN y NUM."
-            document.getElementById("password-login").style.borderColor="blueviolet"      
-        }else if ( passwordLogin.length < 5 ){
-            document.getElementById("password-login-error").innerHTML = "* Debe tener 6 a más caractéres."
-            document.getElementById("password-login").style.borderColor="blueviolet"      
-        }else if ( !verificarpassword(passwordLogin) ){
-            document.getElementById("password-login-error").innerHTML = "* Ingreso de caractéres inválidos."
-            document.getElementById("password-login").style.borderColor="blueviolet"      
-        }else {
-            document.getElementById("password-login-error").innerHTML = ""
-            document.getElementById("password-login").style.borderColor="lightgrey"      
-        }
-        
-    }else{
-
-        document.getElementById("email-login-error").innerHTML = ""
-        document.getElementById("email-login").style.borderColor="lightgrey"
-        document.getElementById("password-login-error").innerHTML = ""
-        document.getElementById("password-login").style.borderColor="lightgrey"
-    }
-
-    /*Verificar email*/
-    function verificarEmail($n){
-        var ExpRegular_Email = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;/*Ingresa cualquier cosa antes del arroba, luego ingresa un arroba y finalice con 2 o 3 letras*/
-        return ExpRegular_Email.test($n);
-    }
-    /*Verificar Password*/
-    function verificarPassword($m){
-        var ExpRegular_Num = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,16}$/; /* al menos un dígito, al menos una minúscula y al menos una mayúscula. */
-        return ExpRegular_Num.test($m);
-    }
-});
-
-
 
 
 /*Avanzar a las páginas siguientes*/

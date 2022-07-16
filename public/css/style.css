@@ -117,7 +117,6 @@ nav ul li a:hover{
     margin-top: 10px;
     margin-left: 27px;
     display: block;
-    width: 60%;
     padding: 8px;
     border: 1px solid gray;
     border-radius: 10px;
@@ -162,12 +161,23 @@ nav ul li a:hover{
     text-align: center;
   }
   
+  .popup-content form label{
+    color:#461453;
+    font-family: "pacifico";
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-left: 30px;
+  }
+
+  
+
   .popup-singup{
     margin-top: 100px;
   }
 
   .popup-content{
-    height: 280px;
+    height: 330px;
     width: 380px;
     background-color: #e294f5;
     padding: 20px;

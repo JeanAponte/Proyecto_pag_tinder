@@ -23,10 +23,12 @@
                 <img src="/imagenes/user.png" alt="User">
                 <img src="/imagenes/close.png" alt="close button" class="close-popup">
                 <form action ="/users/user" method="post">
-                <input class="input-login" type="text" name="email" id="email" placeholder="Email">
-                <input class="input-login" type="password" name="password" id="password" placeholder="Password">
-                <input type="submit" class="button-popup2 buttton-submit" value ="Iniciar sesión">
-            </form>
+                    <label for="email-login">Email:</label><p class="error" id="email-login-error"></p>
+                    <input class="input-login" type="text" name="email" id="email-login" placeholder="Email">
+                    <label for="password-login">Contraseña:</label><p class="error" id="password-login-error"></p>
+                    <input class="input-login" type="password" name="password" id="password-login" placeholder="Password">
+                    <input type="submit" class="button-popup2" id="boton-iniciar" value ="Iniciar sesión">
+                </form>
             </div>
         </div>
 

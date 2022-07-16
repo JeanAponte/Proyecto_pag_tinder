@@ -1,3 +1,4 @@
+const console = require('console');
 const { Console } = require('console');
 const { query } = require('express');
 var express = require('express');
@@ -7,10 +8,6 @@ var router = express.Router();
 router.get('/', function (req, res, next) {
   console.log(req);
   res.render('index');
-});
-
-router.get('/users', function (req, res, next) {
-  res.render('users');
 });
 
 router.get('/consejos_seguridad', function (req, res) {

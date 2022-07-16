@@ -14,3 +14,4 @@ document.getElementById("button-popup-singup").addEventListener("click", functio
 document.querySelector(".close-popup-singup").addEventListener("click", function(){
 	document.querySelector(".popup-singup").style.display = "none";
 });
+

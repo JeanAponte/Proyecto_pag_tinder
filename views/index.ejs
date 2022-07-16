@@ -22,8 +22,8 @@
             <div class="popup-content">
                 <img src="/imagenes/user.png" alt="User">
                 <img src="/imagenes/close.png" alt="close button" class="close-popup">
-                <input type="text" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <input type="text" class="input-login" placeholder="Email">
+                <input type="password" class="input-login" placeholder="Password">
                 <a href="/users/user" class="button-popup2">Iniciar sesión</a>
             </div>
         </div>
@@ -32,13 +32,184 @@
         <div class="popup-singup">
             <div class="popup-content-singup">
                 <img src="/imagenes/close.png" alt="close button" class="close-popup-singup">
-                <form action="/bienvenida" method="post">
-                    <h1>Registarse</h1>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <input type="password" name="password" id="password" placeholder="Contraseña">
-                    <input type="submit" class="button-send" value="Enviar">
-                </form>
+            
+                    <header>
+                        <h1>Registro</h1>
+                        <div class="progress-bar">
+                            <div class="paso">
+                                <p>Básico</p>
+                                <div class="num">
+                                    <span>1</span>
+                                </div>
+                                <div class="check fas fa-check"></div>
+                            </div>
+                             <div class="paso">
+                                <p>Lugar</p>
+                                <div class="num">
+                                    <span>2</span>
+                                </div>
+                                <div class="check fas fa-check"></div>
+                            </div>
+                            <div class="paso">
+                                <p>Aficiones</p>
+                                <div class="num">
+                                    <span>3</span>
+                                </div>
+                                <div class="check fas fa-check"></div>
+                            </div>
+                            <div class="paso">
+                                <p>Usuario</p>
+                                <div class="num">
+                                    <span>4</span>
+                                </div>
+                                <div class="check fas fa-check"></div>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="form-principal">
+                        <form action="#">
+            
+                            <!--PÁGINA 1-->
+                            <div class="pagina movPag">
+                                <div class="campo">
+                                        <label for="nombres">Nombre: </label><p class="error" id="nombres-error"></p>
+                                        <input type="text" id="nombres" placeholder="Nombre">
+                                </div>
+            
+                                <div class="campo">
+                                    
+                                        <label for="fechaNac">Nacimiento:</label><p class="error" id="fechaNac-error"></p>
+                                        <input type="date" id="fechaNac" max="2004-12-31"> 
+                                        <!--max = fecha pone un máximo de fecha al calendario. Útil para límites
+                                        de edad.
+                                            
+                                        value = fecha, pone una fecha por defecto que se muestre cada vez que se
+                                        active. Ejemplo: value="1994-09-26" -->
+                                </div>
+
+                                <div class="campo">
+                                    
+                                        <label for="numTel">Teléfono:</label>
+                                        <input type="text" id="numTel" placeholder="Telefono"> <p class="error" id="numTel-error"></p>
+                                </div>
+            
+                                <div class="campo sigPag">
+                                    <button>Siguiente</button>
+                                </div>
+                            </div>
+
+                            <!--PÁGINA 2-->
+                            <div class="pagina">
+                                <div class="campo">
+                                        <label for="ciudad">Ciudad:</label><p class="error" id="ciudad-error"></p>
+                                        <input type="text" id="ciudad" placeholder="Ciudad">
+                                </div>
+
+                                <div class="campo">
+                                    <label for="pais">País:</label><p class="error" id="pais-error"></p>
+                                    <input type="text" id="pais" placeholder="País">
+                                </div>
+            
+                                <div class="campo">
+                                    <label for="sexo">Sexo:</label><p class="error" id="sexo-error"></p>
+                                    <select id="sexo">
+                                        <!--El primer option es para que una vez elegido el sexo, no se quede guardado aunque recarge
+                                        la página, sino que vuelva al valor por defecto de escoja una opción.
+                                        Además, el disable selected es para que no sea una opción a elegir, sino lo primero que sale-->
+                                        <option value="-1" disable selected>Elige una opción</option>
+                                        <option value="0">Hombre</option>
+                                        <option value="1">Mujer</option>
+                                        <option value="2">No binario</option>
+                                        <option value="3">Transexual</option>
+                                    </select>
+                                </div>
+            
+                                <div class="campo botones-form botones-2">
+                                    <!--dos  clases: volver-pag1 para el js y volver para el css-->
+                                    <button class="volver-pag1 volver">Atrás</button>
+                                    <button class="adelante-pag3 adelante">Siguiente</button>
+                                </div>
+                            </div>
+            
+                            <!--PÁGINA 3-->
+                            <div class="pagina">
+                                <div class="campo">
+                                    <label for="orientacion-sexual">Sexualidad:</label><p class="error" id="orientacion-sexual-error"></p>
+                                    <select id="orientacion-sexual">
+                                        <option value="-1" disable selected>Elige una opción</option>
+                                        <option value="0">Heterosexual</option>
+                                        <option value="1">Gay</option>
+                                        <option value="2">Lesbiana</option>
+                                        <option value="3">Asexual</option>
+                                        <option value="3">Pansexual</option>
+                                    </select>
+                                </div>
+            
+                                <div class="campo">
+                                    <div class="label">
+                                        AFICIONES: <p class="error" id="aficiones-error"></p><br>
+                                            <input type="checkbox" id="viajar">
+                                            <label for="viajar" class="label-aficiones">Viajar</label>
+                                            <input type="checkbox" id="bailar">
+                                            <label for="bailar" class="label-aficiones">Bailar</label>
+                                            <input type="checkbox" id="deportes">
+                                            <label for="deportes" class="label-aficiones">Deportes</label><br>
+                                            <input type="checkbox" id="cantar">
+                                            <label for="cantar" class="label-aficiones">Cantar</label>
+                                            <input type="checkbox" id="videojuegos">
+                                            <label for="videojuegos" class="label-aficiones">Videojuegos</label>
+                                            <input type="checkbox" id="musica">
+                                            <label for="musica" class="label-aficiones">Música</label><br>
+                                            <input type="checkbox" id="cocinar">
+                                            <label for="cocinar" class="label-aficiones">Cocinar</label>
+                                            <input type="checkbox" id="leer">
+                                            <label for="leer" class="label-aficiones">Leer</label>
+                                            <input type="checkbox" id="naturaleza">
+                                            <label for="naturaleza" class="label-aficiones">Naturaleza</label><br>
+                                            <input type="checkbox" id="peliculas">
+                                            <label for="peliculas" class="label-aficiones">Películas</label>
+                                            <input type="checkbox" id="animales">
+                                            <label for="animales" class="label-aficiones">Animales</label>
+                                    </div>
+                                </div>
+            
+                                <div class="campo botones-form botones-3">
+                                    <!--dos  clases: volver-pag1 para el js y volver para el css-->
+                                    <button class="volver-pag2 volver">Atrás</button>
+                                    <button class="adelante-pag4 adelante">Siguiente</button>
+                                    
+                                </div>
+                            </div>
+            
+                            <!--PÁGINA 4-->
+                            <div class="pagina">
+                                <div class="campo">
+                                    <label for="email">Email:</label><p class="error" id="email-error"></p>
+                                    <input type="text" id="email" placeholder="Email">
+                                </div>
+            
+                                <div class="campo">
+                                    <label for="password">Contraseña:</label><p class="error" id="password-error"></p>
+                                    <input type="password" id="password" placeholder="Contraseña">
+                                    <!--Opción para que se vea la contraseña-->
+                                    <span class="ojos" onclick="mostrarPassword()">
+                                        <i id="mostrar" class="fa fa-eye" title="Mostrar Contraseña"></i><!--Para mostrarla-->
+                                        <i id="ocultar" class="fa fa-eye-slash" title="Ocultar Contraseña"></i><!--Para ocultarla-->
+                                    </span>
+                                </div>
+                                
+                                <div class="campo">
+                                    <label for="imagen">Imagen de Perfil:</label><p class="error" id="imagen-error"></p>
+                                    <input type="file" id="imagen">
+                                </div>
+                                <div class="campo botones-form botones-4">
+                                    <!--dos  clases: volver-pag1 para el js y volver para el css-->
+                                    <button class="volver-pag3 volver">Atrás</button>
+                                    <button class="fin" onclick="location.href='/bienvenida'">Finalizar</button> 
+                                </div>
+                            </div>
+                        </form>
+                </div>
             </div>
         </div>
  

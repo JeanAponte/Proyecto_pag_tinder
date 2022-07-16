@@ -42,7 +42,7 @@ router.get('/contactanos', function (req, res) {
   res.render('contactanos');
 });
 
-router.post('/bienvenida', function (req, res) {
+router.get('/bienvenida', function (req, res) {
   res.render('bienvenida');
 });
 

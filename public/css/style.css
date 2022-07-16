@@ -95,13 +95,13 @@ nav ul li a:hover{
     width: 50%;
     padding: 20px;
     font-size: 24px;
-    background-color: #461453a2;
-    color: #d787eb;
+    background-color: #461453b6;
+    color: #dfa2ee;
     font-family: 'Pacifico';
     border-radius: 28px;
 }
 
-/*Pop-up Iniciar sesión*/
+/*Pop-up Iniciar sesión y registrarse*/
 
 .popup-container{ 
     text-align: center;
@@ -111,6 +111,11 @@ nav ul li a:hover{
 .popup-container a:last-child{
     margin-left: 15px;
   } 
+
+.popup-login .input-login{
+    width: 75%;
+    height: 20%;
+}
 
 .button-popup, .button-popup2, .button-send{
     padding: 8px;
@@ -130,7 +135,7 @@ nav ul li a:hover{
     color:#582963;
     background-color:#a757bb;
   }
-  
+ 
   .popup-login, .popup-singup{
     background-color: #e294f549;
     width: 100%;
@@ -143,6 +148,10 @@ nav ul li a:hover{
     text-align: center;
   }
   
+  .popup-singup{
+    margin-top: 100px;
+  }
+
   .popup-content{
     height: 280px;
     width: 380px;
@@ -155,24 +164,22 @@ nav ul li a:hover{
   .popup-content img:first-child{
     width: 14%;
   }
-  
 
-  .popup-content-singup{
-    margin-top: 100px;
-    height: 350px;
-    width: 380px;
-    background-color: #e294f5;
-    align-items: center;
-    border-radius: 20px;
-    position: relative;
-  }
-
-  .close-popup, .close-popup-singup{
-    width: 5%;
+  .close-popup{
+    width: 7%;
     position: absolute;
     top: -10px;
-    right: -15px;
+    right: -23px;
   }
+
+  .close-popup-singup{
+    width: 2%;
+    position: absolute;
+    top:35px;
+    right: 427px;
+
+  }
+  
   
   .popup-content input{
     margin: 20px auto;
@@ -183,29 +190,312 @@ nav ul li a:hover{
     border-radius: 10px;
     text-align: center;
   }
+  
 
-  .popup-content-singup input{
-    display: block;
-    width: 60%;
-    padding: 8px;
-    border: 1px solid gray;
-    border-radius: 10px;
-    text-align: center;
-    margin-left: 46px;
-    margin-top: 20px;
-  }
+  /*-----------------------------REGISTRO-----------------------------------*/
 
-  .popup-content-singup input:last-child{
-    margin-left: 110px;
-    width: 30%;
-    text-align: center;
-  }
-  .popup-content-singup h1{
+  
+.popup-content-singup{
+    height: 500px;
+    width: 380px;
+    background-color: #e294f5;
+    border-radius: 20px;
+    padding: 20px 35px 15px 35px;
+  } 
+
+.popup-content-singup h1{
     font-family: "pacifico";
     font-size: 30px;
-    margin-left: -60px;
     color:#461453;
   }
+
+.popup-content-singup .form-principal{
+    width: 100%;
+    overflow: hidden;/*Esconde todo menos el formulario principal*/
+}
+
+.form-principal form{
+    display: flex;
+    width: 400%; /*Porque tengo 4 formularios*/
+}
+
+.form-principal form .pagina{
+    width: 25%; /*Cada formulario tiene un 50% de ese 400%*/
+    transition: margin-left 0.3s ease-in-out;/*ease-in-out: inicio y final lento*/ 
+}
+
+.form-principal form .pagina .campo{
+    height: 30px;
+    width: 320px;
+    margin-top: 30px;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    font-family: "pacifico";
+    font-weight: 500;
+    font-size: 17px;
+    top: -38px;
+    float:left; /*alinea todo a la izquierda*/
+    text-align: left;
+    width: 100%;
+    margin-bottom: 30px;
+    color:#461453;
+}
+
+.form-principal form .pagina .campo input{
+    margin-top: 10px;
+    width: 75%;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+[type="text"], [type="password"]{
+    height: 20px;
+}
+
+[type="checkbox"]{
+    display: none;
+}
+
+.label-aficiones{
+    padding-left: 1.3em;
+    position: relative;
+    color:#461453;
+}
+
+.label-aficiones:before{
+    content: '';
+    border: solid 1px black;
+    border-radius: 3px;
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    left: 0px;
+    top: 8px;
+    transition: all 0.2s;
+    transform: rotate(0deg);
+}
+
+[type="checkbox"]:checked + .label-aficiones:before{
+    color:#a757bb;
+    content:'\f00c';
+    font-family: FontAwesome;
+    transform: rotate(360deg);
+}
+
+#sexo, #orientacion-sexual{
+    width: 75%;
+}
+
+.form-principal form .pagina .botones-2, .form-principal form .pagina .botones-3, .form-principal form .pagina .botones-4{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.form-principal form .pagina .botones-3{
+    margin-top: 120px;
+}
+
+  .campo button{
+    margin-top: 8px;
+    margin-left: 60px;
+    padding: 8px;
+    width: 50%;
+    background: #461453;
+    font-family: "pacifico";
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid #d787eb;
+    border-radius: 15px;
+    color: #d787eb;
+    box-shadow: 6px 6px 29px -4px #461453;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.botones-form{
+    margin-left: -20px;
+}
+
+.botones-form button:last-child{
+    margin-left: 10px;
+}
+
+.button-popup2:hover, .button-send:hover{
+    color:#582963;
+    background-color:#a757bb;
+  }
+
+.form-principal form .pagina .campo select{
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 50%;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-family: "pacifico";
+}
+
+.form-principal form .pagina .campo button:hover{
+    color:#582963;
+    background-color:#a757bb;
+}
+
+.form-principal form .pagina .botones-form button{
+   margin-top: -20px!important; 
+   width: 30%;
+}
+
+form .pagina .botones-form button .volver{
+    margin-right: 3px;
+    font-size: 17px;
+}
+
+form .pagina .botones-form button .adelante{
+    margin-left: 3px;
+}
+
+/*-----------------BARRA DE PROGRESO-------------------*/
+
+.popup-content-singup .progress-bar{
+    display: flex;
+    margin: 10px 0;
+}
+
+.popup-content-singup .progress-bar .paso{
+    text-align: center;
+    width: 100%; /*ocupa todo el formulario*/
+    position: relative;
+}
+
+.progress-bar .paso p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #461453;
+    transition: 0.2s;
+    font-family: "pacifico";
+}
+
+
+.progress-bar .paso p.active{
+    color:#a757bb;
+}
+
+.progress-bar .paso .num{
+    position: relative;
+    margin-top: 5px;    
+    width: 25px;
+    height: 25px;
+    border: 2px solid #461453;
+    border-radius: 50%;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px; /*Acepta un valor para que controle el espacio entre líneas*/
+    transition: 0.2s;
+}
+
+.progress-bar .paso .num.active{
+    border-color:#a757bb;
+    background-color: #a757bb;
+}
+
+.progress-bar .paso .num span{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+}
+
+.progress-bar .paso .num.active span{
+    display:none;
+}
+
+.progress-bar .paso .check{
+    display:none;
+    position: absolute;
+    left: 50%;
+    top: 74%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+}
+
+.progress-bar .paso .check.active{
+    display: block;
+    color:#461453;
+}
+
+
+/*Lineas que conectan los pasos*/
+.progress-bar .paso .num:before,
+.progress-bar .paso .num:after{
+    position: absolute;
+    content: ''; /*Necesario*/
+    width: 44px;
+    height: 3px;
+    bottom: 8px;
+    right: -50px;
+    background-color: #461453;
+}
+
+/*Para borrar la última línea*/
+.progress-bar .paso:last-child .num:before,
+.progress-bar .paso:last-child .num:after{
+    display: none;
+}
+
+/*Cuando se active los num, activa la animación*/
+.progress-bar .paso .num.active:after{
+    background-color: #a757bb;
+    animation: mov_linea 0.3s linear forwards;/*Forwards: estado final*/
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes mov_linea{
+    /*Al final de la animación*/
+    100%{
+        transform: scaleX(1); /*Que se vea la linea de otro color*/
+    }
+}
+
+/*Estilos para mostrar la contraseña*/
+
+.ojos{
+    position: absolute;
+    top: 43px;
+    right: 75px;
+    font-size: 20px;
+    color: #461453;
+}
+
+#ocultar{
+    display:none;
+    margin-left: -6px;
+}
+
+#mostrar, #ocultar{
+    cursor: pointer; /*Cursor de la manita*/
+}
+
+/*Estilos para mostrar el mensaje de error*/
+
+.error{
+    position: absolute;
+    color:#461453;
+    font-size: 12px;
+    float:left;
+    margin-left: 90px;
+    margin-top: 8px;
+}
 
 /*Pagina de Filtro*/
 

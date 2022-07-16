@@ -913,13 +913,15 @@ textarea{
         width: 95%;
         padding: 8px;
         border-radius: 15px;
+        margin-top: 150px;
     }
 
     /*Responsive Footer*/
 
     .footer {
         width: 100%;
-        height: 100px;
+        height: 151px;
+        
     }
     
     .contacto {

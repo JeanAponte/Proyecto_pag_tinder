@@ -112,8 +112,17 @@ nav ul li a:hover{
     margin-left: 15px;
   } 
 
+
 .popup-login .input-login{
-    width: 75%;
+    margin-top: 10px;
+    margin-left: 27px;
+    display: block;
+    width: 60%;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
     height: 20%;
 }
 
@@ -130,7 +139,12 @@ nav ul li a:hover{
     transition: 0.3s;
     text-decoration: none;
 }
-  
+
+[type="submit"]{
+    margin-left: -105px;
+    margin-top: -10px;
+    
+}
   .button-popup:hover, .button-popup2:hover, .button-send:hover{
     color:#582963;
     background-color:#a757bb;
@@ -146,10 +160,6 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  .popup-login form input{
-    margin-left: 27px;
-    margin-top: 4px;
   }
   
   .popup-singup{
@@ -182,17 +192,6 @@ nav ul li a:hover{
     top:35px;
     right: 427px;
 
-  }
-  
-  
-  .popup-content input{
-    margin: 20px auto;
-    display: block;
-    width: 60%;
-    padding: 8px;
-    border: 1px solid gray;
-    border-radius: 10px;
-    text-align: center;
   }
   
 

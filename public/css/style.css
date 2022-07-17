@@ -828,7 +828,7 @@ textarea{
 
 /*Pagina Bienvenido*/
 .bienvenida h1{
-    font-size: 50px;
+    font-size: 57px;
     font-family: 'pacifico';
     text-align: center;
     color:#461453;
@@ -850,10 +850,10 @@ textarea{
     padding: 15px;
     border-radius: 15px;
     text-align: center;
-    margin-left: 650px;
+    margin-left: 611px;
     font-family: 'pacifico';
-    font-size: 24px;
-    margin-top: 50px;
+    font-size: 27px;
+    margin-top: 60px;
     
 }
 

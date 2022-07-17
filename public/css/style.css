@@ -543,6 +543,9 @@ form .pagina .botones-form button .adelante{
     background-color:#ecc0f8;
 }
 
+.main_filtro1{
+    width: 5%;
+}
 .filtro {
     float: left;
     flex-direction:column;
@@ -552,9 +555,16 @@ form .pagina .botones-form button .adelante{
     padding-right: 25px;
     padding-bottom: 10px;
     background-color:#ecd0f4;
+    border: #461453;
 }
 
-.main_filtro{
+.div .filtro{
+    border-color: gray;
+    border-width: 1px;
+    border-style: dotted;
+}
+
+.main_filtro2{
     width: 75%;
 }
 

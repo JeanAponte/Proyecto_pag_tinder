@@ -194,15 +194,36 @@ nav ul li a:hover{
     right: -23px;
   }
 
-  .close-popup-singup{
+  .close-popup-singup, .close-popup-contactanos{
     width: 2%;
     position: absolute;
     top:35px;
     right: 427px;
+  }
 
+
+/*popup Contactanos*/
+  .popup-contactanos{
+    background-color: #e294f549;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.popup-content-contactanos{
+    height: 350px;
+    width: 380px;
+    background-color: #e294f5;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
   }
   
-
   /*-----------------------------REGISTRO-----------------------------------*/
 
   

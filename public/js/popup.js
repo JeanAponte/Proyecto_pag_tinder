@@ -15,3 +15,11 @@ document.querySelector(".close-popup-singup").addEventListener("click", function
 	document.querySelector(".popup-singup").style.display = "none";
 });
 
+
+document.getElementById("button-popup-contactanos").addEventListener("click", function(){
+	document.querySelector(".popup-contactanos").style.display = "flex";
+});
+  
+document.querySelector(".close-popup-contactanos").addEventListener("click", function(){
+	document.querySelector(".popup-contactanos").style.display = "none";
+});

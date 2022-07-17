@@ -566,10 +566,9 @@ form .pagina .botones-form button .adelante{
 }
 
 .main_consejos_seguridad{
-    padding-left: 90px;
-    padding-right: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 10px;
-    font-size: 25px;
 }
 
 .normas{
@@ -630,6 +629,7 @@ form .pagina .botones-form button .adelante{
 .denuncias{
     padding-bottom: 10px;
 }
+
 
 /*Formulario de la pagina de registro*/
 .main_form{

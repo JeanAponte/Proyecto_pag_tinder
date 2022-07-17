@@ -223,6 +223,12 @@ nav ul li a:hover{
     border-radius: 20px;
     position: relative;
   }
+
+  .close-popup-contactanos{
+    width: 5%;
+    right: -20px;
+    top:-19px;
+  }
   
   /*-----------------------------REGISTRO-----------------------------------*/
 

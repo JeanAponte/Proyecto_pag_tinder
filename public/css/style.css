@@ -333,7 +333,7 @@ nav ul li a:hover {
 
 .label-aficiones:before {
     content: '';
-    border: solid 1px black;
+    border: solid 1px #461453;
     border-radius: 3px;
     width: 0.8em;
     height: 0.8em;

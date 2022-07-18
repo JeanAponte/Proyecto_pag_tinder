@@ -22,10 +22,6 @@ router.get('/filtro', function (req, res) {
   res.render('filtro');
 });
 
-router.get('/forminiciarsesion', function (req, res) {
-  res.render('forminiciarsesion');
-});
-
 router.post('/form2', function (req, res, next) {
   let nombre = req.body.nombre;
   let email = req.body.email;

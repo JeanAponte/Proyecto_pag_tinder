@@ -925,6 +925,7 @@ textarea {
 
     .checkbtn {
         display: block;
+        
     }
 
     ul {
@@ -1085,15 +1086,60 @@ textarea {
         margin-left: -30px;
         text-align: center;
     }
+
+    /*Popus*/
+    .popup-content{
+        padding: 0;
+        width: 269px;
+        height: 370px;
+    }
+    .popup-content form label{
+        padding: 0;
+        width: 100px;
+        height: auto;
+        font-size: 19px;
+
+    }
+    .popup-content form{
+        padding: 0;
+        width: 180px;
+    }
+    .popup-content form input{
+        width: 100px;
+        margin-left: -45px;
+        margin-top: 1px;
+    }
+
+    .popup-content form, .input-login{
+        width: 250px;
+        margin-right: -13px;
+        margin-top: 20px;
+    }
+
+    .popup-content img:first-child{
+        width: 16%;
+        margin-top: 10px;
+    }
+
+    .close-popup{
+        width: 9%;
+    }
 }
 
 
-/*Responsive Tablet*/
+
+
+
+
+
+
+/*Responsive Tablet*//*
 
 @media(min-width:1000px)
  {
 
     /*Responsive footer*/
+    /*
 
     .contacto a,
     .consejos a {
@@ -1119,7 +1165,7 @@ textarea {
     }
 
     /*responsive principal*/
-
+    /*
     .principal {
         height: 924px;
     }
@@ -1137,7 +1183,7 @@ textarea {
         font-size: 25px;
     }
 
-    /*Responsive popups INICIAR SESION*/
+    /*Responsive popups INICIAR SESION*//*
     .popup-content {
         height: 390px;
     }
@@ -1151,7 +1197,7 @@ textarea {
         font-size: 17px;
     }
 
-    /*REGISTRARSE*/
+    /*REGISTRARSE*//*
     .close-popup-singup{
         width: 3%;
     }

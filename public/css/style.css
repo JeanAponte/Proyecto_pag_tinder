@@ -1090,8 +1090,8 @@ textarea {
 
 /*Responsive Tablet*/
 
-@media(min-width:1000px, max-width:1024px
-) {
+@media(min-width:1000px)
+ {
 
     /*Responsive footer*/
     .footer {

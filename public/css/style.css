@@ -1094,9 +1094,6 @@ textarea {
  {
 
     /*Responsive footer*/
-    .footer {
-        position: absolute;
-    }
 
     .contacto a,
     .consejos a {

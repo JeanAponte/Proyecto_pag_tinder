@@ -967,7 +967,7 @@ textarea {
     }
 
     nav {
-        position: fixed;
+        
     }
 
     .hola {
@@ -1087,7 +1087,7 @@ textarea {
         text-align: center;
     }
 
-    /*Popus*/
+    /*Popup iniciar sesion*/
     .popup-content{
         padding: 0;
         width: 269px;
@@ -1124,6 +1124,44 @@ textarea {
     .close-popup{
         width: 9%;
     }
+
+    /*Popup Registro*/
+
+    .popup-content-singup{
+        padding: 0;
+        margin-bottom: 270px;
+        width: 350px;
+    }
+
+    .popup-content-singup header h1{
+        font-size: 23px;
+    }
+
+    .popup-content-singup header, .progress-bar{
+        font-size: 18px;
+        margin-right: 40px;
+    }
+
+    .popup-content-singup header{
+        width: 350px;
+    }
+
+    .form-principal form{
+        padding: 0;
+        margin-left: 30px;
+    }
+
+    .form-principal form .pagina .campo select{
+        font-size: 14px;
+    }
+
+    .close-popup-singup{
+        width: 7%;
+        margin-left:120px;
+        margin-top: 15px;
+    }
+
+
 }
 
 

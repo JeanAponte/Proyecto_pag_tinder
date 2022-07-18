@@ -1026,3 +1026,54 @@ textarea{
     text-align: center;
    }    
 }
+
+
+@media(max-width:1024px) {
+    
+    .footer{
+        position: absolute;
+    }
+
+    .contacto a, .consejos a{
+        font-size: 28px;
+    }
+
+    .social_media a{
+        font-size: 35px;
+    }
+
+    .social_media{
+        margin-left: 300px;
+        margin-top: 20px;
+    }
+
+    .consejos{
+        margin-left: 500px;
+    }
+
+    .consejos p{
+        font-size: 18px;
+        margin-top: -9px;
+    }
+
+    /*responsive principal*/
+
+    .principal{
+        height: 924px;
+    }
+
+    .popup-container {
+        margin-top: -200px;
+    }
+
+    .descripcion{
+        font-size: 29px;
+        text-align: center;
+    }
+
+    .button-popup{
+        font-size: 25px;
+    }
+
+    
+}

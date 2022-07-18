@@ -5,36 +5,38 @@
     text-decoration: none;
     list-style: none;
 }
-nav{
+
+nav {
     background: #d787eb;
     height: 110px;
     width: 100%;
 }
 
-nav ul{
+nav ul {
     text-align: center;
     margin-right: 20px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
-    
+
 }
 
-nav ul li a{
+nav ul li a {
     color: #461453;
     font-size: 30px;
     padding: 7px 13px;
     font-family: 'Pacifico';
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: #9c15be;
     transition: 0.4s;
 }
 
-.checkbtn{
+.checkbtn {
     font-size: 30px;
     color: #461453;
     float: right;
@@ -44,11 +46,12 @@ nav ul li a:hover{
     display: none;
 
 }
-#check{
+
+#check {
     display: none;
 }
-   
-.user{
+
+.user {
     font-size: 27px;
     background: none;
     border: none;
@@ -59,29 +62,35 @@ nav ul li a:hover{
     margin-right: 35px;
     padding: 0 80px;
 }
-.hola:hover{
+
+.hola:hover {
     color: #9c15be;
     transition: 0.3s;
 }
-.hola{color:#461453;
+
+.hola {
+    color: #461453;
 }
-.enlace{
+
+.enlace {
     position: absolute;
     padding: 10px 80px;
 }
-.logo{
+
+.logo {
     height: 100px;
 }
 
 /*principal*/
 
-.principal{
+.principal {
     background-image: url("/imagenes/fondo.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100%;
     width: 100%;
 }
+
 .main_principal {
     height: 100%;
     width: 100%;
@@ -103,17 +112,17 @@ nav ul li a:hover{
 
 /*Pop-up Iniciar sesión y registrarse*/
 
-.popup-container{ 
+.popup-container {
     text-align: center;
     margin-bottom: 25px;
-  }
+}
 
-.popup-container a:last-child{
+.popup-container a:last-child {
     margin-left: 15px;
-  } 
+}
 
 
-.popup-login .input-login{
+.popup-login .input-login {
     margin-top: 10px;
     margin-left: 27px;
     display: block;
@@ -125,7 +134,9 @@ nav ul li a:hover{
     height: 20%;
 }
 
-.button-popup, .button-popup2, .button-send{
+.button-popup,
+.button-popup2,
+.button-send {
     padding: 8px;
     background: #461453;
     font-family: "pacifico";
@@ -139,148 +150,163 @@ nav ul li a:hover{
     text-decoration: none;
 }
 
-[type="submit"]{
+[type="submit"] {
     margin-left: -105px;
     margin-top: -10px;
-    
+
 }
-  .button-popup:hover, .button-popup2:hover, .button-send:hover{
-    color:#582963;
-    background-color:#a757bb;
-  }
- 
-  .popup-login, .popup-singup{
+
+.button-popup:hover,
+.button-popup2:hover,
+.button-send:hover {
+    color: #582963;
+    background-color: #a757bb;
+}
+
+.popup-login,
+.popup-singup {
     background-color: #e294f549;
     width: 100%;
     height: 100%;
     position: absolute;
-    top:0;
+    top: 0;
     display: none;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  
-  .popup-content form label{
-    color:#461453;
+}
+
+.popup-content form label {
+    color: #461453;
     font-family: "pacifico";
     display: flex;
     justify-content: left;
     align-items: left;
     margin-left: 30px;
-  }
+}
 
-  .popup-singup{
+.popup-singup {
     margin-top: 100px;
-  }
+}
 
-  .popup-content{
+.popup-content {
     height: 340px;
     width: 380px;
     background-color: #e294f5;
     padding: 20px;
     border-radius: 20px;
     position: relative;
-  }
-  
-  .popup-content img:first-child{
-    width: 14%;
-  }
+}
 
-  .close-popup{
+.popup-content img:first-child {
+    width: 14%;
+}
+
+.close-popup {
     width: 7%;
     position: absolute;
     top: -10px;
     right: -23px;
-  }
+}
+.close-popup-singup{
+    position: absolute;
+    width: 2%;
+    margin-left: 184px;
+    margin-top: -36px;
+}
 
-  .close-popup-singup, .close-popup-contactanos{
+.close-popup-contactanos {
     width: 2%;
     position: absolute;
-    top:35px;
+    top: 35px;
     right: 427px;
-  }
+}
 
 
 /*popup Contactanos*/
-  .popup-contactanos{
+.popup-contactanos {
     background-color: #e294f549;
     width: 100%;
     height: 100%;
     position: absolute;
-    top:0;
+    top: 0;
     display: none;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
+}
 
-.popup-content-contactanos{
+.popup-content-contactanos {
     height: 350px;
     width: 380px;
     background-color: #e294f5;
     padding: 20px;
     border-radius: 20px;
     position: relative;
-  }
+}
 
-  .close-popup-contactanos{
+.close-popup-contactanos {
     width: 5%;
     right: -20px;
-    top:-19px;
-  }
-  
-  /*-----------------------------REGISTRO-----------------------------------*/
+    top: -19px;
+}
 
-  
-.popup-content-singup{
+/*-----------------------------REGISTRO-----------------------------------*/
+
+
+.popup-content-singup {
     height: 500px;
     width: 380px;
     background-color: #e294f5;
     border-radius: 20px;
     padding: 20px 35px 15px 35px;
-  } 
+}
 
-.popup-content-singup h1{
+.popup-content-singup h1 {
     font-family: "pacifico";
     font-size: 30px;
-    color:#461453;
-  }
+    color: #461453;
+}
 
-.popup-content-singup .form-principal{
+.popup-content-singup .form-principal {
     width: 100%;
-    overflow: hidden;/*Esconde todo menos el formulario principal*/
+    overflow: hidden;
+    /*Esconde todo menos el formulario principal*/
 }
 
-.form-principal form{
+.form-principal form {
     display: flex;
-    width: 400%; /*Porque tengo 4 formularios*/
+    width: 400%;
+    /*Porque tengo 4 formularios*/
 }
 
-.form-principal form .pagina{
-    width: 25%; /*Cada formulario tiene un 50% de ese 400%*/
-    transition: margin-left 0.3s ease-in-out;/*ease-in-out: inicio y final lento*/ 
+.form-principal form .pagina {
+    width: 25%;
+    /*Cada formulario tiene un 50% de ese 400%*/
+    transition: margin-left 0.3s ease-in-out;
+    /*ease-in-out: inicio y final lento*/
 }
 
-.form-principal form .pagina .campo{
+.form-principal form .pagina .campo {
     height: 30px;
     width: 320px;
     margin-top: 30px;
-    position:relative;
+    position: relative;
     display: flex;
     flex-direction: column;
     font-family: "pacifico";
     font-weight: 500;
     font-size: 17px;
     top: -38px;
-    float:left; /*alinea todo a la izquierda*/
+    float: left;
+    /*alinea todo a la izquierda*/
     text-align: left;
     width: 100%;
     margin-bottom: 30px;
-    color:#461453;
+    color: #461453;
 }
 
-.form-principal form .pagina .campo input{
+.form-principal form .pagina .campo input {
     margin-top: 10px;
     width: 75%;
     padding: 20px;
@@ -290,21 +316,22 @@ nav ul li a:hover{
     margin-left: 15px;
 }
 
-[type="text"], [type="password"]{
+[type="text"],
+[type="password"] {
     height: 20px;
 }
 
-[type="checkbox"]{
+[type="checkbox"] {
     display: none;
 }
 
-.label-aficiones{
+.label-aficiones {
     padding-left: 1.3em;
     position: relative;
-    color:#461453;
+    color: #461453;
 }
 
-.label-aficiones:before{
+.label-aficiones:before {
     content: '';
     border: solid 1px black;
     border-radius: 3px;
@@ -317,28 +344,31 @@ nav ul li a:hover{
     transform: rotate(0deg);
 }
 
-[type="checkbox"]:checked + .label-aficiones:before{
-    color:#a757bb;
-    content:'\f00c';
+[type="checkbox"]:checked+.label-aficiones:before {
+    color: #a757bb;
+    content: '\f00c';
     font-family: FontAwesome;
     transform: rotate(360deg);
 }
 
-#sexo, #orientacion-sexual{
+#sexo,
+#orientacion-sexual {
     width: 75%;
 }
 
-.form-principal form .pagina .botones-2, .form-principal form .pagina .botones-3, .form-principal form .pagina .botones-4{
+.form-principal form .pagina .botones-2,
+.form-principal form .pagina .botones-3,
+.form-principal form .pagina .botones-4 {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
 }
 
-.form-principal form .pagina .botones-3{
+.form-principal form .pagina .botones-3 {
     margin-top: 120px;
 }
 
-  .campo button{
+.campo button {
     margin-top: 8px;
     margin-left: 60px;
     padding: 8px;
@@ -354,20 +384,22 @@ nav ul li a:hover{
     transition: 0.3s;
     text-decoration: none;
 }
-.botones-form{
+
+.botones-form {
     margin-left: -20px;
 }
 
-.botones-form button:last-child{
+.botones-form button:last-child {
     margin-left: 10px;
 }
 
-.button-popup2:hover, .button-send:hover{
-    color:#582963;
-    background-color:#a757bb;
-  }
+.button-popup2:hover,
+.button-send:hover {
+    color: #582963;
+    background-color: #a757bb;
+}
 
-.form-principal form .pagina .campo select{
+.form-principal form .pagina .campo select {
     margin-left: 15px;
     margin-top: 10px;
     width: 50%;
@@ -379,39 +411,40 @@ nav ul li a:hover{
     font-family: "pacifico";
 }
 
-.form-principal form .pagina .campo button:hover{
-    color:#582963;
-    background-color:#a757bb;
+.form-principal form .pagina .campo button:hover {
+    color: #582963;
+    background-color: #a757bb;
 }
 
-.form-principal form .pagina .botones-form button{
-   margin-top: -20px!important; 
-   width: 30%;
+.form-principal form .pagina .botones-form button {
+    margin-top: -20px !important;
+    width: 30%;
 }
 
-form .pagina .botones-form button .volver{
+form .pagina .botones-form button .volver {
     margin-right: 3px;
     font-size: 17px;
 }
 
-form .pagina .botones-form button .adelante{
+form .pagina .botones-form button .adelante {
     margin-left: 3px;
 }
 
 /*-----------------BARRA DE PROGRESO-------------------*/
 
-.popup-content-singup .progress-bar{
+.popup-content-singup .progress-bar {
     display: flex;
     margin: 10px 0;
 }
 
-.popup-content-singup .progress-bar .paso{
+.popup-content-singup .progress-bar .paso {
     text-align: center;
-    width: 100%; /*ocupa todo el formulario*/
+    width: 100%;
+    /*ocupa todo el formulario*/
     position: relative;
 }
 
-.progress-bar .paso p{
+.progress-bar .paso p {
     font-size: 18px;
     font-weight: 500;
     color: #461453;
@@ -420,13 +453,13 @@ form .pagina .botones-form button .adelante{
 }
 
 
-.progress-bar .paso p.active{
-    color:#a757bb;
+.progress-bar .paso p.active {
+    color: #a757bb;
 }
 
-.progress-bar .paso .num{
+.progress-bar .paso .num {
     position: relative;
-    margin-top: 5px;    
+    margin-top: 5px;
     width: 25px;
     height: 25px;
     border: 2px solid #461453;
@@ -434,16 +467,17 @@ form .pagina .botones-form button .adelante{
     display: inline-block;
     font-weight: 500;
     font-size: 17px;
-    line-height: 25px; /*Acepta un valor para que controle el espacio entre líneas*/
+    line-height: 25px;
+    /*Acepta un valor para que controle el espacio entre líneas*/
     transition: 0.2s;
 }
 
-.progress-bar .paso .num.active{
-    border-color:#a757bb;
+.progress-bar .paso .num.active {
+    border-color: #a757bb;
     background-color: #a757bb;
 }
 
-.progress-bar .paso .num span{
+.progress-bar .paso .num span {
     font-weight: 500;
     font-size: 17px;
     line-height: 25px;
@@ -453,12 +487,12 @@ form .pagina .botones-form button .adelante{
     transform: translateX(-50%);
 }
 
-.progress-bar .paso .num.active span{
-    display:none;
+.progress-bar .paso .num.active span {
+    display: none;
 }
 
-.progress-bar .paso .check{
-    display:none;
+.progress-bar .paso .check {
+    display: none;
     position: absolute;
     left: 50%;
     top: 74%;
@@ -466,17 +500,18 @@ form .pagina .botones-form button .adelante{
     transform: translate(-50%, -50%);
 }
 
-.progress-bar .paso .check.active{
+.progress-bar .paso .check.active {
     display: block;
-    color:#461453;
+    color: #461453;
 }
 
 
 /*Lineas que conectan los pasos*/
 .progress-bar .paso .num:before,
-.progress-bar .paso .num:after{
+.progress-bar .paso .num:after {
     position: absolute;
-    content: ''; /*Necesario*/
+    content: '';
+    /*Necesario*/
     width: 44px;
     height: 3px;
     bottom: 8px;
@@ -486,28 +521,31 @@ form .pagina .botones-form button .adelante{
 
 /*Para borrar la última línea*/
 .progress-bar .paso:last-child .num:before,
-.progress-bar .paso:last-child .num:after{
+.progress-bar .paso:last-child .num:after {
     display: none;
 }
 
 /*Cuando se active los num, activa la animación*/
-.progress-bar .paso .num.active:after{
+.progress-bar .paso .num.active:after {
     background-color: #a757bb;
-    animation: mov_linea 0.3s linear forwards;/*Forwards: estado final*/
+    animation: mov_linea 0.3s linear forwards;
+    /*Forwards: estado final*/
     transform: scaleX(0);
     transform-origin: left;
 }
 
-@keyframes mov_linea{
+@keyframes mov_linea {
+
     /*Al final de la animación*/
-    100%{
-        transform: scaleX(1); /*Que se vea la linea de otro color*/
+    100% {
+        transform: scaleX(1);
+        /*Que se vea la linea de otro color*/
     }
 }
 
 /*Estilos para mostrar la contraseña*/
 
-.ojos{
+.ojos {
     position: absolute;
     top: 43px;
     right: 75px;
@@ -515,22 +553,24 @@ form .pagina .botones-form button .adelante{
     color: #461453;
 }
 
-#ocultar{
-    display:none;
+#ocultar {
+    display: none;
     margin-left: -6px;
 }
 
-#mostrar, #ocultar{
-    cursor: pointer; /*Cursor de la manita*/
+#mostrar,
+#ocultar {
+    cursor: pointer;
+    /*Cursor de la manita*/
 }
 
 /*Estilos para mostrar el mensaje de error*/
 
-.error{
+.error {
     position: absolute;
-    color:#461453;
+    color: #461453;
     font-size: 12px;
-    float:left;
+    float: left;
     margin-left: 90px;
     margin-top: 8px;
 }
@@ -540,109 +580,116 @@ form .pagina .botones-form button .adelante{
 .cajafiltro {
     display: flex;
     flex-direction: row;
-    background-color:#ecc0f8;
+    background-color: #ecc0f8;
 }
 
-.main_filtro1{
+.main_filtro1 {
     width: 5%;
 }
+
 .filtro {
     float: left;
-    flex-direction:column;
+    flex-direction: column;
     width: 25%;
     padding-top: 15px;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 10px;
-    background-color:#ecd0f4;
+    background-color: #ecd0f4;
     border: #461453;
 }
 
-.div .filtro{
+.div .filtro {
     border-color: gray;
     border-width: 1px;
     border-style: dotted;
 }
 
-.main_filtro2{
+.main_filtro2 {
     width: 75%;
 }
 
 /*Css Página normas y consejos de seguridad*/
 
-.main_normas, .main_consejos_seguridad{
+.main_normas,
+.main_consejos_seguridad {
     font-family: "pacifico";
-    background-color:#ecc0f8;
+    background-color: #ecc0f8;
 }
 
-.main_consejos_seguridad{
+.main_consejos_seguridad {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 10px;
 }
 
-.normas{
+.normas {
     margin-left: 50px;
     padding-right: 40px;
 }
 
-.main_normas h1, .main_consejos_seguridad h1{
+.main_normas h1,
+.main_consejos_seguridad h1 {
     text-align: center;
     font-size: 50px;
-    color:#461453;
+    color: #461453;
 }
 
-.normas h2, .main_consejos_seguridad h2{
-    color:#461453;
+.normas h2,
+.main_consejos_seguridad h2 {
+    color: #461453;
     font-size: 30px;
     text-align: start;
 }
 
-.normas ul, .main_consejos_seguridad ul{
+.normas ul,
+.main_consejos_seguridad ul {
     margin-left: 50px;
     margin-right: 20px;
 }
 
-.normas strong, .main_consejos_seguridad h3{
+.normas strong,
+.main_consejos_seguridad h3 {
     font-size: 20px;
-    color:#9c15be;
+    color: #9c15be;
 }
 
-.normas li{
+.normas li {
     margin-bottom: 20px;
 }
 
-.denuncias h2{
-    color:#461453;
+.denuncias h2 {
+    color: #461453;
     text-align: center;
     font-size: 30px;
 }
 
-.denuncias p{
-    margin-left: 100px;   
+.denuncias p {
+    margin-left: 100px;
 }
 
-.denuncias a{
-    color:#9c15be;
+.denuncias a {
+    color: #9c15be;
 }
 
-.denuncias a:hover{
-    color:#cf44f2;
+.denuncias a:hover {
+    color: #cf44f2;
     transition: 0.3s;
 }
-.denuncias a:last-child{
-   text-decoration: none;
-   margin-left: 10px;
+
+.denuncias a:last-child {
+    text-decoration: none;
+    margin-left: 10px;
 
 }
 
-.denuncias{
+.denuncias {
     padding-bottom: 10px;
 }
 
 
 /*Formulario de la pagina de registro*/
-.main_form{
+.main_form {
     background-color: #e294f5;
 }
 
@@ -742,7 +789,8 @@ form .pagina .botones-form button .adelante{
     margin-top: 20px;
 }
 
-.contacto a, .consejos a {
+.contacto a,
+.consejos a {
     text-decoration: none;
     color: #461453;
     font-size: 30px;
@@ -762,7 +810,9 @@ form .pagina .botones-form button .adelante{
     padding-right: 10px;
 }
 
-.social_media a:hover, .contacto a:hover, .consejos a:hover {
+.social_media a:hover,
+.contacto a:hover,
+.consejos a:hover {
     transition: 0.5s;
     color: #9c15be;
 }
@@ -785,12 +835,12 @@ form .pagina .botones-form button .adelante{
 /*------------------------------------------------
             FORMULARIO DE CONTACTO
 -------------------------------------------------*/
-#main_contacto{
+#main_contacto {
     background-color: #e294f5;
     margin: 0;
 }
 
-form{
+form {
     width: 450px;
     margin: auto;
     padding: 10px 20px;
@@ -798,7 +848,7 @@ form{
     border-radius: 7px;
 }
 
-h2{
+h2 {
     text-align: center;
     margin-bottom: 20px;
     padding: 7px;
@@ -809,7 +859,8 @@ h2{
     padding-right: 100px;
 }
 
-input, textarea{
+input,
+textarea {
     font-family: "pacifico";
     width: 100px;
     margin-bottom: 20px;
@@ -820,41 +871,43 @@ input, textarea{
     text-align: center;
 }
 
-textarea{
+textarea {
     min-height: 100px;
     max-height: 300px;
     min-width: 310px;
     max-width: 310px;
 }
 
-#boton{
+#boton {
     background-color: #cf44f2;
-    color:#ecc0f8;
+    color: #ecc0f8;
 }
 
-#boton:hover{
-    cursor:pointer;
+#boton:hover {
+    cursor: pointer;
 }
 
 /*Pagina Bienvenido*/
-.bienvenida h1{
+.bienvenida h1 {
     font-size: 57px;
     font-family: 'pacifico';
     text-align: center;
-    color:#461453;
+    color: #461453;
 }
 
-.bienvenida p{
+.bienvenida p {
     font-size: 29px;
     font-family: 'pacifico';
     text-align: center;
     margin-top: 20px;
 }
-.bienvenida{
+
+.bienvenida {
     background: #ecc0f8;
     height: 447px;
 }
-.hola{
+
+.hola {
     text-align: center;
     background: #d787eb;
     padding: 15px;
@@ -864,54 +917,59 @@ textarea{
     font-family: 'pacifico';
     font-size: 27px;
     margin-top: 60px;
-    
+
 }
 
 /*Responsive header*/
 @media(max-width:844px) {
 
-    .checkbtn{
+    .checkbtn {
         display: block;
     }
-    ul{
+
+    ul {
         position: fixed;
         width: 100%;
-        height:735px;
-        background:#461453;
+        height: 735px;
+        background: #461453;
         top: 80px;
         left: -100%;
         text-align: center;
         transition: all 0.5s;
-        margin-top:30px ;
+        margin-top: 30px;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
         margin-top: 100px;
 
     }
-    nav ul li a{
+
+    nav ul li a {
         font-size: 25px;
         color: #d787eb;
 
     }
-    nav ul li a:hover{
-        color:#9c15be;
+
+    nav ul li a:hover {
+        color: #9c15be;
         transition: 0.4s;
 
 
     }
-    #check:checked ~ ul {
-        left:0;
+
+    #check:checked~ul {
+        left: 0;
 
     }
-    
-    nav{
+
+    nav {
         position: fixed;
     }
-    
-    .hola{
+
+    .hola {
         background: none;
     }
 
@@ -963,102 +1021,108 @@ textarea{
     .footer {
         width: 100%;
         height: 151px;
-        
+
     }
-    
+
     .contacto {
         margin-left: 40px;
         margin-top: 20px;
     }
-    .social_media a{
+
+    .social_media a {
         font-size: 20px;
     }
 
-     .social_media {
+    .social_media {
         margin-left: 40px;
         margin-top: 50px;
         width: fit-content;
-       
+
     }
-    
-    .consejos{
+
+    .consejos {
         width: fit-content;
         margin-top: 20px;
         margin-left: 170px;
         position: absolute;
     }
 
-    .contacto a, .consejos a {
+    .contacto a,
+    .consejos a {
         font-size: 22px;
     }
 
     /*Responsive pgna filtro*/
-    .filtro{
+    .filtro {
         margin-top: 100px;
     }
 
-    .main_filtro{
+    .main_filtro {
         margin-top: 113px;
     }
 
 
     /*Responsive pgna normas*/
 
-   .main_consejos_seguridad h3{
-    font-size: 20px;
-    margin-right: -30px;
-    margin-left: -30px;
-    text-align: center;
-   }
+    .main_consejos_seguridad h3 {
+        font-size: 20px;
+        margin-right: -30px;
+        margin-left: -30px;
+        text-align: center;
+    }
 
-   .main_consejos_seguridad p{
-    padding-right: 10px;
-    font-size: 17px;
-    margin-right: -30px;
-    margin-left: -30px;
-    text-align: center;
-   }
+    .main_consejos_seguridad p {
+        padding-right: 10px;
+        font-size: 17px;
+        margin-right: -30px;
+        margin-left: -30px;
+        text-align: center;
+    }
 
-   .main_consejos_seguridad h2{
-    font-size: 27px;
-    margin-right: -112px;
-    margin-left: -30px;
-    text-align: center;
-   }    
+    .main_consejos_seguridad h2 {
+        font-size: 27px;
+        margin-right: -112px;
+        margin-left: -30px;
+        text-align: center;
+    }
 }
 
 
+/*Responsive Tablet*/
+
 @media(max-width:1024px) {
-    
-    .footer{
+
+    /*Responsive footer*/
+    .footer {
         position: absolute;
     }
 
-    .contacto a, .consejos a{
+    .contacto a,
+    .consejos a {
         font-size: 28px;
     }
 
-    .social_media a{
+    .social_media a {
         font-size: 35px;
     }
 
-    .social_media{
+    .social_media {
         margin-left: 300px;
         margin-top: 20px;
     }
 
-    .consejos{
+    .consejos {
         margin-left: 500px;
     }
 
-    .consejos p{
+    .consejos p {
         font-size: 18px;
         margin-top: -9px;
     }
 
     /*responsive principal*/
 
-    .principal{
+    .principal {
         height: 924px;
     }
 
@@ -1066,14 +1130,41 @@ textarea{
         margin-top: -200px;
     }
 
-    .descripcion{
+    .descripcion {
         font-size: 29px;
         text-align: center;
     }
 
-    .button-popup{
+    .button-popup {
         font-size: 25px;
     }
 
-    
+    /*Responsive popups INICIAR SESION*/
+    .popup-content {
+        height: 390px;
+    }
+
+    .button-popup2{
+        font-size: 17px;
+        width: 130px;
+    }
+
+    .popup-content label{
+        font-size: 17px;
+    }
+
+    /*REGISTRARSE*/
+    .close-popup-singup{
+        width: 3%;
+    }
+
+    .popup-content-singup{
+        margin-top: -390px;
+    }
+
+    .sigPag button{
+        font-size: 17px;
+
+    }
+
 }

@@ -8,62 +8,106 @@
         <div class="filtro">
             <aside>
                 <p><h1>Filtro</h1></p><br>
+                <div class="label-filtro"></div>
                     <p><h3>Edad</h3><br>
-                        <input type="checkbox" name="casilla">18-20
-                        <input type="checkbox" name="casilla">20-30
-                        <input type="checkbox" name="casilla">30-40
-                        <input type="checkbox" name="casilla">40-50
-                        <input type="checkbox" name="casilla">50-60
-                        <input type="checkbox" name="casilla">60-70
-                        <input type="checkbox" name="casilla">70-80
-                        <input type="checkbox" name="casilla">80-90
-                        <input type="checkbox" name="casilla">90-100
-                        <input type="checkbox" name="casilla">100-110
-                
+                        <select type="checkbox" id="edad">
+                            <option value="-1" disable selected>Elige una opción</option>
+                            <option value="0">18-20</option>
+                            <option value="1">20-30</option>
+                            <option value="2">30-40</option>
+                            <option value="3">40-50</option>
+                            <option value="4">50-60</option>
+                            <option value="5">60-70</option>
+                            <option value="6">70-80</option>
+                            <option value="7">80-90</option>
+                            <option value="8">90-100</option>
+                            <option value="9">100-110</option>
+                        </select>
                     <p><h3>Pais</h3><input type="text" name="pais"></p>
                     <p><h3>Ciudad</h3><input type="text" name="ciudad"></p>
                     <p><h3>Sexo</h3><br>
-                        <input type="checkbox" name="casilla">Hombre
-                        <input type="checkbox" name="casilla">Mujer
-                        <input type="checkbox" name="casilla">No binario
+                        <input type="checkbox" id="hombre">
+                        <label for="hombre" class="label-filtro">Hombre</label>
+                        <input type="checkbox" id="mujer">
+                        <label for="mujer" class="label-filtro">Mujer</label>
+                        <input type="checkbox" id="no binario">
+                        <label for="no binario" class="label-filtro">No binario</label>
                     </p>
                     <p><h3>Orientacion sexual</h3><br>
-                        <input type="checkbox" name="casilla">Heterosexual
-                        <input type="checkbox" name="casilla">Gay
-                        <input type="checkbox" name="casilla">Lesbiana
-                        <input type="checkbox" name="casilla">Asexual
-                        <input type="checkbox" name="casilla">Pansexual
-                    
+                        <input type="checkbox" id="heterosexual">
+                        <label for="heterosexual" class="label-filtro">Heterosexual</label>
+                        <input type="checkbox" id="gay">
+                        <label for="gay" class="label-filtro">Gay</label>
+                        <input type="checkbox" id="lesbiana">
+                        <label for="lesbiana" class="label-filtro">Lesbiana</label>
+                        <input type="checkbox" id="asexual">
+                        <label for="asexual" class="label-filtro">Asexual</label>
+                        <input type="checkbox" id="pansexual">
+                        <label for="pansexual" class="label-filtro">Pansexual</label>
+                
                     <p><h3>Aficiones</h3><br>
-                        <input type="checkbox" name="casilla">Cantar
-                        <input type="checkbox" name="casilla">Cine
-                        <input type="checkbox" name="casilla">Caminar
-                        <input type="checkbox" name="casilla">Video juegos
-                        <input type="checkbox" name="casilla">Cocinar<br>
-                        <input type="checkbox" name="casilla">Leer
-                        <input type="checkbox" name="casilla">Musica
-                        <input type="checkbox" name="casilla">Correr
-                        <input type="checkbox" name="casilla">Deportes
-                        <input type="checkbox" name="casilla">Bailar<br>
-                        <input type="checkbox" name="casilla">Fiesta
-                        <input type="checkbox" name="casilla">Nadar
-                        <input type="checkbox" name="casilla">Animales
-                        <input type="checkbox" name="casilla">Naturaleza
-                        <input type="checkbox" name="casilla">Piano<br>
-                        <input type="checkbox" name="casilla">Moda
-                        <input type="checkbox" name="casilla">Cazar
-                        <input type="checkbox" name="casilla">Comer
-                        <input type="checkbox" name="casilla">Bucear
-                        <input type="checkbox" name="casilla">Futbol<br>
-                        <input type="checkbox" name="casilla">Viajar
-                        <input type="checkbox" name="casilla">Dibujar
-                        <input type="checkbox" name="casilla">Navegar
-                        <input type="checkbox" name="casilla">Yoga<br>
-                        <input type="checkbox" name="casilla">Ir al Gym
-                        <input type="checkbox" name="casilla">Pescar
-                        <input type="checkbox" name="casilla">Ir a la playa
-                        <input type="checkbox" name="casilla">Escribir
+                        <input type="checkbox" id="viajar">
+                        <label for="viajar" class="label-filtro">Viajar</label>
+                        <input type="checkbox" id="bailar">
+                        <label for="bailar" class="label-filtro">Bailar</label>
+                        <input type="checkbox" id="deportes">
+                        <label for="deportes" class="label-filtro">Deportes</label><br>
+                        <input type="checkbox" id="cantar">
+                        <label for="cantar" class="label-filtro">Cantar</label>
+                        <input type="checkbox" id="videojuegos">
+                        <label for="videojuegos" class="label-filtro">Videojuegos</label>
+                        <input type="checkbox" id="musica">
+                        <label for="musica" class="label-filtro">Música</label><br>
+                        <input type="checkbox" id="cocinar">
+                        <label for="cocinar" class="label-filtro">Cocinar</label>
+                        <input type="checkbox" id="leer">
+                        <label for="leer" class="label-filtro">Leer</label>
+                        <input type="checkbox" id="naturaleza">
+                        <label for="naturaleza" class="label-filtro">Naturaleza</label><br>
+                        <input type="checkbox" id="peliculas">
+                        <label for="peliculas" class="label-filtro">Películas</label>
+                        <input type="checkbox" id="animales">
+                        <label for="animales" class="label-filtro">Animales</label>
+                        <input type="checkbox" id="cine">
+                        <label for="cine" class="label-filtro">Cine</label>
+                        <input type="checkbox" id="caminar">
+                        <label for="caminar" class="label-filtro">Caminar</label>
+                        <input type="checkbox" id="correr">
+                        <label for="correr" class="label-filtro">Correr</label>
+                        <input type="checkbox" id="fiesta">
+                        <label for="fiesta" class="label-filtro">Fiesta</label>
+                        <input type="checkbox" id="nadar">
+                        <label for="nadar" class="label-filtro">Nadar</label>
+                        <input type="checkbox" id="naturaleza">
+                        <label for="naturaleza" class="label-filtro">Naturaleza</label>
+                        <input type="checkbox" id="piano">
+                        <label for="piano" class="label-filtro">Piano</label>
+                        <input type="checkbox" id="moda">
+                        <label for="moda" class="label-filtro">Moda</label>
+                        <input type="checkbox" id="cazar">
+                        <label for="cazar" class="label-filtro">Cazar</label>
+                        <input type="checkbox" id="comer">
+                        <label for="comer" class="label-filtro">Comer</label>
+                        <input type="checkbox" id="bucear">
+                        <label for="bucear" class="label-filtro">Bucear</label>
+                        <input type="checkbox" id="futbol">
+                        <label for="futbol" class="label-filtro">Futbol</label>
+                        <input type="checkbox" id="dibujar">
+                        <label for="dibujar" class="label-filtro">Dibujar</label>
+                        <input type="checkbox" id="navegar">
+                        <label for="navegar" class="label-filtro">Navegar</label>
+                        <input type="checkbox" id="yoga">
+                        <label for="yoga" class="label-filtro">Yoga</label>
+                        <input type="checkbox" id="ir al Gym">
+                        <label for="ir al Gym" class="label-filtro">Ir al Gym</label>
+                        <input type="checkbox" id="pescar">
+                        <label for="pescar" class="label-filtro">Pescar</label>
+                        <input type="checkbox" id="Ir a la playa">
+                        <label for="Ir a la playa" class="label-filtro">Ir a la playa</label>
+                        <input type="checkbox" id="escribir">
+                        <label for="escribir" class="label-filtro">Escribir</label>
                     </p>
+                </div>
             </aside>
         </div>
 

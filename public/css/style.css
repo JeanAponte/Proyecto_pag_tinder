@@ -907,9 +907,118 @@ textarea {
 }
 
 /*-------------------------------------------
+            RESPONSIVE TABLET
+---------------------------------------------*/
+
+@media(min-width:768px) and (max-width:822px){
+
+    /*FOOTER*/
+    .footer{
+    margin-top: 136px;
+        
+    }
+    .consejos a {
+        font-size: 25px;
+        margin-left: -137px;        
+    }
+
+    .consejos p {
+        font-size: 18px;
+        margin-left: -140px;
+        margin-top: -12px;
+
+    }
+
+    .contacto{
+        margin-left: 60px;
+    }
+
+    .contacto a{
+        font-size: 25px;
+    }
+
+    .social_media a {
+        font-size: 35px;
+    }
+
+    .social_media {
+        margin-left: 300px;
+    }
+
+
+    /*responsive principal*/
+    .descripcion{
+        width: 650px;
+        text-align: center;
+        margin-left: 43px;
+        margin-top: 90px;
+        
+    }
+
+    .descripcion p{
+        font-size: 30px;
+    }
+
+    /*navegador*/
+     .logo{
+        width: 90px;
+        height: 90px;
+        margin-left: -40px;
+     }
+    
+     .header nav ul{
+        margin-left: 60px;
+        
+     }
+
+     .header nav ul li a{
+        font-size: 33px;
+     }
+
+     .header nav ul li{
+        margin-top:13px;
+     }
+
+     .user a i{
+        font-size: 26px;
+        padding: 0; 
+     }
+
+     .header nav .user{
+        padding: 0;
+     }
+
+     .header nav .user, .hola{
+        margin-right: 10px;
+        margin-top: -79px;
+     }
+     
+     /*Botones iniciar sesion y registrarse*/
+
+     .popup-container ,.button-popup{
+        font-size: 27px;
+        
+     }
+
+     /*Popup Registro*/
+     
+
+     .close-popup-singup{
+        width:4% ;
+     }
+
+     
+
+
+   
+}
+
+
+
+/*-------------------------------------------
             RESPONSIVE MOVIL
 ---------------------------------------------*/
-@media(max-width:844px) {
+@media(max-width:390px) {
 
     .checkbtn {
         display: block;
@@ -1199,80 +1308,3 @@ textarea {
 
 }
 
-/*-------------------------------------------
-            RESPONSIVE TABLET
----------------------------------------------*/
-
-@media(min-width:844px) and (max-width: 1000px){
-
-    .contacto a,
-    .consejos a {
-        font-size: 28px;
-    }
-
-    .social_media a {
-        font-size: 35px;
-    }
-
-    .social_media {
-        margin-left: 300px;
-        margin-top: 20px;
-    }
-
-    .consejos {
-        margin-left: 500px;
-    }
-
-    .consejos p {
-        font-size: 18px;
-        margin-top: -9px;
-    }
-
-    /*responsive principal*/
-    
-    .principal {
-        height: 924px;
-    }
-
-    .popup-container {
-        margin-top: -200px;
-    }
-
-    .descripcion {
-        font-size: 29px;
-        text-align: center;
-    }
-
-    .button-popup {
-        font-size: 25px;
-    }
-
-    /*Responsive popups INICIAR SESION*/
-    .popup-content {
-        height: 390px;
-    }
-
-    .button-popup2{
-        font-size: 17px;
-        width: 130px;
-    }
-
-    .popup-content label{
-        font-size: 17px;
-    }
-
-    /*REGISTRARSE*/
-    .close-popup-singup{
-        width: 3%;
-    }
-
-    .popup-content-singup{
-        margin-top: -390px;
-    }
-
-    .sigPag button{
-        font-size: 17px;
-
-    }
-
-}

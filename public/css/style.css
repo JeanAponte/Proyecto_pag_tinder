@@ -589,13 +589,14 @@ form .pagina .botones-form button .adelante {
 .filtro {
     float: left;
     flex-direction:column;
-    width: 25%;
+    width: 20%;
     padding-top: 15px;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 10px;
     background-color:#ecd0f4;
     border: 2px solid  #4614539f;
+    font-family: 'Pacifico';
 }
 
 .div .filtro{
@@ -613,11 +614,16 @@ form .pagina .botones-form button .adelante {
     padding-left: 10px;
 }
 .main_filtro2{
-    width: 75%;
+    width: 70%;
 }
 
 [type="checkbox"]{
     display: none;
+}
+
+[type="text"]{
+    border: #461453 solid 1px ;
+
 }
 
 .label-filtro{
@@ -630,7 +636,7 @@ form .pagina .botones-form button .adelante {
 }
 
 .label-filtro:before{
-    content: '';
+    content:'';
     border: solid 1px black;
     border-radius: 3px;
     width: 0.8em;
@@ -638,6 +644,7 @@ form .pagina .botones-form button .adelante {
     position: relative;
     left: 0px;
     top: 8px;
+    margin-right: 5px;
     transition: all 0.2s;
     transform: rotate(0deg);
 }
@@ -648,6 +655,12 @@ form .pagina .botones-form button .adelante {
     font-family: FontAwesome;
     transform: rotate(360deg);
 }
+
+.cajafiltro2 {
+    display: flex;
+    flex-direction:column;
+}
+
 
 /*Css Página normas y consejos de seguridad*/
 
@@ -1010,9 +1023,9 @@ textarea {
 
     }
 
-    nav {
+    /*nav {
         
-    }
+    }*/
 
     .hola {
         background: none;

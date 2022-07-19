@@ -6,6 +6,10 @@
     list-style: none;
 }
 
+/*--------------------------
+            HEADER
+----------------------------*/
+
 nav {
     background: #d787eb;
     height: 110px;
@@ -81,7 +85,9 @@ nav ul li a:hover {
     height: 100px;
 }
 
-/*principal*/
+/*------------------------------------------------
+            CONTENIDO PÁGINA PRINCIPAL
+-------------------------------------------------*/
 
 .principal {
     background-image: url("/imagenes/fondo.jpg");
@@ -110,7 +116,9 @@ nav ul li a:hover {
     border-radius: 28px;
 }
 
-/*Pop-up Iniciar sesión y registrarse*/
+/*-------------------------------------------
+            POP UP LOGIN Y SIGN UP
+---------------------------------------------*/
 
 .popup-container {
     text-align: center;
@@ -223,7 +231,9 @@ nav ul li a:hover {
 }
 
 
-/*popup Contactanos*/
+/*----------------------------------------
+            POP UP CONTACTANOS
+------------------------------------------*/
 .popup-contactanos {
     background-color: #e294f549;
     width: 100%;
@@ -251,8 +261,9 @@ nav ul li a:hover {
     top: -19px;
 }
 
-/*-----------------------------REGISTRO-----------------------------------*/
-
+/*------------------------
+        REGISTRO
+--------------------------*/
 
 .popup-content-singup {
     height: 500px;
@@ -430,7 +441,9 @@ form .pagina .botones-form button .adelante {
     margin-left: 3px;
 }
 
-/*-----------------BARRA DE PROGRESO-------------------*/
+/*-------------------------------------------
+            BARRA DE PROGRESO REGISTRO
+---------------------------------------------*/
 
 .popup-content-singup .progress-bar {
     display: flex;
@@ -575,7 +588,9 @@ form .pagina .botones-form button .adelante {
     margin-top: 8px;
 }
 
-/*Pagina de Filtro*/
+/*-------------------------------------
+            PÁGINA DE FILTRO
+---------------------------------------*/
 
 .cajafiltro {
     display: flex;
@@ -649,23 +664,19 @@ form .pagina .botones-form button .adelante {
     transform: rotate(360deg);
 }
 
-/*Css Página normas y consejos de seguridad*/
+/*----------------------------------------------------------
+            PÁGINAS NORMAS Y CONSEJOS DE SEGURIDAD
+------------------------------------------------------------*/
 
 .main_normas,
 .main_consejos_seguridad {
+    display: flex;
+    flex-direction: column;
     font-family: "pacifico";
     background-color: #ecc0f8;
-}
-
-.main_consejos_seguridad {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 10px;
-}
-
-.normas {
-    margin-left: 50px;
-    padding-right: 40px;
 }
 
 .main_normas h1,
@@ -680,35 +691,33 @@ form .pagina .botones-form button .adelante {
     color: #461453;
     font-size: 30px;
     text-align: start;
-}
-
-.main_consejos_seguridad .listas ul li h3, 
-.normas .listas ul li strong{
-    margin-left: 40px;
-    
-}
-.main_consejos_seguridad .listas li p, .normas .listas li p{
-    margin: 10px 30px 10px 40px; /*Top, right, bottom, left*/
+    margin-bottom: -5px;
 }
 
 .normas strong,
-.main_consejos_seguridad h3 {
+.main_consejos_seguridad strong {
     font-size: 20px;
     color: #9c15be;
+    
 }
 
-.normas li {
-    margin-bottom: 20px;
+.section-normas, .section-consejos {
+    margin-left: 30px;
+}
+
+.section-normas p, .section-consejos p{
+    margin-bottom: 10px;
 }
 
 .denuncias h2 {
-    color: #461453;
+    color: #9c15be;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
+    margin-left: 100px;
 }
 
 .denuncias p {
-    margin-left: 100px;
+    margin-left: 30px;
 }
 
 .denuncias a {
@@ -730,90 +739,9 @@ form .pagina .botones-form button .adelante {
     padding-bottom: 10px;
 }
 
-
-/*Formulario de la pagina de registro*/
-.main_form {
-    background-color: #e294f5;
-}
-
-.formulario {
-    text-align: center;
-    font-family: 'Pacifico';
-    color: black;
-    background: #e294f5;
-    width: 400px;
-    height: 265px;
-    margin-left: 430px;
-    font-size: 16px;
-
-}
-
-.formulario p {
-    font-size: 22px;
-}
-
-.formulario h1 {
-    font-size: 35px;
-}
-
-.formulario .continuar {
-    font-size: 15px;
-    font-family: 'Pacifico';
-    background-color: black;
-    color: white;
-    border-radius: 15px;
-    width: 100px;
-    margin-bottom: 6px;
-    margin-top: 8px;
-}
-
-.formulario .continuar:hover {
-    color: #461453;
-}
-
-/*Formulario2 de la pagina de registro*/
-
-.formulario2 {
-    text-align: center;
-    font-family: 'Pacifico';
-    color: black;
-    background: #e294f5;
-    width: 400px;
-    height: 665px;
-    margin-top: 120px;
-    margin-left: 430px;
-    font-size: 16px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-
-}
-
-.formulario2 p {
-    font-size: 22px;
-}
-
-
-.formulario2 h1 {
-    font-size: 35px;
-}
-
-
-.formulario2 .continuar {
-    font-size: 15px;
-    font-family: 'Pacifico';
-    background-color: black;
-    color: white;
-    border-radius: 15px;
-    width: 100px;
-    margin-bottom: 6px;
-    margin-top: 8px;
-}
-
-.formulario2 .continuar:hover {
-    color: #461453;
-}
-
-/*Footer*/
+/*---------------------------
+            FOOTER
+-----------------------------*/
 
 .footer {
     display: flex;
@@ -930,7 +858,9 @@ textarea {
     cursor: pointer;
 }
 
-/*Pagina Bienvenido*/
+/*-------------------------------------------
+            PÁGINA DE BIENVENIDA
+---------------------------------------------*/
 .bienvenida h1 {
     font-size: 57px;
     font-family: 'pacifico';
@@ -963,7 +893,9 @@ textarea {
 
 }
 
-/*Responsive header*/
+/*-------------------------------------------
+            RESPONSIVE MOVIL
+---------------------------------------------*/
 @media(max-width:844px) {
 
     .checkbtn {
@@ -1109,69 +1041,77 @@ textarea {
 
     /*Responsive pgna consejos de seguridad*/
 
-    .body-consejos, .body-normas{
-        margin: 0;
-        min-height: 100vh;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-
     .main_consejos_seguridad, .main_normas{
-        display: flex;
-        flex-direction: column;
         width: 100%;
     }
-    .main_consejos_seguridad h1{
-        font-size: 30px;
-        margin-top: 130px;
+    
+    .main_consejos_seguridad h1, .main_normas h1{
+        font-size: 28px;
+        margin-left: -15px;
         text-align: center;
+
     }
 
-    .main_consejos_seguridad p {
-        margin-left: -20px;
+    .main_normas h1{
+        padding-right: 10px;
+    }
+
+    .main_consejos_seguridad h2, .main_normas h2{
+        font-size: 25px;
+        text-align: start;
+        padding-left: 0px;
+    }
+    
+    .main_consejos_seguridad p, .main_normas p{
         margin-top: 15px;
+        padding-left: 5px;
     }
-
-    .main_consejos_seguridad h2{
+    
+    .section-consejos strong, .section-normas strong{
         font-size: 20px;
-        margin-left: -30px;
-        margin-right: -50px;
+        text-align: start;
+        padding-left: 0px;
+        margin-left: -32px;
     }
 
-    .main_consejos_seguridad .listas{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        width: 100%;
+    .section-consejos p, .section-normas p{
+        text-align: start;
+        padding-left: 0px;
+        margin-right: -20px;
+        margin-left: -32px;
+        margin-top: 5px;
+    }
+
+    .section-normas p{
+        margin-right: 0px;
+        padding-right: 10px;
+    }
+
+    .denuncias h2{
+        text-align: center;
+        font-size: 15px;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-left: -16px;
+        margin-right: 10px;
+        
+    }
+
+    .denuncias p{
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 10px;
+        text-align: start;
+    }
+
+    .denuncias p a:last-child{
+        font-size: 13px;
+        padding-left: 0px;
+        margin-left: 0px;
+
     }
 
     
-    /*
-    .main_consejos_seguridad .listas h3 {
-        font-size: 17px;
-        text-align: left;
-        margin-left: 20px;
-    }
-
-    
-    .main_consejos_seguridad ul{
-        margin-left: 515px;
-        margin-bottom: auto;
-        background-color: #ecc0f8;
-        
-    } 
-
-    /*
-    .main_consejos_seguridad ul li{
-        display: flex;
-        flex-direction: column;
-        
-        justify-content: flex-end;
-        align-items: flex-end;
-        
-    }
 
     /*Popup iniciar sesion*/
     .popup-content{
@@ -1250,14 +1190,11 @@ textarea {
 
 }
 
+/*-------------------------------------------
+            RESPONSIVE TABLET
+---------------------------------------------*/
 
-
-
-
-
-
-
-/*Responsive Tablet*//*
+/*
 
 @media(min-width:1000px)
  {

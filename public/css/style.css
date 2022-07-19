@@ -1023,10 +1023,6 @@ textarea {
 
     }
 
-    /*nav {
-        
-    }*/
-
     .hola {
         background: none;
     }
@@ -1071,7 +1067,8 @@ textarea {
         width: 95%;
         padding: 8px;
         border-radius: 15px;
-        margin-top: 150px;
+        margin-top: 25px;
+        text-align: center;
     }
 
     
@@ -1080,7 +1077,7 @@ textarea {
 
     .footer {
         width: 100%;
-        height: 151px;
+        height: 166px;
     }
 
     .contacto {
@@ -1161,32 +1158,6 @@ textarea {
         width: 100%;
     }
 
-    
-    /*
-    .main_consejos_seguridad .listas h3 {
-        font-size: 17px;
-        text-align: left;
-        margin-left: 20px;
-    }
-
-    
-    .main_consejos_seguridad ul{
-        margin-left: 515px;
-        margin-bottom: auto;
-        background-color: #ecc0f8;
-        
-    } 
-
-    /*
-    .main_consejos_seguridad ul li{
-        display: flex;
-        flex-direction: column;
-        
-        justify-content: flex-end;
-        align-items: flex-end;
-        
-    }
-
     /*Popup iniciar sesion*/
     .popup-content{
         padding: 0;
@@ -1263,11 +1234,6 @@ textarea {
 
 
 }
-
-
-
-
-
 
 
 

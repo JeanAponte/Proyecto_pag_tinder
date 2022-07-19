@@ -604,13 +604,14 @@ form .pagina .botones-form button .adelante {
 .filtro {
     float: left;
     flex-direction:column;
-    width: 25%;
+    width: 20%;
     padding-top: 15px;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 10px;
     background-color:#ecd0f4;
     border: 2px solid  #4614539f;
+    font-family: 'Pacifico';
 }
 
 .div .filtro{
@@ -628,11 +629,16 @@ form .pagina .botones-form button .adelante {
     padding-left: 10px;
 }
 .main_filtro2{
-    width: 75%;
+    width: 70%;
 }
 
 [type="checkbox"]{
     display: none;
+}
+
+[type="text"]{
+    border: #461453 solid 1px ;
+
 }
 
 .label-filtro{
@@ -645,7 +651,7 @@ form .pagina .botones-form button .adelante {
 }
 
 .label-filtro:before{
-    content: '';
+    content:'';
     border: solid 1px black;
     border-radius: 3px;
     width: 0.8em;
@@ -653,6 +659,7 @@ form .pagina .botones-form button .adelante {
     position: relative;
     left: 0px;
     top: 8px;
+    margin-right: 5px;
     transition: all 0.2s;
     transform: rotate(0deg);
 }
@@ -664,9 +671,15 @@ form .pagina .botones-form button .adelante {
     transform: rotate(360deg);
 }
 
-/*----------------------------------------------------------
-            PÁGINAS NORMAS Y CONSEJOS DE SEGURIDAD
-------------------------------------------------------------*/
+.cajafiltro2 {
+    display: flex;
+    flex-direction:column;
+}
+
+
+/*-------------------------------------
+    PÁGINAS DE NORMAS Y SEGURIDAD
+---------------------------------------*/
 
 .main_normas,
 .main_consejos_seguridad {
@@ -900,6 +913,7 @@ textarea {
 
     .checkbtn {
         display: block;
+        height: 15px;
         
     }
 
@@ -941,9 +955,9 @@ textarea {
 
     }
 
-    nav {
+    /*nav {
         
-    }
+    }*/
 
     .hola {
         background: none;
@@ -1194,13 +1208,7 @@ textarea {
             RESPONSIVE TABLET
 ---------------------------------------------*/
 
-/*
-
-@media(min-width:1000px)
- {
-
-    /*Responsive footer*/
-    /*
+@media(min-width:844px) and (max-width: 1000px){
 
     .contacto a,
     .consejos a {
@@ -1226,7 +1234,7 @@ textarea {
     }
 
     /*responsive principal*/
-    /*
+    
     .principal {
         height: 924px;
     }
@@ -1244,7 +1252,7 @@ textarea {
         font-size: 25px;
     }
 
-    /*Responsive popups INICIAR SESION*//*
+    /*Responsive popups INICIAR SESION*/
     .popup-content {
         height: 390px;
     }
@@ -1258,7 +1266,7 @@ textarea {
         font-size: 17px;
     }
 
-    /*REGISTRARSE*//*
+    /*REGISTRARSE*/
     .close-popup-singup{
         width: 3%;
     }

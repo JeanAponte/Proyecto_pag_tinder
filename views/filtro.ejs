@@ -7,10 +7,11 @@
         <div class="main_filtro1"><main></main></div>
         <div class="filtro">
             <aside>
-                <p><h1>Filtro</h1></p><br>
-                <div class="label-filtro"></div>
-                    <p><h3>Edad</h3><br>
-                        <select type="checkbox" id="edad">
+                <h1>Filtro</h1><br>
+                <div class="cajafiltro2">
+                    <div><h3>Edad</h3>
+                    
+                        <select id="edad_filtro">
                             <option value="-1" disable selected>Elige una opción</option>
                             <option value="0">18-20</option>
                             <option value="1">20-30</option>
@@ -23,17 +24,19 @@
                             <option value="8">90-100</option>
                             <option value="9">100-110</option>
                         </select>
-                    <p><h3>Pais</h3><input type="text" name="pais"></p>
-                    <p><h3>Ciudad</h3><input type="text" name="ciudad"></p>
-                    <p><h3>Sexo</h3><br>
+                    </div><br>
+                    <div><h3>Pais</h3><input type="text" name="pais"></div><br>
+                    <div><h3>Ciudad</h3><input type="text" name="ciudad"></div><br>
+                    <div><h3>Sexo</h3>
                         <input type="checkbox" id="hombre">
                         <label for="hombre" class="label-filtro">Hombre</label>
                         <input type="checkbox" id="mujer">
                         <label for="mujer" class="label-filtro">Mujer</label>
                         <input type="checkbox" id="no binario">
                         <label for="no binario" class="label-filtro">No binario</label>
-                    </p>
-                    <p><h3>Orientacion sexual</h3><br>
+                        <br>
+                    </div>
+                    <div><h3>Orientacion sexual</h3>
                         <input type="checkbox" id="heterosexual">
                         <label for="heterosexual" class="label-filtro">Heterosexual</label>
                         <input type="checkbox" id="gay">
@@ -44,26 +47,27 @@
                         <label for="asexual" class="label-filtro">Asexual</label>
                         <input type="checkbox" id="pansexual">
                         <label for="pansexual" class="label-filtro">Pansexual</label>
+                    </div><br>
                 
-                    <p><h3>Aficiones</h3><br>
+                    <div><h3>Aficiones</h3>
                         <input type="checkbox" id="viajar">
                         <label for="viajar" class="label-filtro">Viajar</label>
                         <input type="checkbox" id="bailar">
                         <label for="bailar" class="label-filtro">Bailar</label>
                         <input type="checkbox" id="deportes">
-                        <label for="deportes" class="label-filtro">Deportes</label><br>
+                        <label for="deportes" class="label-filtro">Deportes</label>
                         <input type="checkbox" id="cantar">
                         <label for="cantar" class="label-filtro">Cantar</label>
                         <input type="checkbox" id="videojuegos">
                         <label for="videojuegos" class="label-filtro">Videojuegos</label>
                         <input type="checkbox" id="musica">
-                        <label for="musica" class="label-filtro">Música</label><br>
+                        <label for="musica" class="label-filtro">Música</label>
                         <input type="checkbox" id="cocinar">
                         <label for="cocinar" class="label-filtro">Cocinar</label>
                         <input type="checkbox" id="leer">
                         <label for="leer" class="label-filtro">Leer</label>
                         <input type="checkbox" id="naturaleza">
-                        <label for="naturaleza" class="label-filtro">Naturaleza</label><br>
+                        <label for="naturaleza" class="label-filtro">Naturaleza</label>
                         <input type="checkbox" id="peliculas">
                         <label for="peliculas" class="label-filtro">Películas</label>
                         <input type="checkbox" id="animales">
@@ -106,7 +110,8 @@
                         <label for="Ir a la playa" class="label-filtro">Ir a la playa</label>
                         <input type="checkbox" id="escribir">
                         <label for="escribir" class="label-filtro">Escribir</label>
-                    </p>
+                    </div>
+                
                 </div>
             </aside>
         </div>

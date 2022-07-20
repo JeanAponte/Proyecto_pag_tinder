@@ -24,7 +24,7 @@
                 <img src="/imagenes/close.png" alt="close button" class="close-popup">
                 <form action ="/users/user" method="post">
                     <label for="email-login">Email:</label>
-                    <input class="input-login" type="text" name="email" id="email-login" placeholder="Email">
+                    <input class="input-login" type="email" name="email" id="email-login" placeholder="Email">
                     <label for="password-login">Contraseña:</label>
                     <input class="input-login" type="password" name="password" id="password-login" placeholder="Password">
                     <input type="submit" class="button-popup2" id="boton-iniciar" value ="Iniciar sesión">
@@ -71,7 +71,7 @@
                         </div>
                     </header>
                     <div class="form-principal">
-                        <form action="#">
+                        <form action="/bienvenida" method="post" name="form-registro">
             
                             <!--PÁGINA 1-->
                             <div class="pagina movPag">
@@ -209,7 +209,7 @@
                                 <div class="campo botones-form botones-4">
                                     <!--dos  clases: volver-pag1 para el js y volver para el css-->
                                     <button class="volver-pag3 volver">Atrás</button>
-                                    <button class="fin" onclick="location.href='/bienvenida'">Finalizar</button> 
+                                    <input class="fin" type="submit" value="Finalizar"> 
                                 </div>
                             </div>
                         </form>

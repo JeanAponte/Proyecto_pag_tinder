@@ -35,7 +35,7 @@ router.get('/contactanos', function (req, res) {
   res.render('contactanos');
 });
 
-router.get('/bienvenida', function (req, res) {
+router.post('/bienvenida', function (req, res) {
   res.render('bienvenida');
 });
 

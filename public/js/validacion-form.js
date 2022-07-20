@@ -7,13 +7,13 @@ function mostrarPassword(){
     /*La muestro*/
     if(x.type == 'password'){
         x.type = "text";
-        y.style.display = "block";
+        y.style.display = "inline";
         z.style.display = "none";
     }else{
         /*La oculto*/
         x.type = "password";
         y.style.display = "none";
-        z.style.display = "block";
+        z.style.display = "inline";
     }
 }
 
@@ -246,7 +246,7 @@ botonAdelante4.addEventListener("click", function(e){
 });
 
 botonFinal.addEventListener("click", function(e){
-    e.preventDefault();
+    
 
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
@@ -259,6 +259,8 @@ botonFinal.addEventListener("click", function(e){
         document.getElementById("password-error").innerHTML = "* Este campo no puede quedar vacío."
         document.getElementById("password").style.borderColor="#461453"
 
+        e.preventDefault(); /*Evita enviar el formulario*/
+
     }else if( email == "" || password == "" || 
                 email.length < 6 || password.length < 5 ||
                 !verificarEmail(email) || !verificarPassword(password)){
@@ -266,11 +268,12 @@ botonFinal.addEventListener("click", function(e){
         /*Si el email está vacío*/
         if ( email == "" ){
             document.getElementById("email-error").innerHTML = "* Este campo no puede quedar vacío."
-            document.getElementById("email").style.borderColor="#461453"      
+            document.getElementById("email").style.borderColor="#461453"
+                  
         }else if ( email.length < 6 ){
             document.getElementById("email-error").innerHTML = "* Debe tener 6 o más caractéres."
             document.getElementById("email").style.borderColor="#461453"      
-        }else if ( !verificarCorreo(email) ){
+        }else if ( !verificarEmail(email) ){
             document.getElementById("email-error").innerHTML = "* Ingreso de datos inválidos."
             document.getElementById("email").style.borderColor="#461453"      
         }else {
@@ -283,18 +286,20 @@ botonFinal.addEventListener("click", function(e){
             document.getElementById("password-error").innerHTML = "* Este campo no puede quedar vacío."
             document.getElementById("password").style.borderColor="blueviolet"      
         }else if ( password.length < 5 && !verificarPassword(password) ){
-            document.getElementById("password-error").innerHTML = "* Mínimo una MAY, MIN y NUM."
+            document.getElementById("password-error").innerHTML = "* Mínimo 5 carácteres"
             document.getElementById("password").style.borderColor="blueviolet"      
         }else if ( password.length < 5 ){
-            document.getElementById("password-error").innerHTML = "* Debe tener 6 a más caractéres."
+            document.getElementById("password-error").innerHTML = "* Debe tener 5 a más caractéres."
             document.getElementById("password").style.borderColor="blueviolet"      
-        }else if ( !verificarpassword(password) ){
-            document.getElementById("password-error").innerHTML = "* Ingreso de caractéres inválidos."
+        }else if ( !verificarPassword(password) ){
+            document.getElementById("password-error").innerHTML = "* Mínimo una MAY, MIN y NUM."
             document.getElementById("password").style.borderColor="blueviolet"      
         }else {
             document.getElementById("password-error").innerHTML = ""
             document.getElementById("password").style.borderColor="lightgrey"      
         }
+
+        e.preventDefault();
         
     }else{
 
@@ -308,76 +313,8 @@ botonFinal.addEventListener("click", function(e){
         progressCheck[contador - 1].classList.add("active");
         contador++;
 
-        /*Ejecuta otra función después de un determinado tiempo*/
-        // setTimeout(function(){
-        
-        //     let timerInterval;
-            
-        //     Swal.fire({
-        
-        //     allowOutsideClick: false,
-        //     allowEscapeKey: false,
-        //     stopKeydownPropagation: false,
-        
-        //     title: 'Realizando registro...',
-        //     timer: 1000,
-        //     timerProgressBar: true,
-        //     onBeforeOpen: () => {
-        //         Swal.showLoading()
-        //         timerInterval = setInterval(() => {
-        //         const content = Swal.getContent()
-        //         if (content) {
-        //             const p = content.querySelector('p')
-        //             if (p) {
-        //             p.textContent = Swal.getTimerRight()
-        //             }
-        //         }
-        //         }, 100)
-        //     },
-        //     onClose: () => {
-        //         clearInterval(timerInterval)
-        //     }
-        //     }).then((result) => {
-        //     if (result.dismiss === Swal.DismissReason.timer) {
-        //         Swal.fire({
-        //         title: '¡ATENCIÓN!',
-        //         html: "Al continuar con el registro, <br>usted acepta los términos y condiciones.",
-        //         icon: 'info',
-        //         showCancelButton: true,
-        //         confirmButtonColor: '#3085d6',
-        //         cancelButtonColor: '#d33',
-        //         confirmButtonText: 'Sí, continuar.',
-        //         }).then((result) => {
-        //         if (result.value) {
-        //             Swal.fire({
-        //             icon: 'success',
-        //             title: '¡Enhorabuena!',
-            
-        //             html: 'El usuario: <br>' +
-        //                     '<p style="color: #0E2C48; font-size: px;";>' + 
-        //                     newUser +'</p><br> Ha sido registrado con éxito.',
-            
-        //             confirmButtonText:
-        //             '<i class="fa fa-thumbs-up"></i> ACEPTAR',
-        //             allowOutsideClick: false,
-        //             allowEscapeKey: false,
-        //             stopKeydownPropagation: false  
-        //             }
-        //             ).then((result) => {
-        //             if (result.value) {
-        //                 limpiar();
-        //                 location.reload(); /*recargar la página*/           
-        //             }
-        //             })
-        //         }else {
-        //             contador--;
-        //         }
-        //         })
-        //     }
-        //     });    
-        // });
     }
-
+    
     /*Verificar email*/
     function verificarEmail($n){
         var ExpRegular_Email = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;/*Ingresa cualquier cosa antes del arroba, luego ingresa un arroba y finalice con 2 o 3 letras*/
@@ -389,23 +326,17 @@ botonFinal.addEventListener("click", function(e){
         return ExpRegular_Num.test($m);
     }
 
-    /*
-    function limpiar(){
-        document.getElementById("nombres").value = "";
-        document.querySelector('input[type="date"]').value = "";
-        document.getElementById("numTel").value = "";
-        document.getElementById("ciudad").value = "";
-        document.getElementById("pais").value = "";
-        document.getElementById("sexo").value = -1;
-        document.getElementById("orientacion-sexual").value = -1;
-        document.getElementById("email").value = "";
-        document.getElementById("password").value = "";
-      }*/
+    /*Enviar formulario*/
+    function enviar_formulario(){
+        document.form-registro.submit();
+     }
 });
+
+
 
 /*Para volver hacia atrás*/
 
-botonAtras1.addEventListener("click", function(e){
+botonAtras1.addEventListener("click", "submit", function(e){
     e.preventDefault();
     movPag.style.marginLeft = "0%";
 

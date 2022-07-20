@@ -230,37 +230,6 @@ nav ul li a:hover {
     right: 427px;
 }
 
-
-/*----------------------------------------
-            POP UP CONTACTANOS
-------------------------------------------*/
-.popup-contactanos {
-    background-color: #e294f549;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.popup-content-contactanos {
-    height: 350px;
-    width: 380px;
-    background-color: #e294f5;
-    padding: 20px;
-    border-radius: 20px;
-    position: relative;
-}
-
-.close-popup-contactanos {
-    width: 5%;
-    right: -20px;
-    top: -19px;
-}
-
 /*------------------------
         REGISTRO
 --------------------------*/
@@ -375,6 +344,7 @@ nav ul li a:hover {
     margin-top: 50px;
 }
 
+
 .form-principal form .pagina .botones-3 {
     margin-top: 120px;
 }
@@ -396,6 +366,24 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
+.form-principal form .pagina .botones-4 [type="submit"]{
+    margin-top: -20px;
+    padding: 8px;
+    width:90px;
+    height: 50px;
+    background: #461453;
+    font-family: "pacifico";
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid #d787eb;
+    border-radius: 15px;
+    color: #d787eb;
+    box-shadow: 6px 6px 29px -4px #461453;
+    transition: 0.3s;
+    text-decoration: none;
+
+}
+
 .botones-form {
     margin-left: -20px;
 }
@@ -405,7 +393,9 @@ nav ul li a:hover {
 }
 
 .button-popup2:hover,
-.button-send:hover {
+.button-send:hover,
+.form-principal form .pagina .campo button:hover,
+.form-principal [type="submit"]:hover {
     color: #582963;
     background-color: #a757bb;
 }
@@ -420,11 +410,6 @@ nav ul li a:hover {
     border-radius: 5px;
     border: 1px solid lightgray;
     font-family: "pacifico";
-}
-
-.form-principal form .pagina .campo button:hover {
-    color: #582963;
-    background-color: #a757bb;
 }
 
 .form-principal form .pagina .botones-form button {
@@ -573,8 +558,7 @@ form .pagina .botones-form button .adelante {
 
 #mostrar,
 #ocultar {
-    cursor: pointer;
-    /*Cursor de la manita*/
+    cursor: pointer;/*Cursor de la manita*/
 }
 
 /*Estilos para mostrar el mensaje de error*/
@@ -587,6 +571,38 @@ form .pagina .botones-form button .adelante {
     margin-left: 90px;
     margin-top: 8px;
 }
+
+
+/*----------------------------------------
+            POP UP CONTACTANOS
+------------------------------------------*/
+.popup-contactanos {
+    background-color: #e294f549;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.popup-content-contactanos {
+    height: 350px;
+    width: 380px;
+    background-color: #e294f5;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.close-popup-contactanos {
+    width: 5%;
+    right: -20px;
+    top: -19px;
+}
+
 
 /*-------------------------------------
             PÁGINA DE FILTRO
@@ -913,10 +929,7 @@ textarea {
 @media(min-width:768px) and (max-width:822px){
 
     /*FOOTER*/
-    .footer{
-    margin-top: 136px;
-        
-    }
+    
     .consejos a {
         font-size: 25px;
         margin-left: -137px;        
@@ -1007,8 +1020,13 @@ textarea {
         width:4% ;
      }
 
-     
 
+     /*Consejos de seguridad y normas*/
+
+     .main_consejos_seguridad, .main_normas{
+        width: 100%;
+        min-height: 100vh;
+    }
 
    
 }
@@ -1112,8 +1130,6 @@ textarea {
         text-align: center;
     }
 
-    
-
     /*Responsive Footer*/
 
     .footer {
@@ -1159,17 +1175,18 @@ textarea {
     }
 
 
-    /*Responsive pgna consejos de seguridad*/
+    /*Responsive pgna consejos de seguridad*/    
 
     .main_consejos_seguridad, .main_normas{
         width: 100%;
+        min-height: 100vh;
+        
     }
     
     .main_consejos_seguridad h1, .main_normas h1{
         font-size: 28px;
         margin-left: -15px;
         text-align: center;
-
     }
 
     .main_normas h1{
@@ -1304,7 +1321,6 @@ textarea {
         margin-left:120px;
         margin-top: 15px;
     }
-
 
 }
 

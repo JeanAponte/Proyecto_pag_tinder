@@ -543,7 +543,7 @@ form .pagina .botones-form button .adelante {
 
 /*Estilos para mostrar la contraseña*/
 
-.ojos {
+.ojos{
     position: absolute;
     top: 43px;
     right: 75px;
@@ -551,13 +551,23 @@ form .pagina .botones-form button .adelante {
     color: #461453;
 }
 
-#ocultar {
+.ojitos{
+    position: absolute;
+    top: 240px;
+    right: 80px;
+    font-size: 20px;
+    color: #461453;
+}
+
+#ocultar, #ocultar2 {
     display: none;
     margin-left: -6px;
 }
 
 #mostrar,
-#ocultar {
+#ocultar,
+#mostrar2,
+#ocultar2 {
     cursor: pointer;/*Cursor de la manita*/
 }
 
@@ -572,6 +582,15 @@ form .pagina .botones-form button .adelante {
     margin-top: 8px;
 }
 
+.error-login{
+    position: absolute;
+    color: #461453;
+    font-size: 12px;
+    float: left;
+    margin-left: 120px;
+    margin-top: -25px;
+    font-family: "pacifico";
+}
 
 /*----------------------------------------
             POP UP CONTACTANOS

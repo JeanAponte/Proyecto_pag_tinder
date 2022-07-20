@@ -4,19 +4,123 @@ function mostrarPassword(){
     var y = document.getElementById("ocultar");
     var z = document.getElementById("mostrar");
 
+    var a = document.getElementById("password-login");
+    var b = document.getElementById("ocultar2");
+    var c = document.getElementById("mostrar2");
+
     /*La muestro*/
-    if(x.type == 'password'){
-        x.type = "text";
+    if(x.type == 'password' || a.type == "password"){
+        x.type= "text";
+        a.type = "text";
         y.style.display = "inline";
+        b.style.display = "inline";
         z.style.display = "none";
+        c.style.display = "none";
     }else{
         /*La oculto*/
-        x.type = "password";
+        x.type= "password";
+        a.type= "password";
         y.style.display = "none";
+        b.style.display = "none";
         z.style.display = "inline";
+        c.style.display = "inline";
     }
 }
 
+
+/* --------------
+       LOGIN
+    --------------
+*/
+
+const login = document.querySelector(".login");
+
+login.addEventListener("click", function(e){
+    
+
+    var email = document.getElementById("email-login").value;
+    var password = document.getElementById("password-login").value;
+
+    /*Si todo está vacío*/
+    if ( email == "" && password == "" ){
+
+        document.getElementById("email-login-error").innerHTML = "* Este campo no puede quedar vacío."
+        document.getElementById("email-login").style.borderColor="#461453"
+        document.getElementById("password-login-error").innerHTML = "* Este campo no puede quedar vacío."
+        document.getElementById("password-login").style.borderColor="#461453"
+
+        e.preventDefault(); /*Evita enviar el formulario*/
+
+    }else if( email == "" || password == "" || 
+                email.length < 6 || password.length < 5 ||
+                !verificarEmail(email) || !verificarPassword(password)){
+    
+        /*Si el email está vacío*/
+        if ( email == "" ){
+            document.getElementById("email-login-error").innerHTML = "* Este campo no puede quedar vacío."
+            document.getElementById("email-login").style.borderColor="#461453"
+                  
+        }else if ( email.length < 6 ){
+            document.getElementById("email-login-error").innerHTML = "* Debe tener 6 o más caractéres."
+            document.getElementById("email-login").style.borderColor="#461453"      
+        }else if ( !verificarEmail(email) ){
+            document.getElementById("email-login-error").innerHTML = "* Ingreso de datos inválidos."
+            document.getElementById("email-login").style.borderColor="#461453"      
+        }else {
+            document.getElementById("email-login-error").innerHTML = ""
+            document.getElementById("email-login").style.borderColor="lightgrey"      
+        }
+
+        /*Contraseña incorrecta o vacía*/
+        if ( password == "" ){
+            document.getElementById("password-login-error").innerHTML = "* Este campo no puede quedar vacío."
+            document.getElementById("password-login").style.borderColor="#461453"      
+        }else if ( password.length < 5 && !verificarPassword(password) ){
+            document.getElementById("password-login-error").innerHTML = "* Mínimo 5 carácteres"
+            document.getElementById("password-login").style.borderColor="#461453"      
+        }else if ( password.length < 5 ){
+            document.getElementById("password-login-error").innerHTML = "* Debe tener 5 a más caractéres."
+            document.getElementById("password-login").style.borderColor="#461453"      
+        }else if ( !verificarPassword(password) ){
+            document.getElementById("password-login-error").innerHTML = "* Mínimo una MAY, MIN y NUM."
+            document.getElementById("password-login").style.borderColor="#461453"      
+        }else {
+            document.getElementById("password-login-error").innerHTML = ""
+            document.getElementById("password-login").style.borderColor="lightgrey"      
+        }
+
+        e.preventDefault();
+        
+    }else{
+
+        document.getElementById("email-login-error").innerHTML = ""
+        document.getElementById("email-login").style.borderColor="lightgrey"
+        document.getElementById("password-login-error").innerHTML = ""
+        document.getElementById("password-login").style.borderColor="lightgrey"
+
+        num[contador - 1].classList.add("active");
+        progressText[contador - 1].classList.add("active");
+        progressCheck[contador - 1].classList.add("active");
+        contador++;
+
+    }
+    
+    /*Verificar email*/
+    function verificarEmail($n){
+        var ExpRegular_Email = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;/*Ingresa cualquier cosa antes del arroba, luego ingresa un arroba y finalice con 2 o 3 letras*/
+        return ExpRegular_Email.test($n);
+    }
+    /*Verificar Password*/
+    function verificarPassword($m){
+        var ExpRegular_Num = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,16}$/; /* al menos un dígito, al menos una minúscula y al menos una mayúscula. */
+        return ExpRegular_Num.test($m);
+    }
+});
+
+/* --------------------
+        REGISTRO
+   --------------------
+*/
 const movPag = document.querySelector(".movPag");/*Obitenes el primer elemento de la clase que se le pasa por parámetro*/
 const botonAdelante2 = document.querySelector(".sigPag");/*Botón que va hacia delante de la página*/
 const botonAtras1 = document.querySelector(".volver-pag1");
@@ -284,16 +388,16 @@ botonFinal.addEventListener("click", function(e){
         /*Contraseña incorrecta o vacía*/
         if ( password == "" ){
             document.getElementById("password-error").innerHTML = "* Este campo no puede quedar vacío."
-            document.getElementById("password").style.borderColor="blueviolet"      
+            document.getElementById("password").style.borderColor="#461453"      
         }else if ( password.length < 5 && !verificarPassword(password) ){
             document.getElementById("password-error").innerHTML = "* Mínimo 5 carácteres"
-            document.getElementById("password").style.borderColor="blueviolet"      
+            document.getElementById("password").style.borderColor="#461453"      
         }else if ( password.length < 5 ){
             document.getElementById("password-error").innerHTML = "* Debe tener 5 a más caractéres."
-            document.getElementById("password").style.borderColor="blueviolet"      
+            document.getElementById("password").style.borderColor="#461453"      
         }else if ( !verificarPassword(password) ){
             document.getElementById("password-error").innerHTML = "* Mínimo una MAY, MIN y NUM."
-            document.getElementById("password").style.borderColor="blueviolet"      
+            document.getElementById("password").style.borderColor="#461453"      
         }else {
             document.getElementById("password-error").innerHTML = ""
             document.getElementById("password").style.borderColor="lightgrey"      
@@ -325,11 +429,6 @@ botonFinal.addEventListener("click", function(e){
         var ExpRegular_Num = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,16}$/; /* al menos un dígito, al menos una minúscula y al menos una mayúscula. */
         return ExpRegular_Num.test($m);
     }
-
-    /*Enviar formulario*/
-    function enviar_formulario(){
-        document.form-registro.submit();
-     }
 });
 
 

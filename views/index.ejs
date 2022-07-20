@@ -23,11 +23,16 @@
                 <img src="/imagenes/user.png" alt="User">
                 <img src="/imagenes/close.png" alt="close button" class="close-popup">
                 <form action ="/users/user" method="post">
-                    <label for="email-login">Email:</label>
+                    <label for="email-login">Email:</label><p class="error-login" id="email-login-error"></p>
                     <input class="input-login" type="email" name="email" id="email-login" placeholder="Email">
-                    <label for="password-login">Contraseña:</label>
+                    <label for="password-login">Contraseña:</label><p class="error-login" id="password-login-error"></p>
                     <input class="input-login" type="password" name="password" id="password-login" placeholder="Password">
-                    <input type="submit" class="button-popup2" id="boton-iniciar" value ="Iniciar sesión">
+                    <!--Opción para que se vea la contraseña-->
+                    <span class="ojitos" onclick="mostrarPassword()">
+                        <i id="mostrar2" class="fa fa-eye" title="Mostrar Contraseña"></i><!--Para mostrarla-->
+                        <i id="ocultar2" class="fa fa-eye-slash" title="Ocultar Contraseña"></i><!--Para ocultarla-->
+                    </span>
+                    <input type="submit" class="login button-popup2" id="boton-iniciar" value ="Iniciar sesión">
                 </form>
             </div>
         </div>

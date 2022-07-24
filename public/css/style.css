@@ -93,8 +93,23 @@ nav ul li a:hover {
     background-image: url("/imagenes/fondo.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-attachment: fixed;
     height: 100%;
     width: 100%;
+}
+
+.texto-pantalla-principal{
+    margin: 20px;
+    width: 50%;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #dfa2ee;
+    font-family: 'Pacifico';
+    border-radius: 28px;
+    -webkit-text-stroke: 1px black;
+    text-shadow: -2px -2px 1px #000;
+    padding-top: 15%;
 }
 
 .main_principal {
@@ -116,13 +131,38 @@ nav ul li a:hover {
     border-radius: 28px;
 }
 
+.opiniones-titulo{
+    margin: 20px;
+    width: 50%;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #dfa2ee;
+    font-family: 'Pacifico';
+    border-radius: 28px;
+    -webkit-text-stroke: 1px black;
+    text-shadow: -2px -2px 1px #000;
+    padding-top: 2%;
+}
+
+.opiniones´{
+    margin: 20px;
+    width: 50%;
+    padding: 20px;
+    font-size: 24px;
+    background-color: #461453b6;
+    color: #dfa2ee;
+    font-family: 'Pacifico';
+    border-radius: 28px;
+}
+
 /*-------------------------------------------
             POP UP LOGIN Y SIGN UP
 ---------------------------------------------*/
 
 .popup-container {
     text-align: center;
-    margin-bottom: 25px;
+    padding-bottom: 15%;
 }
 
 .popup-container a:last-child {

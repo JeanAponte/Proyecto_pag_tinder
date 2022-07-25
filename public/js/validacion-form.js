@@ -27,10 +27,9 @@ function mostrarPassword(){
     }
 }
 
-
 /* --------------
        LOGIN
-    --------------
+   --------------
 */
 
 const login = document.querySelector(".login");

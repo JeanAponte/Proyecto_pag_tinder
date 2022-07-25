@@ -1,23 +1,14 @@
 var express = require('express');
 var router = express.Router();
+const usersController = require('../controllers/usersController');
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.render('users');
-});
+router.get('/', usersController.getUsers);
 
-router.get('/user', function(req, res, next) {
-  res.render('user');
-});
+/*GET a user*/
+router.get('/user', usersController.getUser);
 
-
-
-router.post('/user',function(req,res,next){
-  let email= req.body.email;
-  let password=req.body.password;
-
-  console.log(email, password);
-  res.render('users');
-});
+/*POST login*/
+router.post('/user', usersController.login);
 
 module.exports = router;

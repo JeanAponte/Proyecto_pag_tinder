@@ -6,46 +6,44 @@
         
         <main class="main_principal">
 
-        <div class="texto-pantalla-principal">
-            <p>DESLIZA HACIA LA DERECHA...<br>¡ENCUENTRA EL AMOR!
-            </p>
-        </div>
-
-        <div class="popup-container">
-            <a href="#" class="button-popup" id="button-popup">Iniciar sesión</a>
-            <a href="#" class="button-popup" id="button-popup-singup">Registrarse</a>
-        </div>
-
-        <div class="descripcion">
-            <p>Gente adulta con todo tipo de historias y experiencias previas aprovecha para hacer amigos, vivir aventuras… ¡y lo que surja!</p>
-            <p>
-            ¿Quieres empezar una relación? ¡Hecho! ¿Quieres hacer nuevos amigos? Ningún problema. ¿Eres nuevo en la facultad y quieres aprovechar al máximo tu experiencia en la uni? Citas Coders es para ti.</p>
-            <p>Tienes millones de personas solteras a tu alcance… ¡y todas quieren conocer a gente como tú! Pertenezcas donde pertenezcas eres bienvenido .</p>
+            <div class="texto-pantalla-principal">
+                <p>DESLIZA HACIA LA DERECHA...<br>¡ENCUENTRA EL AMOR!
+                </p>
             </div>
-        
-        <div class="opiniones-titulo">
-            <p>OPINIONES DE<br>NUESTROS USUARIOS</p>
-        </div>
 
-        <div class="opiniones">
-            <p>Sebastián Trujillo:<br>"Gracias a esta app encontré el amor" <br>Puntuación: ★★★★☆</p>
-        </div>
+            <div class="popup-container">
+                <a href="#" class="button-popup" id="button-popup">Iniciar sesión</a>
+                <a href="#" class="button-popup" id="button-popup-singup">Registrarse</a>
+            </div>
 
-        <div class="opiniones">
-            <p>Andrea Bernardino:<br>"La mejor aplicación de citas" <br>Puntuación: ★★★★★</p>
-        </div>
+            <div class="descripcion">
+                <p>Gente adulta con todo tipo de historias y experiencias previas aprovecha para hacer amigos, vivir aventuras… ¡y lo que surja!</p>
+                <p>
+                ¿Quieres empezar una relación? ¡Hecho! ¿Quieres hacer nuevos amigos? Ningún problema. ¿Eres nuevo en la facultad y quieres aprovechar al máximo tu experiencia en la uni? Citas Coders es para ti.</p>
+                <p>Tienes millones de personas solteras a tu alcance… ¡y todas quieren conocer a gente como tú! Pertenezcas donde pertenezcas eres bienvenido .</p>
+                </div>
+            
+            <div class="opiniones-titulo">
+                <p>OPINIONES DE<br>NUESTROS USUARIOS</p>
+            </div>
 
-        <div class="opiniones">
-            <p>Guillem Ruiz:<br>"¡No puedo iniciar sesión! Pero buena app" <br>Puntuación: ★☆☆☆☆</p>
-        </div>
+            <div class="opiniones">
+                <p>Sebastián Trujillo:<br>"Gracias a esta app encontré el amor" <br>Puntuación: ★★★★☆</p>
+            </div>
 
-        <div class="opiniones">
-            <p>Caterina Caterina:<br>"Supera a toda la competencia" <br>Puntuación: ★★★★★</p>
-        </div>
+            <div class="opiniones">
+                <p>Andrea Bernardino:<br>"La mejor aplicación de citas" <br>Puntuación: ★★★★★</p>
+            </div>
+
+            <div class="opiniones">
+                <p>Guillem Ruiz:<br>"¡No puedo iniciar sesión! Pero buena app" <br>Puntuación: ★☆☆☆☆</p>
+            </div>
+
+            <div class="opiniones">
+                <p>Caterina Caterina:<br>"Supera a toda la competencia" <br>Puntuación: ★★★★★</p>
+            </div>
 
         </main>
-
-
 
         <div class="popup-login">
             <div class="popup-content">
@@ -111,13 +109,13 @@
                             <div class="pagina movPag">
                                 <div class="campo">
                                         <label for="nombres">Nombre: </label><p class="error" id="nombres-error"></p>
-                                        <input type="text" id="nombres" placeholder="Nombre">
+                                        <input type="text" id="nombres" placeholder="Nombre" name="nombre">
                                 </div>
             
                                 <div class="campo">
                                     
                                         <label for="fechaNac">Nacimiento:</label><p class="error" id="fechaNac-error"></p>
-                                        <input type="date" id="fechaNac" max="2004-12-31"> 
+                                        <input type="date" id="fechaNac" max="2004-12-31" name="fecha_nacimiento"> 
                                         <!--max = fecha pone un máximo de fecha al calendario. Útil para límites
                                         de edad.
                                             
@@ -128,7 +126,7 @@
                                 <div class="campo">
                                     
                                         <label for="numTel">Teléfono:</label>
-                                        <input type="text" id="numTel" placeholder="Telefono"> <p class="error" id="numTel-error"></p>
+                                        <input type="text" id="numTel" placeholder="Telefono" name="telefono"> <p class="error" id="numTel-error" ></p>
                                 </div>
             
                                 <div class="campo sigPag">
@@ -140,25 +138,25 @@
                             <div class="pagina">
                                 <div class="campo">
                                         <label for="ciudad">Ciudad:</label><p class="error" id="ciudad-error"></p>
-                                        <input type="text" id="ciudad" placeholder="Ciudad">
+                                        <input type="text" id="ciudad" placeholder="Ciudad" name="ciudad">
                                 </div>
 
                                 <div class="campo">
                                     <label for="pais">País:</label><p class="error" id="pais-error"></p>
-                                    <input type="text" id="pais" placeholder="País">
+                                    <input type="text" id="pais" placeholder="País" name="pais">
                                 </div>
             
                                 <div class="campo">
                                     <label for="sexo">Sexo:</label><p class="error" id="sexo-error"></p>
-                                    <select id="sexo">
+                                    <select id="sexo" name="sexo">
                                         <!--El primer option es para que una vez elegido el sexo, no se quede guardado aunque recarge
                                         la página, sino que vuelva al valor por defecto de escoja una opción.
                                         Además, el disable selected es para que no sea una opción a elegir, sino lo primero que sale-->
                                         <option value="-1" disable selected>Elige una opción</option>
-                                        <option value="0">Hombre</option>
-                                        <option value="1">Mujer</option>
-                                        <option value="2">No binario</option>
-                                        <option value="3">Transexual</option>
+                                        <option value="Hombre">Hombre</option>
+                                        <option value="Mujer">Mujer</option>
+                                        <option value="No binario">No binario</option>
+                                        <option value="Transexual">Transexual</option>
                                     </select>
                                 </div>
             
@@ -173,40 +171,40 @@
                             <div class="pagina">
                                 <div class="campo">
                                     <label for="orientacion-sexual">Sexualidad:</label><p class="error" id="orientacion-sexual-error"></p>
-                                    <select id="orientacion-sexual">
+                                    <select id="orientacion-sexual" name="orientacion_sexual">
                                         <option value="-1" disable selected>Elige una opción</option>
-                                        <option value="0">Heterosexual</option>
-                                        <option value="1">Gay</option>
-                                        <option value="2">Lesbiana</option>
-                                        <option value="3">Asexual</option>
-                                        <option value="3">Pansexual</option>
+                                        <option value="Heterosexual">Heterosexual</option>
+                                        <option value="Gay">Gay</option>
+                                        <option value="Lesbiana">Lesbiana</option>
+                                        <option value="Asexual">Asexual</option>
+                                        <option value="Pansexual">Pansexual</option>
                                     </select>
                                 </div>
             
                                 <div class="campo">
                                     <div class="label">
                                         AFICIONES: <p class="error" id="aficiones-error"></p><br>
-                                            <input type="checkbox" id="viajar">
+                                            <input value="viajar" type="checkbox" id="viajar" name="aficiones">
                                             <label for="viajar" class="label-aficiones">Viajar</label>
-                                            <input type="checkbox" id="bailar">
+                                            <input value="bailar" type="checkbox" id="bailar" name="aficiones">
                                             <label for="bailar" class="label-aficiones">Bailar</label>
-                                            <input type="checkbox" id="deportes">
+                                            <input value="deportes" type="checkbox" id="deportes" name="aficiones">
                                             <label for="deportes" class="label-aficiones">Deportes</label><br>
-                                            <input type="checkbox" id="cantar">
+                                            <input value="cantar" type="checkbox" id="cantar" name="aficiones">
                                             <label for="cantar" class="label-aficiones">Cantar</label>
-                                            <input type="checkbox" id="videojuegos">
+                                            <input value="videojuegos" type="checkbox" id="videojuegos" name="aficiones">
                                             <label for="videojuegos" class="label-aficiones">Videojuegos</label>
-                                            <input type="checkbox" id="musica">
+                                            <input value="musica" type="checkbox" id="musica" name="aficiones">
                                             <label for="musica" class="label-aficiones">Música</label><br>
-                                            <input type="checkbox" id="cocinar">
+                                            <input value="cocinar" type="checkbox" id="cocinar" name="aficiones">
                                             <label for="cocinar" class="label-aficiones">Cocinar</label>
-                                            <input type="checkbox" id="leer">
+                                            <input value="leer" type="checkbox" id="leer" name="aficiones">
                                             <label for="leer" class="label-aficiones">Leer</label>
-                                            <input type="checkbox" id="naturaleza">
+                                            <input value="naturaleza" type="checkbox" id="naturaleza" name="aficiones">
                                             <label for="naturaleza" class="label-aficiones">Naturaleza</label><br>
-                                            <input type="checkbox" id="peliculas">
+                                            <input value="peliculas" type="checkbox" id="peliculas" name="aficiones">
                                             <label for="peliculas" class="label-aficiones">Películas</label>
-                                            <input type="checkbox" id="animales">
+                                            <input value="animales" type="checkbox" id="animales" name="aficiones">
                                             <label for="animales" class="label-aficiones">Animales</label>
                                     </div>
                                 </div>
@@ -223,12 +221,12 @@
                             <div class="pagina">
                                 <div class="campo">
                                     <label for="email">Email:</label><p class="error" id="email-error"></p>
-                                    <input type="text" id="email" placeholder="Email">
+                                    <input type="text" id="email" placeholder="Email" name="email">
                                 </div>
             
                                 <div class="campo">
                                     <label for="password">Contraseña:</label><p class="error" id="password-error"></p>
-                                    <input type="password" id="password" placeholder="Contraseña">
+                                    <input type="password" id="password" placeholder="Contraseña" name="password">
                                     <!--Opción para que se vea la contraseña-->
                                     <span class="ojos" onclick="mostrarPassword()">
                                         <i id="mostrar" class="fa fa-eye" title="Mostrar Contraseña"></i><!--Para mostrarla-->
@@ -238,7 +236,7 @@
                                 
                                 <div class="campo">
                                     <label for="imagen">Imagen de Perfil:</label><p class="error" id="imagen-error"></p>
-                                    <input type="file" id="imagen">
+                                    <input type="file" id="imagen" name="imagen">
                                 </div>
                                 <div class="campo botones-form botones-4">
                                     <!--dos  clases: volver-pag1 para el js y volver para el css-->

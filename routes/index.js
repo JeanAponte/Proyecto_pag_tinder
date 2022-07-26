@@ -20,4 +20,13 @@ router.get('/filtro', indexController.getFiltro);
 /* GET Welcome page. */
 router.post('/bienvenida', indexController.getBienvenida);
 
+
+ 
+ /*PAG para consultar cookies*/
+ router.get('/get-cookie', function(req, res, next) {
+     //Recojo la cookie
+     console.log(req.cookies['nombre-usuario']); //req.cookies Donde obtenemos todas las cookies que están registradas.,
+     res.send('recogiendo cookies'); //req.cookies['nombre-usuario'] para una cookie en específico
+   });
+
 module.exports = router;

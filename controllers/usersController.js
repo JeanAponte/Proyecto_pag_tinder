@@ -1,5 +1,10 @@
+var mongoose = require('mongoose');
+var userModel = require("../model/usuario");
+
+/*Creo el controlador*/
 var usersController = {};
 
+/*Control de rutas de usuarios*/
 usersController.getUsers = function(req, res, next) {
     res.render('users');
   }
@@ -16,9 +21,34 @@ usersController.login = function(req,res,next){
     res.render('user', {email:email, password:password});
   }
 
-userController.auth = function(email, password,req,res){
+/*Funciones de usuario*/
+userController.obtenerUsuario = function (email){
+
+  /*Comprobar si existe el usuario con el email pasado como parámetro
+    *findOne es buscar a un único usuario mediante una o unas variable/s que le pasemos.
+    *findOne({La propiedad que requiero de la BD: valor de lo que paso por el parámetro})
+    *exec (finction (err, variable donde se guarda el usuario))
+   */
+
+  userModel.findOne({email:email}).exec(function(err, usuario){
+    if ( err ){
+       return false; //No se ha encontrado en la BD
+    }else{
+      return usuario; //Devuelve el usuario
+    }
+  });
+}
+
+/* Añadir un usuario a la BD */
+
+userModel.agregarUsuario = function(err,usuario){
+
+}
+
+userController.auth = function(email){
     //Comprobar en la BD si existe el email. 
-    if (email == req.body.email && password == req.body.password){
+
+    if (userController.obtenerUsuario){
       if (req.cookies['nombre-usuario']){
         res.render('user');
       }else{
@@ -35,12 +65,12 @@ userController.auth = function(email, password,req,res){
 }
 
 
-User.list = function(){
+userController.list = function(){
     //Buscar usuarios en db (atributos queremos de cada usuario)
     return []; //Array con todos los usuarios
 }
 
-user.friends = function(id_u){
+userController.friends = function(id_u){
     return []; //Array con todos los usuarios
 }
 

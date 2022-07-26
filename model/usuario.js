@@ -1,5 +1,3 @@
-
-
 //Crear el esquema de usuario con Schema.
 
 var mongoose = require('mongoose');

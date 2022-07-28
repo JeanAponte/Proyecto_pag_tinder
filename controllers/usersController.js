@@ -5,34 +5,26 @@ var userModel = require("../model/Usuario");
 var usersController = {};
 
 /*Control de rutas de usuarios*/
-usersController.getUsers = function(req, res, next) {
-    res.render('users');
-  }
-
-usersController.getUser = function(req, res, next) {
-    res.render('user');
-  }
 
 usersController.login = function(req,res,next){
     let email = req.body.email;
     let password = req.body.password;
   
-    console.log(email, password);
-    res.render('user', {email:email, password:password});
+    if (userModel.findOne(email)){
+      console.log(email, password);
+      res.render('user', {email:email, password:password});
+    }else{
+      usersController.createUser();
+    }
+    
   }
 
 
 /*------------Funciones de usuarios-----------*/
 
-usersController.obtenerUsuario = function (email){
+usersController.obtenerUsuario = function (id){
 
-  /*Comprobar si existe el usuario con el email pasado como parámetro
-    *findOne es buscar a un único usuario mediante una o unas variable/s que le pasemos.
-    *findOne({La propiedad que requiero de la BD: valor de lo que paso por el parámetro})
-    *exec (finction (err, variable donde se guarda el usuario))
-   */
-
-  userModel.findOne({email:email}).exec(function(err, usuario){
+  userModel.findOne({_id:id}).exec(function(err, usuario){
     if ( err ){
        return false; //No se ha encontrado en la BD
     }else{
@@ -44,7 +36,7 @@ usersController.obtenerUsuario = function (email){
 /*----------------Listar usuarios------------------*/
 
 usersController.list = function(req, res){
-  User.find().exec(function(err, usuarios){
+  userModel.find().exec(function(err, usuarios){
       if( err ){ console.log('Error: ', err); return; }
       console.log(usuarios);
       res.render('../views/users', {usuarios: usuarios}); 
@@ -53,24 +45,23 @@ usersController.list = function(req, res){
 
 /*---------------Añadir un usuario a la BD----------------*/
 
-usersController.createUser = async (req,res) =>{
-    const user = new Usuario({
-        nombre: 'Laura',
-        edad: '20',
-        ciudad: 'París',
-        pais: 'Francia',
-        aficiones: 'Viajar, Naturaleza, Animales',
-        telefono: '035874578',
-        email: 'laura29@gmail.com',
-        fecha_nacimiento: '12/05/2002',
-        imagen: 'https://cronicaglobal.elespanol.com/uploads/s1/49/64/67/mujer.jpeg',
-        sexo: 'Mujer',
-        orientacion_sexual: 'Heterosexual'
+usersController.createUser = async (nombre, fecha_nacimiento,telefono,ciudad,pais,sexo,orientacion_sexual,aficiones,email,password,imagen) =>{
+    const user = new userModel({
+        nombre: nombre,
+        ciudad: ciudad,
+        pais: pais,
+        aficiones: aficiones,
+        telefono: telefono,
+        email: email,
+        fecha_nacimiento: fecha_nacimiento,
+        imagen: imagen,
+        sexo: sexo,
+        orientacion_sexual: orientacion_sexual,
+        password: password
     });
 
+    console.log(user);
     user.save();
-
-    res.render('../views/user', {usuarios:user})
 }
 
 /*----------------Borrado de usuarios---------------- */

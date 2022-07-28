@@ -3,10 +3,10 @@ var router = express.Router();
 const usersController = require('../controllers/usersController');
 
 /* GET users listing. */
-router.get('/', usersController.getUsers);
+router.get('/', usersController.list);
 
 /*GET a user*/
-router.get('/user', usersController.getUser);
+router.get('/user', usersController.obtenerUsuario);
 
 /*POST login*/
 router.post('/user', usersController.login);

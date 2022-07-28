@@ -41,6 +41,23 @@ usersController.obtenerUsuario = function (email){
   });
 }
 
+/*Listar usuarios */
+
+usersController.list = function(req, res){
+  User.find().exec(function(err, usuarios){
+      if( err ){ console.log('Error: ', err); return; }
+      console.log(usuarios);
+      res.render('../views/users', {usuarios: usuarios}); 
+  });
+};
+
+
+// usersController.list = async function(req,res){
+//    const users = await userModel.find();
+//    res.render('../views/users', {usuarios: users}); 
+// }
+
+
 // /* Añadir un usuario a la BD */
 
 // userModel.agregarUsuario = function(err,usuario){

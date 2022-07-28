@@ -1,8 +1,27 @@
 <%- include('head'); %> 
 
-
-  <!-- Contenido -->
+<body class="users-body">
+    <!-- Contenido -->
   <%- include('header'); %> 
+
+  <div class="container">
+    <% for(let i = 0; i < usuarios.length; i++){%>
+      <div class="card">
+        <figure>
+          <img src="<%= usuarios[i].imagen %>" alt="Foto de usuario">
+        </figure>
+  
+        <div class="card-content">
+          <h3><%= usuarios[i].nombre %>     <%= usuarios[i].edad %> </h3>
+          <p>
+              Aficiones: <%= usuarios[i].aficiones %><br>
+          </p>
+        </div>
+      </div> 
+   <% } %>   
+  </div>
+</body>
+  
  
   <!-- fin contenido -->
   <%- include('footer'); %> 
